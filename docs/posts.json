@@ -16,9 +16,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_200x200.jpg"
     },
     "stats": {
-      "views": 721146,
-      "likes": 3238,
-      "retweets": 223
+      "views": 913349,
+      "likes": 3239,
+      "retweets": 225
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.mp4",
@@ -48,8 +48,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
     },
     "stats": {
-      "views": 209705,
-      "likes": 878,
+      "views": 211160,
+      "likes": 883,
       "retweets": 82
     },
     "video": {
@@ -61,6 +61,38 @@
       "source_url": "https://video.twimg.com/tweet_video/HOhyEbhaEAAnpfS.mp4",
       "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp",
       "attachment": "https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e"
+    }
+  },
+  {
+    "id": "2083142947978047937",
+    "url": "https://x.com/LeonardoAi/status/2083142947978047937",
+    "title": "MiniMax H3 is on Leonardo",
+    "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
+    "prompt": null,
+    "prompt_in_thread": false,
+    "model": "MiniMax H3",
+    "category": "Launch & Announcements",
+    "date": "2026-07-31",
+    "author": {
+      "name": "Leonardo.Ai",
+      "handle": "LeonardoAi",
+      "url": "https://x.com/LeonardoAi",
+      "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
+    },
+    "stats": {
+      "views": 60383,
+      "likes": 493,
+      "retweets": 6
+    },
+    "video": {
+      "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.mp4",
+      "thumbnail": "https://pbs.twimg.com/media/HOjPdD9XwAAcG8i.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 12.23,
+      "source_url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
+      "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp",
+      "attachment": "https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125"
     }
   },
   {
@@ -80,7 +112,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/2004688279782699008/8jMYzXU3_200x200.jpg"
     },
     "stats": {
-      "views": 56909,
+      "views": 57840,
       "likes": 138,
       "retweets": 1
     },
@@ -112,8 +144,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/649098801119121408/5WTuzsXc_200x200.jpg"
     },
     "stats": {
-      "views": 47131,
-      "likes": 140,
+      "views": 47546,
+      "likes": 141,
       "retweets": 18
     },
     "video": {
@@ -144,9 +176,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/2047708517570887680/vasvAmZR_200x200.jpg"
     },
     "stats": {
-      "views": 40837,
-      "likes": 402,
-      "retweets": 31
+      "views": 41960,
+      "likes": 404,
+      "retweets": 32
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ComfyUI_2083065132910063616.mp4",
@@ -176,7 +208,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1998970271458537475/jcT0J2z6_200x200.jpg"
     },
     "stats": {
-      "views": 40132,
+      "views": 40694,
       "likes": 65,
       "retweets": 5
     },
@@ -208,8 +240,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/1661812165949489186/vhwQU-Fk_200x200.jpg"
     },
     "stats": {
-      "views": 17338,
-      "likes": 296,
+      "views": 17420,
+      "likes": 297,
       "retweets": 28
     },
     "video": {
@@ -221,38 +253,6 @@
       "source_url": "https://video.twimg.com/amplify_video/2082499279680405504/vid/avc1/2560x1440/Zho0yGTsy043Peo5.mp4?tag=29",
       "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/umesh_ai_2082499279680405504.webp",
       "attachment": "https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb"
-    }
-  },
-  {
-    "id": "2083142947978047937",
-    "url": "https://x.com/LeonardoAi/status/2083142947978047937",
-    "title": "MiniMax H3 is on Leonardo",
-    "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
-    "prompt": null,
-    "prompt_in_thread": false,
-    "model": "MiniMax H3",
-    "category": "Launch & Announcements",
-    "date": "2026-07-31",
-    "author": {
-      "name": "Leonardo.Ai",
-      "handle": "LeonardoAi",
-      "url": "https://x.com/LeonardoAi",
-      "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
-    },
-    "stats": {
-      "views": 11704,
-      "likes": 36,
-      "retweets": 6
-    },
-    "video": {
-      "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.mp4",
-      "thumbnail": "https://pbs.twimg.com/media/HOjPdD9XwAAcG8i.jpg",
-      "width": 1920,
-      "height": 1080,
-      "duration": 12.23,
-      "source_url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
-      "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp",
-      "attachment": "https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125"
     }
   },
   {
@@ -272,7 +272,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_200x200.jpg"
     },
     "stats": {
-      "views": 8600,
+      "views": 8787,
       "likes": 41,
       "retweets": 5
     },
@@ -304,7 +304,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1909539944189624320/cOei_LOK_200x200.jpg"
     },
     "stats": {
-      "views": 7385,
+      "views": 7395,
       "likes": 16,
       "retweets": 0
     },
@@ -336,7 +336,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1687401026805256192/uQ1o2wVQ_200x200.jpg"
     },
     "stats": {
-      "views": 6224,
+      "views": 6282,
       "likes": 79,
       "retweets": 4
     },
@@ -368,7 +368,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/570258232968552448/lfXJ6w2b_200x200.jpeg"
     },
     "stats": {
-      "views": 5172,
+      "views": 5227,
       "likes": 38,
       "retweets": 8
     },
@@ -381,38 +381,6 @@
       "source_url": "https://video.twimg.com/amplify_video/2082970378692141056/vid/avc1/2560x1440/cZ8W1e1YliYpKpcl.mp4?tag=29",
       "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/kiyoshi_shin_2082970378692141056.webp",
       "attachment": "https://github.com/user-attachments/assets/97fbca07-1570-4a65-ae56-f547a69de5c1"
-    }
-  },
-  {
-    "id": "2083163811398181247",
-    "url": "https://x.com/heyshrutimishra/status/2083163811398181247",
-    "title": "MiniMax H3 just became the best video editor in AI",
-    "text": "MiniMax H3 just became the best video editor in AI.\n\n#1 on Artificial Analysis's Video Editing Leaderboard, #2 in Text to Video, #3 in Image to Video. And unlike every model above it, H3 can take a video as input, not just generate one from scratch.\n\nThat changes what video AI actually means in production.\n\nRight now, the tools people use to package video for advertising and brand content are Adobe After Effects, DaVinci Resolve, and manual compositing workflows. They're powerful, but they require technical operators and hours of iteration to get timing, text overlays, and motion graphics aligned.\n\nH3 takes text, images, existing video clips, and audio together as inputs, generates 5 to 15 second clips at 24fps with native audio embedded. The instruction-based editing is what makes it different. You're not starting from scratch with a prompt. You're directing an existing clip.\n\nFor creative fields specifically, this is where it gets interesting. \n\nAdvertising teams spend enormous effort on visual packaging: supers (on-screen text), brand color grading, transitions, and audio sync. These are all instructable edits, and H3's multimodal architecture is built to handle exactly that layer. The model has a strong enough aesthetic sense to respond to directorial intent, not just literal prompts.\nPricing is also positioned to win. At $7.80 per minute for 2K video with audio, H3 significantly undercuts Kling 3.0 ($20.16/min) and Dreamina Seedance 2.0 ($22.45/min).\n\nAnd MiniMax plans to release the weights under a Community License that permits commercial use for companies under $20M revenue, with attribution. If that ships, H3 becomes the strongest open-weights video model by a wide margin, ahead of LTX-2.3 which held that position before.\n\nMost video AI is still about generation. H3 is the first model that starts to feel like post-production.",
-    "prompt": null,
-    "prompt_in_thread": false,
-    "model": "MiniMax H3",
-    "category": "Launch & Announcements",
-    "date": "2026-07-31",
-    "author": {
-      "name": "Shruti",
-      "handle": "heyshrutimishra",
-      "url": "https://x.com/heyshrutimishra",
-      "avatar": "https://pbs.twimg.com/profile_images/2069500193737994240/_NLmpT9-_200x200.jpg"
-    },
-    "stats": {
-      "views": 4581,
-      "likes": 17,
-      "retweets": 4
-    },
-    "video": {
-      "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/heyshrutimishra_2083163783686463488.mp4",
-      "thumbnail": "https://pbs.twimg.com/ext_tw_video_thumb/2083163783686463488/pu/img/yRzk8UlGeCjxk1Vk.jpg",
-      "width": 2560,
-      "height": 1440,
-      "duration": 15.08,
-      "source_url": "https://video.twimg.com/ext_tw_video/2083163783686463488/pu/vid/avc1/1280x720/xoPROV7gDdu4L7-c.mp4?tag=12",
-      "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/heyshrutimishra_2083163783686463488.webp",
-      "attachment": "https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65"
     }
   },
   {
@@ -432,7 +400,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1948789718683955200/1PP5EsV7_200x200.jpg"
     },
     "stats": {
-      "views": 4511,
+      "views": 4935,
       "likes": 53,
       "retweets": 6
     },
@@ -445,6 +413,38 @@
       "source_url": "https://video.twimg.com/ext_tw_video/2083628836285984768/pu/vid/avc1/720x1280/GfseYcSENCN1XmIr.mp4?tag=12",
       "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LudovicCreator_2083628836285984768.webp",
       "attachment": "https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5"
+    }
+  },
+  {
+    "id": "2083163811398181247",
+    "url": "https://x.com/heyshrutimishra/status/2083163811398181247",
+    "title": "MiniMax H3 just became the best video editor in AI",
+    "text": "MiniMax H3 just became the best video editor in AI.\n\n#1 on Artificial Analysis's Video Editing Leaderboard, #2 in Text to Video, #3 in Image to Video. And unlike every model above it, H3 can take a video as input, not just generate one from scratch.\n\nThat changes what video AI actually means in production.\n\nRight now, the tools people use to package video for advertising and brand content are Adobe After Effects, DaVinci Resolve, and manual compositing workflows. They're powerful, but they require technical operators and hours of iteration to get timing, text overlays, and motion graphics aligned.\n\nH3 takes text, images, existing video clips, and audio together as inputs, generates 5 to 15 second clips at 24fps with native audio embedded. The instruction-based editing is what makes it different. You're not starting from scratch with a prompt. You're directing an existing clip.\n\nFor creative fields specifically, this is where it gets interesting. \n\nAdvertising teams spend enormous effort on visual packaging: supers (on-screen text), brand color grading, transitions, and audio sync. These are all instructable edits, and H3's multimodal architecture is built to handle exactly that layer. The model has a strong enough aesthetic sense to respond to directorial intent, not just literal prompts.\nPricing is also positioned to win. At $7.80 per minute for 2K video with audio, H3 significantly undercuts Kling 3.0 ($20.16/min) and Dreamina Seedance 2.0 ($22.45/min).\n\nAnd MiniMax plans to release the weights under a Community License that permits commercial use for companies under $20M revenue, with attribution. If that ships, H3 becomes the strongest open-weights video model by a wide margin, ahead of LTX-2.3 which held that position before.\n\nMost video AI is still about generation. H3 is the first model that starts to feel like post-production.",
+    "prompt": null,
+    "prompt_in_thread": false,
+    "model": "MiniMax H3",
+    "category": "Launch & Announcements",
+    "date": "2026-07-31",
+    "author": {
+      "name": "Shruti",
+      "handle": "heyshrutimishra",
+      "url": "https://x.com/heyshrutimishra",
+      "avatar": "https://pbs.twimg.com/profile_images/2069500193737994240/_NLmpT9-_200x200.jpg"
+    },
+    "stats": {
+      "views": 4634,
+      "likes": 17,
+      "retweets": 4
+    },
+    "video": {
+      "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/heyshrutimishra_2083163783686463488.mp4",
+      "thumbnail": "https://pbs.twimg.com/ext_tw_video_thumb/2083163783686463488/pu/img/yRzk8UlGeCjxk1Vk.jpg",
+      "width": 2560,
+      "height": 1440,
+      "duration": 15.08,
+      "source_url": "https://video.twimg.com/ext_tw_video/2083163783686463488/pu/vid/avc1/1280x720/xoPROV7gDdu4L7-c.mp4?tag=12",
+      "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/heyshrutimishra_2083163783686463488.webp",
+      "attachment": "https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65"
     }
   },
   {
@@ -464,9 +464,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/1985637392087465985/LV5VUjkI_200x200.jpg"
     },
     "stats": {
-      "views": 3993,
+      "views": 4018,
       "likes": 16,
-      "retweets": 10
+      "retweets": 9
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/Ben_escrito_2083091813477519360.mp4",
@@ -496,7 +496,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/2021718581126606850/2o_ds9Yy_200x200.jpg"
     },
     "stats": {
-      "views": 3385,
+      "views": 3393,
       "likes": 75,
       "retweets": 8
     },

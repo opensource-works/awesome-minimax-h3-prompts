@@ -21,20 +21,20 @@ Open the gallery if you want to search across prompts, filter by category, or co
 | Posts | **16** |
 | Creators credited | **16** |
 | Posts with the full prompt | **1** |
-| Combined views on X | **1.2M** |
+| Combined views on X | **1.4M** |
 | Models covered | **MiniMax H3** (16) |
 | Last refreshed | 2026-08-03 |
 
 ## Most watched
 
 <table><tr>
-<td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 721.1K views</sub></td>
-<td width="33%" valign="top"><a href="https://x.com/ArtificialAnlys/status/2083042088338538594"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is #1 in Video Editing and ranks top 3 in both…</b><br><a href="https://x.com/ArtificialAnlys">@ArtificialAnlys</a> · 209.7K views</sub></td>
-<td width="33%" valign="top"><a href="https://x.com/CallMeDiegoJr/status/2082554826349535341"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/CallMeDiegoJr_2082554386631331840.webp" width="100%" alt=""></a><br><sub><b>Testing whether H3&#x27;s native voice output handles Persian</b><br><a href="https://x.com/CallMeDiegoJr">@CallMeDiegoJr</a> · 56.9K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 913.3K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/ArtificialAnlys/status/2083042088338538594"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is #1 in Video Editing and ranks top 3 in both…</b><br><a href="https://x.com/ArtificialAnlys">@ArtificialAnlys</a> · 211.2K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/LeonardoAi/status/2083142947978047937"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is on Leonardo</b><br><a href="https://x.com/LeonardoAi">@LeonardoAi</a> · 60.4K views</sub></td>
 </tr><tr>
-<td width="33%" valign="top"><a href="https://x.com/bdsqlsz/status/2083023496842801456"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/bdsqlsz_2083023259378036736.webp" width="100%" alt=""></a><br><sub><b>MiniMax-H3 open source</b><br><a href="https://x.com/bdsqlsz">@bdsqlsz</a> · 47.1K views</sub></td>
-<td width="33%" valign="top"><a href="https://x.com/ComfyUI/status/2083071877891682784"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ComfyUI_2083065132910063616.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is now available in ComfyUI via Partner Nodes</b><br><a href="https://x.com/ComfyUI">@ComfyUI</a> · 40.8K views</sub></td>
-<td width="33%" valign="top"><a href="https://x.com/servasyy_ai/status/2083024386567840185"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/servasyy_ai_2083024276458962944.webp" width="100%" alt=""></a><br><sub><b>海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。</b><br><a href="https://x.com/servasyy_ai">@servasyy_ai</a> · 40.1K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/CallMeDiegoJr/status/2082554826349535341"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/CallMeDiegoJr_2082554386631331840.webp" width="100%" alt=""></a><br><sub><b>Testing whether H3&#x27;s native voice output handles Persian</b><br><a href="https://x.com/CallMeDiegoJr">@CallMeDiegoJr</a> · 57.8K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/bdsqlsz/status/2083023496842801456"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/bdsqlsz_2083023259378036736.webp" width="100%" alt=""></a><br><sub><b>MiniMax-H3 open source</b><br><a href="https://x.com/bdsqlsz">@bdsqlsz</a> · 47.5K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/ComfyUI/status/2083071877891682784"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ComfyUI_2083065132910063616.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is now available in ComfyUI via Partner Nodes</b><br><a href="https://x.com/ComfyUI">@ComfyUI</a> · 42K views</sub></td>
 </tr></table>
 
 ## Contents
@@ -62,7 +62,7 @@ https://github.com/user-attachments/assets/46cb4256-2731-4a88-ab24-9bcc58d5f200
 
 https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb
 
-**[Umesh](https://x.com/umesh_ai)** · [@umesh_ai](https://x.com/umesh_ai) · MiniMax H3 · 2026-07-29 · 17.3K views · [▶ Watch on X](https://x.com/umesh_ai/status/2082499539735588916)
+**[Umesh](https://x.com/umesh_ai)** · [@umesh_ai](https://x.com/umesh_ai) · MiniMax H3 · 2026-07-29 · 17.4K views · [▶ Watch on X](https://x.com/umesh_ai/status/2082499539735588916)
 
 <details><summary><b>Prompt</b></summary>
 
@@ -90,7 +90,7 @@ https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
 https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609
 
-**[Diego Jr](https://x.com/CallMeDiegoJr)** · [@CallMeDiegoJr](https://x.com/CallMeDiegoJr) · MiniMax H3 · 2026-07-29 · 56.9K views · [▶ Watch on X](https://x.com/CallMeDiegoJr/status/2082554826349535341)
+**[Diego Jr](https://x.com/CallMeDiegoJr)** · [@CallMeDiegoJr](https://x.com/CallMeDiegoJr) · MiniMax H3 · 2026-07-29 · 57.8K views · [▶ Watch on X](https://x.com/CallMeDiegoJr/status/2082554826349535341)
 
 
 ## Omni-Reference & Editing
@@ -105,7 +105,7 @@ https://github.com/user-attachments/assets/97fbca07-1570-4a65-ae56-f547a69de5c1
 
 https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5
 
-**[LudovicCreator](https://x.com/LudovicCreator)** · [@LudovicCreator](https://x.com/LudovicCreator) · MiniMax H3 · 2026-08-01 · 4.5K views · [▶ Watch on X](https://x.com/LudovicCreator/status/2083628852165672988)
+**[LudovicCreator](https://x.com/LudovicCreator)** · [@LudovicCreator](https://x.com/LudovicCreator) · MiniMax H3 · 2026-08-01 · 4.9K views · [▶ Watch on X](https://x.com/LudovicCreator/status/2083628852165672988)
 
 > The creator posted the prompt further down [the thread](https://x.com/LudovicCreator/status/2083628852165672988).
 
@@ -125,49 +125,49 @@ https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
 https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
-**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 721.1K views · [▶ Watch on X](https://x.com/MiniMax_AI/status/2082779062653845803)
+**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 913.3K views · [▶ Watch on X](https://x.com/MiniMax_AI/status/2082779062653845803)
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
 https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
-**[Artificial Analysis](https://x.com/ArtificialAnlys)** · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · MiniMax H3 · 2026-07-31 · 209.7K views · [▶ Watch on X](https://x.com/ArtificialAnlys/status/2083042088338538594)
-
-### MiniMax-H3 open source
-
-https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
-
-**[青龍聖者](https://x.com/bdsqlsz)** · [@bdsqlsz](https://x.com/bdsqlsz) · MiniMax H3 · 2026-07-31 · 47.1K views · [▶ Watch on X](https://x.com/bdsqlsz/status/2083023496842801456)
-
-### MiniMax H3 is now available in ComfyUI via Partner Nodes
-
-https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
-
-**[ComfyUI](https://x.com/ComfyUI)** · [@ComfyUI](https://x.com/ComfyUI) · MiniMax H3 · 2026-07-31 · 40.8K views · [▶ Watch on X](https://x.com/ComfyUI/status/2083071877891682784)
-
-### 海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。
-
-https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e
-
-**[huangserva](https://x.com/servasyy_ai)** · [@servasyy_ai](https://x.com/servasyy_ai) · MiniMax H3 · 2026-07-31 · 40.1K views · [▶ Watch on X](https://x.com/servasyy_ai/status/2083024386567840185)
+**[Artificial Analysis](https://x.com/ArtificialAnlys)** · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · MiniMax H3 · 2026-07-31 · 211.2K views · [▶ Watch on X](https://x.com/ArtificialAnlys/status/2083042088338538594)
 
 ### MiniMax H3 is on Leonardo
 
 https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
-**[Leonardo.Ai](https://x.com/LeonardoAi)** · [@LeonardoAi](https://x.com/LeonardoAi) · MiniMax H3 · 2026-07-31 · 11.7K views · [▶ Watch on X](https://x.com/LeonardoAi/status/2083142947978047937)
+**[Leonardo.Ai](https://x.com/LeonardoAi)** · [@LeonardoAi](https://x.com/LeonardoAi) · MiniMax H3 · 2026-07-31 · 60.4K views · [▶ Watch on X](https://x.com/LeonardoAi/status/2083142947978047937)
+
+### MiniMax-H3 open source
+
+https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
+
+**[青龍聖者](https://x.com/bdsqlsz)** · [@bdsqlsz](https://x.com/bdsqlsz) · MiniMax H3 · 2026-07-31 · 47.5K views · [▶ Watch on X](https://x.com/bdsqlsz/status/2083023496842801456)
+
+### MiniMax H3 is now available in ComfyUI via Partner Nodes
+
+https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
+
+**[ComfyUI](https://x.com/ComfyUI)** · [@ComfyUI](https://x.com/ComfyUI) · MiniMax H3 · 2026-07-31 · 42K views · [▶ Watch on X](https://x.com/ComfyUI/status/2083071877891682784)
+
+### 海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。
+
+https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e
+
+**[huangserva](https://x.com/servasyy_ai)** · [@servasyy_ai](https://x.com/servasyy_ai) · MiniMax H3 · 2026-07-31 · 40.7K views · [▶ Watch on X](https://x.com/servasyy_ai/status/2083024386567840185)
 
 ### Minimax发布视频模型MiniMax H3
 
 https://github.com/user-attachments/assets/d62d64f5-19e5-48ec-81bd-3f3fa7e77579
 
-**[Gorden Sun](https://x.com/Gorden_Sun)** · [@Gorden_Sun](https://x.com/Gorden_Sun) · MiniMax H3 · 2026-07-31 · 8.6K views · [▶ Watch on X](https://x.com/Gorden_Sun/status/2083007741904441528)
+**[Gorden Sun](https://x.com/Gorden_Sun)** · [@Gorden_Sun](https://x.com/Gorden_Sun) · MiniMax H3 · 2026-07-31 · 8.8K views · [▶ Watch on X](https://x.com/Gorden_Sun/status/2083007741904441528)
 
 ### MiniMax is open-sourcing H3. This is going to be massive. 🔥
 
 https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4
 
-**[AshutoshShrivastava](https://x.com/ai_for_success)** · [@ai_for_success](https://x.com/ai_for_success) · MiniMax H3 · 2026-07-31 · 6.2K views · [▶ Watch on X](https://x.com/ai_for_success/status/2083017269886738837)
+**[AshutoshShrivastava](https://x.com/ai_for_success)** · [@ai_for_success](https://x.com/ai_for_success) · MiniMax H3 · 2026-07-31 · 6.3K views · [▶ Watch on X](https://x.com/ai_for_success/status/2083017269886738837)
 
 ### MiniMax H3 just became the best video editor in AI
 
