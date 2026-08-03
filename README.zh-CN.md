@@ -127,7 +127,7 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 
 <a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="460" alt="It&#x27;s coming. @Hailuo_AI"></a>
 
-**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 720.9K 播放 · [▶ 在 X 上观看](https://x.com/MiniMax_AI/status/2082779062653845803)
+**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 721.1K 播放 · [▶ 在 X 上观看](https://x.com/MiniMax_AI/status/2082779062653845803)
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 

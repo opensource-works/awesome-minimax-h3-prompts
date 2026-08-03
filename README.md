@@ -28,7 +28,7 @@ Open the gallery if you want to search across prompts, filter by category, or co
 ## Most watched
 
 <table><tr>
-<td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 720.9K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 721.1K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/ArtificialAnlys/status/2083042088338538594"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is #1 in Video Editing and ranks top 3 in both…</b><br><a href="https://x.com/ArtificialAnlys">@ArtificialAnlys</a> · 209.7K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/CallMeDiegoJr/status/2082554826349535341"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/CallMeDiegoJr_2082554386631331840.webp" width="100%" alt=""></a><br><sub><b>Testing whether H3&#x27;s native voice output handles Persian</b><br><a href="https://x.com/CallMeDiegoJr">@CallMeDiegoJr</a> · 56.9K views</sub></td>
 </tr><tr>
@@ -125,7 +125,7 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 
 <a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="460" alt="It&#x27;s coming. @Hailuo_AI"></a>
 
-**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 720.9K views · [▶ Watch on X](https://x.com/MiniMax_AI/status/2082779062653845803)
+**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 721.1K views · [▶ Watch on X](https://x.com/MiniMax_AI/status/2082779062653845803)
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
