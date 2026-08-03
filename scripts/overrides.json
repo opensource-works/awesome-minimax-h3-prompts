@@ -1,0 +1,15 @@
+{
+  "_comment": "Hand-curated fixes on top of the auto-extracted data, keyed by post id. Only 'title' and 'category' are honoured by harvest.py — never the prompt, the author or the stats, which must stay exactly as the author posted them. Titles here shorten or clarify what the post itself says; they never add a claim the post does not make.",
+
+  "2082779062653845803": { "category": "Launch & Announcements" },
+  "2082554826349535341": { "title": "Testing whether H3's native voice output handles Persian", "category": "Audio & Voice" },
+  "2083024386567840185": { "category": "Launch & Announcements" },
+  "2083142947978047937": { "category": "Launch & Announcements" },
+  "2083007741904441528": { "category": "Launch & Announcements" },
+  "2083504262479560838": { "category": "Launch & Announcements" },
+  "2082499539735588916": { "title": "Speeder chase across a cliff city, single continuous shot", "category": "Action & VFX" },
+  "2082519642145485080": { "title": "Burger vs Coke cinematic battle — one prompt, one generation, first roll", "category": "Cinematic & Film" },
+  "2082529869297246414": { "title": "Choreography-heavy street dance sequence with dynamic camera work", "category": "Music & Dance" },
+  "2082971035364946077": { "title": "The same Blender MCP scene through H3: 6 image refs + 1 video ref at 2K", "category": "Omni-Reference & Editing" },
+  "2083628852165672988": { "title": "Sci-fi motion poster animated from a single still", "category": "Omni-Reference & Editing" }
+}

@@ -1,0 +1,62 @@
+name: Refresh index
+
+# Re-fetches every indexed post so view counts stay current and any URL merged
+# into scripts/urls.txt shows up in the gallery without a manual build.
+on:
+  schedule:
+    - cron: "23 6 * * 1"   # Mondays, 06:23 UTC
+  push:
+    branches: [main]
+    paths:
+      - "scripts/urls.txt"
+      - "scripts/overrides.json"
+      - "scripts/harvest.py"
+      - "scripts/build.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Harvest posts
+        run: python3 scripts/harvest.py
+
+      # Copies any clip that isn't on R2 yet and renders its animated preview.
+      # Existing objects are skipped, so a normal run only touches new posts.
+      - name: Mirror new clips to R2
+        env:
+          R2_ACCOUNT: ${{ secrets.R2_ACCOUNT }}
+          R2_KEY_ID: ${{ secrets.R2_KEY_ID }}
+          R2_SECRET: ${{ secrets.R2_SECRET }}
+        run: python3 scripts/mirror.py
+
+      - name: Build gallery and READMEs
+        run: python3 scripts/build.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data docs README.md README.zh-CN.md; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git add data docs README.md README.zh-CN.md
+          git commit -m "chore: refresh MiniMax H3 post index"
+          git push
