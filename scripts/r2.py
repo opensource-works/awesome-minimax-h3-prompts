@@ -3,9 +3,19 @@
 import hashlib, hmac, os, sys, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
-ACCOUNT = os.environ["R2_ACCOUNT"]
-AKID = os.environ["R2_KEY_ID"]
-SECRET = os.environ["R2_SECRET"]
+def _need(name):
+    """An unset GitHub secret arrives as "", not as a missing key — which turns
+    the host into ".r2.cloudflarestorage.com" and fails 40 frames deep inside
+    the idna codec. Fail here instead, saying which one is missing."""
+    v = os.environ.get(name, "").strip()
+    if not v:
+        sys.exit(f"r2: {name} is not set (needs R2_ACCOUNT, R2_KEY_ID, R2_SECRET)")
+    return v
+
+
+ACCOUNT = _need("R2_ACCOUNT")
+AKID = _need("R2_KEY_ID")
+SECRET = _need("R2_SECRET")
 HOST = f"{ACCOUNT}.r2.cloudflarestorage.com"
 REGION, SERVICE = "auto", "s3"
 
