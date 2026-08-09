@@ -16,8 +16,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_200x200.jpg"
     },
     "stats": {
-      "views": 913349,
-      "likes": 3239,
+      "views": 939905,
+      "likes": 3245,
       "retweets": 225
     },
     "video": {
@@ -48,9 +48,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
     },
     "stats": {
-      "views": 211160,
-      "likes": 883,
-      "retweets": 82
+      "views": 220075,
+      "likes": 915,
+      "retweets": 85
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.mp4",
@@ -61,38 +61,6 @@
       "source_url": "https://video.twimg.com/tweet_video/HOhyEbhaEAAnpfS.mp4",
       "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp",
       "attachment": "https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e"
-    }
-  },
-  {
-    "id": "2083142947978047937",
-    "url": "https://x.com/LeonardoAi/status/2083142947978047937",
-    "title": "MiniMax H3 is on Leonardo",
-    "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
-    "prompt": null,
-    "prompt_in_thread": false,
-    "model": "MiniMax H3",
-    "category": "Launch & Announcements",
-    "date": "2026-07-31",
-    "author": {
-      "name": "Leonardo.Ai",
-      "handle": "LeonardoAi",
-      "url": "https://x.com/LeonardoAi",
-      "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
-    },
-    "stats": {
-      "views": 60383,
-      "likes": 493,
-      "retweets": 6
-    },
-    "video": {
-      "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.mp4",
-      "thumbnail": "https://pbs.twimg.com/media/HOjPdD9XwAAcG8i.jpg",
-      "width": 1920,
-      "height": 1080,
-      "duration": 12.23,
-      "source_url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
-      "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp",
-      "attachment": "https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125"
     }
   },
   {
@@ -112,8 +80,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/2004688279782699008/8jMYzXU3_200x200.jpg"
     },
     "stats": {
-      "views": 57840,
-      "likes": 138,
+      "views": 61783,
+      "likes": 144,
       "retweets": 1
     },
     "video": {
@@ -125,6 +93,38 @@
       "source_url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/2560x1440/z0rIv8ptO35T9p8n.mp4?tag=29",
       "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/CallMeDiegoJr_2082554386631331840.webp",
       "attachment": "https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609"
+    }
+  },
+  {
+    "id": "2083142947978047937",
+    "url": "https://x.com/LeonardoAi/status/2083142947978047937",
+    "title": "MiniMax H3 is on Leonardo",
+    "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
+    "prompt": null,
+    "prompt_in_thread": false,
+    "model": "MiniMax H3",
+    "category": "Launch & Announcements",
+    "date": "2026-07-31",
+    "author": {
+      "name": "Leonardo.Ai",
+      "handle": "LeonardoAi",
+      "url": "https://x.com/LeonardoAi",
+      "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
+    },
+    "stats": {
+      "views": 61779,
+      "likes": 492,
+      "retweets": 6
+    },
+    "video": {
+      "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.mp4",
+      "thumbnail": "https://pbs.twimg.com/media/HOjPdD9XwAAcG8i.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 12.23,
+      "source_url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
+      "preview": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp",
+      "attachment": "https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125"
     }
   },
   {
@@ -144,7 +144,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/649098801119121408/5WTuzsXc_200x200.jpg"
     },
     "stats": {
-      "views": 47546,
+      "views": 50813,
       "likes": 141,
       "retweets": 18
     },
@@ -176,9 +176,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/2047708517570887680/vasvAmZR_200x200.jpg"
     },
     "stats": {
-      "views": 41960,
-      "likes": 404,
-      "retweets": 32
+      "views": 44697,
+      "likes": 405,
+      "retweets": 33
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ComfyUI_2083065132910063616.mp4",
@@ -208,8 +208,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/1998970271458537475/jcT0J2z6_200x200.jpg"
     },
     "stats": {
-      "views": 40694,
-      "likes": 65,
+      "views": 43864,
+      "likes": 66,
       "retweets": 5
     },
     "video": {
@@ -240,9 +240,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/1661812165949489186/vhwQU-Fk_200x200.jpg"
     },
     "stats": {
-      "views": 17420,
-      "likes": 297,
-      "retweets": 28
+      "views": 18037,
+      "likes": 305,
+      "retweets": 27
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/umesh_ai_2082499279680405504.mp4",
@@ -272,7 +272,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_200x200.jpg"
     },
     "stats": {
-      "views": 8787,
+      "views": 9308,
       "likes": 41,
       "retweets": 5
     },
@@ -304,7 +304,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1909539944189624320/cOei_LOK_200x200.jpg"
     },
     "stats": {
-      "views": 7395,
+      "views": 7446,
       "likes": 16,
       "retweets": 0
     },
@@ -336,8 +336,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/1687401026805256192/uQ1o2wVQ_200x200.jpg"
     },
     "stats": {
-      "views": 6282,
-      "likes": 79,
+      "views": 6545,
+      "likes": 80,
       "retweets": 4
     },
     "video": {
@@ -368,9 +368,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/570258232968552448/lfXJ6w2b_200x200.jpeg"
     },
     "stats": {
-      "views": 5227,
-      "likes": 38,
-      "retweets": 8
+      "views": 5678,
+      "likes": 40,
+      "retweets": 9
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/kiyoshi_shin_2082970378692141056.mp4",
@@ -400,8 +400,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/1948789718683955200/1PP5EsV7_200x200.jpg"
     },
     "stats": {
-      "views": 4935,
-      "likes": 53,
+      "views": 5605,
+      "likes": 55,
       "retweets": 6
     },
     "video": {
@@ -432,9 +432,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/2069500193737994240/_NLmpT9-_200x200.jpg"
     },
     "stats": {
-      "views": 4634,
-      "likes": 17,
-      "retweets": 4
+      "views": 4947,
+      "likes": 18,
+      "retweets": 3
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/heyshrutimishra_2083163783686463488.mp4",
@@ -464,7 +464,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1985637392087465985/LV5VUjkI_200x200.jpg"
     },
     "stats": {
-      "views": 4018,
+      "views": 4190,
       "likes": 16,
       "retweets": 9
     },
@@ -496,9 +496,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/2021718581126606850/2o_ds9Yy_200x200.jpg"
     },
     "stats": {
-      "views": 3393,
-      "likes": 75,
-      "retweets": 8
+      "views": 3503,
+      "likes": 76,
+      "retweets": 7
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/FutureVibesAi_2082529838179790848.mp4",

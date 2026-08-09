@@ -26,7 +26,7 @@ MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hail
 | 帖子数 | **16** |
 | 署名作者 | **16** |
 | 含完整提示词 | **1** |
-| X 上累计播放 | **1.4M** |
+| X 上累计播放 | **1.5M** |
 | 覆盖模型 | **MiniMax H3**（16） |
 | 最近更新 | 2026-08-09 |
 
@@ -59,7 +59,7 @@ https://github.com/user-attachments/assets/46cb4256-2731-4a88-ab24-9bcc58d5f200
 
 https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb
 
-**[Umesh](https://x.com/umesh_ai)** · [@umesh_ai](https://x.com/umesh_ai) · MiniMax H3 · 2026-07-29 · 17.4K 播放 · [▶ 在 X 上观看](https://x.com/umesh_ai/status/2082499539735588916)
+**[Umesh](https://x.com/umesh_ai)** · [@umesh_ai](https://x.com/umesh_ai) · MiniMax H3 · 2026-07-29 · 18K 播放 · [▶ 在 X 上观看](https://x.com/umesh_ai/status/2082499539735588916)
 
 <details><summary><b>提示词</b></summary>
 
@@ -80,7 +80,7 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 
 https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
-**[Future Vibes AI - Educator](https://x.com/FutureVibesAi)** · [@FutureVibesAi](https://x.com/FutureVibesAi) · MiniMax H3 · 2026-07-29 · 3.4K 播放 · [▶ 在 X 上观看](https://x.com/FutureVibesAi/status/2082529869297246414)
+**[Future Vibes AI - Educator](https://x.com/FutureVibesAi)** · [@FutureVibesAi](https://x.com/FutureVibesAi) · MiniMax H3 · 2026-07-29 · 3.5K 播放 · [▶ 在 X 上观看](https://x.com/FutureVibesAi/status/2082529869297246414)
 
 
 ## 原生音频与配音
@@ -91,7 +91,7 @@ https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
 https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609
 
-**[Diego Jr](https://x.com/CallMeDiegoJr)** · [@CallMeDiegoJr](https://x.com/CallMeDiegoJr) · MiniMax H3 · 2026-07-29 · 57.8K 播放 · [▶ 在 X 上观看](https://x.com/CallMeDiegoJr/status/2082554826349535341)
+**[Diego Jr](https://x.com/CallMeDiegoJr)** · [@CallMeDiegoJr](https://x.com/CallMeDiegoJr) · MiniMax H3 · 2026-07-29 · 61.8K 播放 · [▶ 在 X 上观看](https://x.com/CallMeDiegoJr/status/2082554826349535341)
 
 
 ## 多模态参考与视频编辑
@@ -102,13 +102,13 @@ https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609
 
 https://github.com/user-attachments/assets/97fbca07-1570-4a65-ae56-f547a69de5c1
 
-**[新清士@AIコンテンツ開発者](https://x.com/kiyoshi_shin)** · [@kiyoshi_shin](https://x.com/kiyoshi_shin) · MiniMax H3 · 2026-07-30 · 5.2K 播放 · [▶ 在 X 上观看](https://x.com/kiyoshi_shin/status/2082971035364946077)
+**[新清士@AIコンテンツ開発者](https://x.com/kiyoshi_shin)** · [@kiyoshi_shin](https://x.com/kiyoshi_shin) · MiniMax H3 · 2026-07-30 · 5.7K 播放 · [▶ 在 X 上观看](https://x.com/kiyoshi_shin/status/2082971035364946077)
 
 ### Sci-fi motion poster animated from a single still
 
 https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5
 
-**[LudovicCreator](https://x.com/LudovicCreator)** · [@LudovicCreator](https://x.com/LudovicCreator) · MiniMax H3 · 2026-08-01 · 4.9K 播放 · [▶ 在 X 上观看](https://x.com/LudovicCreator/status/2083628852165672988)
+**[LudovicCreator](https://x.com/LudovicCreator)** · [@LudovicCreator](https://x.com/LudovicCreator) · MiniMax H3 · 2026-08-01 · 5.6K 播放 · [▶ 在 X 上观看](https://x.com/LudovicCreator/status/2083628852165672988)
 
 > 作者把提示词发在了[原帖的楼中楼](https://x.com/LudovicCreator/status/2083628852165672988)。
 
@@ -121,7 +121,7 @@ https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5
 
 https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
-**[Ben Pierron](https://x.com/Ben_escrito)** · [@Ben_escrito](https://x.com/Ben_escrito) · MiniMax H3 · 2026-07-31 · 4K 播放 · [▶ 在 X 上观看](https://x.com/Ben_escrito/status/2083091961544876128)
+**[Ben Pierron](https://x.com/Ben_escrito)** · [@Ben_escrito](https://x.com/Ben_escrito) · MiniMax H3 · 2026-07-31 · 4.2K 播放 · [▶ 在 X 上观看](https://x.com/Ben_escrito/status/2083091961544876128)
 
 
 ## 发布与官方消息
@@ -132,55 +132,55 @@ https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
 https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
-**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 913.3K 播放 · [▶ 在 X 上观看](https://x.com/MiniMax_AI/status/2082779062653845803)
+**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 939.9K 播放 · [▶ 在 X 上观看](https://x.com/MiniMax_AI/status/2082779062653845803)
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
 https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
-**[Artificial Analysis](https://x.com/ArtificialAnlys)** · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · MiniMax H3 · 2026-07-31 · 211.2K 播放 · [▶ 在 X 上观看](https://x.com/ArtificialAnlys/status/2083042088338538594)
+**[Artificial Analysis](https://x.com/ArtificialAnlys)** · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · MiniMax H3 · 2026-07-31 · 220.1K 播放 · [▶ 在 X 上观看](https://x.com/ArtificialAnlys/status/2083042088338538594)
 
 ### MiniMax H3 is on Leonardo
 
 https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
-**[Leonardo.Ai](https://x.com/LeonardoAi)** · [@LeonardoAi](https://x.com/LeonardoAi) · MiniMax H3 · 2026-07-31 · 60.4K 播放 · [▶ 在 X 上观看](https://x.com/LeonardoAi/status/2083142947978047937)
+**[Leonardo.Ai](https://x.com/LeonardoAi)** · [@LeonardoAi](https://x.com/LeonardoAi) · MiniMax H3 · 2026-07-31 · 61.8K 播放 · [▶ 在 X 上观看](https://x.com/LeonardoAi/status/2083142947978047937)
 
 ### MiniMax-H3 open source
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**[青龍聖者](https://x.com/bdsqlsz)** · [@bdsqlsz](https://x.com/bdsqlsz) · MiniMax H3 · 2026-07-31 · 47.5K 播放 · [▶ 在 X 上观看](https://x.com/bdsqlsz/status/2083023496842801456)
+**[青龍聖者](https://x.com/bdsqlsz)** · [@bdsqlsz](https://x.com/bdsqlsz) · MiniMax H3 · 2026-07-31 · 50.8K 播放 · [▶ 在 X 上观看](https://x.com/bdsqlsz/status/2083023496842801456)
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
 https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
 
-**[ComfyUI](https://x.com/ComfyUI)** · [@ComfyUI](https://x.com/ComfyUI) · MiniMax H3 · 2026-07-31 · 42K 播放 · [▶ 在 X 上观看](https://x.com/ComfyUI/status/2083071877891682784)
+**[ComfyUI](https://x.com/ComfyUI)** · [@ComfyUI](https://x.com/ComfyUI) · MiniMax H3 · 2026-07-31 · 44.7K 播放 · [▶ 在 X 上观看](https://x.com/ComfyUI/status/2083071877891682784)
 
 ### 海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。
 
 https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e
 
-**[huangserva](https://x.com/servasyy_ai)** · [@servasyy_ai](https://x.com/servasyy_ai) · MiniMax H3 · 2026-07-31 · 40.7K 播放 · [▶ 在 X 上观看](https://x.com/servasyy_ai/status/2083024386567840185)
+**[huangserva](https://x.com/servasyy_ai)** · [@servasyy_ai](https://x.com/servasyy_ai) · MiniMax H3 · 2026-07-31 · 43.9K 播放 · [▶ 在 X 上观看](https://x.com/servasyy_ai/status/2083024386567840185)
 
 ### Minimax发布视频模型MiniMax H3
 
 https://github.com/user-attachments/assets/d62d64f5-19e5-48ec-81bd-3f3fa7e77579
 
-**[Gorden Sun](https://x.com/Gorden_Sun)** · [@Gorden_Sun](https://x.com/Gorden_Sun) · MiniMax H3 · 2026-07-31 · 8.8K 播放 · [▶ 在 X 上观看](https://x.com/Gorden_Sun/status/2083007741904441528)
+**[Gorden Sun](https://x.com/Gorden_Sun)** · [@Gorden_Sun](https://x.com/Gorden_Sun) · MiniMax H3 · 2026-07-31 · 9.3K 播放 · [▶ 在 X 上观看](https://x.com/Gorden_Sun/status/2083007741904441528)
 
 ### MiniMax is open-sourcing H3. This is going to be massive. 🔥
 
 https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4
 
-**[AshutoshShrivastava](https://x.com/ai_for_success)** · [@ai_for_success](https://x.com/ai_for_success) · MiniMax H3 · 2026-07-31 · 6.3K 播放 · [▶ 在 X 上观看](https://x.com/ai_for_success/status/2083017269886738837)
+**[AshutoshShrivastava](https://x.com/ai_for_success)** · [@ai_for_success](https://x.com/ai_for_success) · MiniMax H3 · 2026-07-31 · 6.5K 播放 · [▶ 在 X 上观看](https://x.com/ai_for_success/status/2083017269886738837)
 
 ### MiniMax H3 just became the best video editor in AI
 
 https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65
 
-**[Shruti](https://x.com/heyshrutimishra)** · [@heyshrutimishra](https://x.com/heyshrutimishra) · MiniMax H3 · 2026-07-31 · 4.6K 播放 · [▶ 在 X 上观看](https://x.com/heyshrutimishra/status/2083163811398181247)
+**[Shruti](https://x.com/heyshrutimishra)** · [@heyshrutimishra](https://x.com/heyshrutimishra) · MiniMax H3 · 2026-07-31 · 4.9K 播放 · [▶ 在 X 上观看](https://x.com/heyshrutimishra/status/2083163811398181247)
 
 
 ## 署名与下架
