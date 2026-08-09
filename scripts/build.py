@@ -21,6 +21,11 @@ CATEGORY_ZH = {
     "Model Comparisons": "模型横评", "Launch & Announcements": "发布与官方消息",
 }
 
+# Where readers can run a prompt from this repo themselves. Sits at the top of
+# both READMEs, above the gallery link.
+TRY_URL = "https://maxluo3.com"
+TRY_HOST = "maxluo3.com"
+
 
 def load():
     posts = json.load(open(DATA))
@@ -469,11 +474,16 @@ def readme_en(posts, repo, site, updated):
     L.append("# Awesome MiniMax H3 Prompts\n")
     L.append("**Every MiniMax H3 clip people are posting on X, collected in one place — "
              "play the video, read the exact prompt, and go straight to the creator who made it.**\n")
-    L.append("[![Watch the gallery](https://img.shields.io/badge/▶%20Watch%20the%20gallery-"
+    L.append(f"[![Try it yourself](https://img.shields.io/badge/✨%20Try%20it%20yourself-"
+             f"{TRY_HOST.replace('-', '--')}-C6F24E?style=flat-square&labelColor=0A0B0A)]({TRY_URL})\n"
+             "[![Watch the gallery](https://img.shields.io/badge/▶%20Watch%20the%20gallery-"
              f"opensource--works.github.io-FF6A4D?style=flat-square)]({site})\n"
              "[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)\n"
              "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)\n")
     L.append("**English** | [简体中文](README.zh-CN.md)\n")
+    L.append(f"### ✨ Want to try it yourself? Generate with Hailuo 3 at **[{TRY_HOST}]({TRY_URL})**\n")
+    L.append(f"Copy any prompt from this repo, paste it into [{TRY_HOST}]({TRY_URL}), and get your own clip back "
+             "in a couple of minutes — no install, no waitlist, free credits to start.\n")
     L.append(f"### ▶ [Open the video gallery]({site})\n")
     L.append("MiniMax H3 — the model the Hailuo AI app ships as **Hailuo 3.0** and the API exposes as "
              "`MiniMax-H3` — landed on 31 July 2026. This index tracks what people are actually making "
@@ -554,10 +564,15 @@ def readme_zh(posts, repo, site, updated):
     L.append("# Awesome MiniMax H3 Prompts\n")
     L.append("**把 X 上大家发的 MiniMax H3 视频集中到一个入口——直接播放、看到完整提示词、"
              "并且一键找到作者本人。**\n")
-    L.append(f"[![观看画廊](https://img.shields.io/badge/▶%20打开视频画廊-opensource--works.github.io-FF6A4D?style=flat-square)]({site})\n"
+    L.append(f"[![自己试试](https://img.shields.io/badge/✨%20自己试一试-"
+             f"{TRY_HOST.replace('-', '--')}-C6F24E?style=flat-square&labelColor=0A0B0A)]({TRY_URL})\n"
+             f"[![观看画廊](https://img.shields.io/badge/▶%20打开视频画廊-opensource--works.github.io-FF6A4D?style=flat-square)]({site})\n"
              "[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)\n"
              "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)\n")
     L.append("[English](README.md) | **简体中文**\n")
+    L.append(f"### ✨ 想亲手试试？上 **[{TRY_HOST}]({TRY_URL})** 直接用 Hailuo 3 生成\n")
+    L.append(f"把这里任意一条提示词复制到 [{TRY_HOST}]({TRY_URL})，几分钟就能拿到你自己的片子——"
+             "免安装、免排队，注册即送免费额度。\n")
     L.append(f"### ▶ [打开视频画廊]({site})\n")
     L.append("MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hailuo 3.0**，"
              "API 的 model id 是 `MiniMax-H3`。这个索引只收 H3 的帖子，"

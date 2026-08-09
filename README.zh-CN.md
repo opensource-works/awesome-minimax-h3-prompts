@@ -2,11 +2,16 @@
 
 **把 X 上大家发的 MiniMax H3 视频集中到一个入口——直接播放、看到完整提示词、并且一键找到作者本人。**
 
+[![自己试试](https://img.shields.io/badge/✨%20自己试一试-maxluo3.com-C6F24E?style=flat-square&labelColor=0A0B0A)](https://maxluo3.com)
 [![观看画廊](https://img.shields.io/badge/▶%20打开视频画廊-opensource--works.github.io-FF6A4D?style=flat-square)](https://opensource-works.github.io/awesome-minimax-h3-prompts/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 [English](README.md) | **简体中文**
+
+### ✨ 想亲手试试？上 **[maxluo3.com](https://maxluo3.com)** 直接用 Hailuo 3 生成
+
+把这里任意一条提示词复制到 [maxluo3.com](https://maxluo3.com)，几分钟就能拿到你自己的片子——免安装、免排队，注册即送免费额度。
 
 ### ▶ [打开视频画廊](https://opensource-works.github.io/awesome-minimax-h3-prompts/)
 
@@ -23,7 +28,7 @@ MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hail
 | 含完整提示词 | **1** |
 | X 上累计播放 | **1.4M** |
 | 覆盖模型 | **MiniMax H3**（16） |
-| 最近更新 | 2026-08-03 |
+| 最近更新 | 2026-08-09 |
 
 ## 目录
 

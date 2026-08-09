@@ -2,11 +2,16 @@
 
 **Every MiniMax H3 clip people are posting on X, collected in one place — play the video, read the exact prompt, and go straight to the creator who made it.**
 
+[![Try it yourself](https://img.shields.io/badge/✨%20Try%20it%20yourself-maxluo3.com-C6F24E?style=flat-square&labelColor=0A0B0A)](https://maxluo3.com)
 [![Watch the gallery](https://img.shields.io/badge/▶%20Watch%20the%20gallery-opensource--works.github.io-FF6A4D?style=flat-square)](https://opensource-works.github.io/awesome-minimax-h3-prompts/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 **English** | [简体中文](README.zh-CN.md)
+
+### ✨ Want to try it yourself? Generate with Hailuo 3 at **[maxluo3.com](https://maxluo3.com)**
+
+Copy any prompt from this repo, paste it into [maxluo3.com](https://maxluo3.com), and get your own clip back in a couple of minutes — no install, no waitlist, free credits to start.
 
 ### ▶ [Open the video gallery](https://opensource-works.github.io/awesome-minimax-h3-prompts/)
 
@@ -23,7 +28,7 @@ Open the gallery if you want to search across prompts, filter by category, or co
 | Posts with the full prompt | **1** |
 | Combined views on X | **1.4M** |
 | Models covered | **MiniMax H3** (16) |
-| Last refreshed | 2026-08-03 |
+| Last refreshed | 2026-08-09 |
 
 ## Most watched
 
