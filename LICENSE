@@ -22,8 +22,20 @@ SOFTWARE.
 
 ---
 
-This license covers the code and the curation in this repository only.
+## Scope clarification
 
-The indexed posts, their prompts and their videos remain the property of the
-people who created and posted them on X. They are linked and embedded here with
-attribution, not re-hosted or relicensed.
+The MIT License applies only to original repository software, schemas,
+maintainer-authored documentation, and the original editorial selection and
+arrangement to the extent those things are owned by the repository authors.
+
+It does **not** grant rights in third-party posts, prompts, comments, videos,
+images, audio, names, likenesses, trademarks, or platform metadata. Those
+materials are not relicensed by their presence in the catalog, a generated
+projection, an attachment, or a cache. Their respective creators and
+rights-holders retain their rights.
+
+A source link is not a license. A technical ability to download, embed, or
+mirror an asset is not permission. Any reproduction of third-party text or
+media needs an independent legal basis, such as an evidence-backed grant, an
+applicable public license, or a limited quotation permitted by applicable law;
+none comes from this MIT License. See `RIGHTS.md` and `TAKEDOWN.md`.

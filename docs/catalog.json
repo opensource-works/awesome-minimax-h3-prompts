@@ -1,0 +1,3994 @@
+{
+  "$schema": "../schema/catalog-v2.schema.json",
+  "schema_version": "2.0.0",
+  "updated_at": "2026-08-11T12:49:48Z",
+  "collection": {
+    "id": "awesome-minimax-h3-prompts",
+    "repo_url": "https://github.com/opensource-works/awesome-minimax-h3-prompts",
+    "model_scope": [
+      {
+        "family": "MiniMax",
+        "version": "H3",
+        "aliases": [
+          "MiniMax H3",
+          "MiniMax-H3",
+          "#MiniMaxH3",
+          "Hailuo H3",
+          "Hailuo 3",
+          "Hailuo 3.0",
+          "Hailuo 03",
+          "海螺 H3"
+        ],
+        "released_on": "2026-07-31",
+        "public_demo_from": "2026-07-29",
+        "evidence_ids": [
+          "ev_release_minimax_h3"
+        ]
+      }
+    ],
+    "historical_window": {
+      "from": "2026-07-29",
+      "through": "2026-08-11",
+      "observed_through_exclusive": "2026-08-11T12:30:00Z"
+    },
+    "query_matrix_version": "2026-08-11"
+  },
+  "discovery_runs": {
+    "run_legacy_urls_import_20260811": {
+      "id": "run_legacy_urls_import_20260811",
+      "started_at": "2026-08-11T00:00:00Z",
+      "ended_at": "2026-08-11T00:00:00Z",
+      "platform": "x",
+      "query_matrix_version": "legacy-urls.txt",
+      "query_ids": [
+        "legacy.urls.txt"
+      ],
+      "status": "complete",
+      "result_count": 35,
+      "log_url": null,
+      "window_kind": "historical",
+      "window": {
+        "kind": "historical",
+        "from": "2026-07-29T00:00:00Z",
+        "through_exclusive": "2026-08-11T12:30:00Z"
+      },
+      "run_observed_at": "2026-08-11T00:00:00Z",
+      "filtered_outside_window": 0,
+      "missing_timestamp": 0
+    },
+    "run_historical_backfill_x_20260811": {
+      "id": "run_historical_backfill_x_20260811",
+      "started_at": "2026-08-11T00:00:00Z",
+      "ended_at": "2026-08-11T00:00:00Z",
+      "platform": "x",
+      "query_matrix_version": "historical-research-2026-08-11",
+      "query_ids": [
+        "backfill.minimax_h3_x_missing"
+      ],
+      "status": "partial",
+      "result_count": 22,
+      "log_url": "data/backfill-2026-08-11.json",
+      "limitations": [
+        "An initial multilingual Seedance query run produced 614 unique video status IDs, but the raw result set was not persisted before the upstream search endpoint began returning HTTP 404. The 614 IDs are therefore not present in this file and must not be represented as a retained exhaustive inventory."
+      ],
+      "window_kind": "historical",
+      "window": {
+        "kind": "historical",
+        "from": "2026-07-29T00:00:00Z",
+        "through_exclusive": "2026-08-11T12:30:00Z"
+      },
+      "run_observed_at": "2026-08-11T00:00:00Z",
+      "filtered_outside_window": 0,
+      "missing_timestamp": 0
+    },
+    "run_historical_backfill_reddit_20260811": {
+      "id": "run_historical_backfill_reddit_20260811",
+      "started_at": "2026-08-11T00:00:00Z",
+      "ended_at": "2026-08-11T00:00:00Z",
+      "platform": "reddit",
+      "query_matrix_version": "historical-research-2026-08-11",
+      "query_ids": [
+        "backfill.minimax_h3_reddit_candidates",
+        "backfill.reference-only"
+      ],
+      "status": "partial",
+      "result_count": 22,
+      "log_url": "data/backfill-2026-08-11.json",
+      "limitations": [
+        "Public Reddit JSON returned HTTP 403 in this environment. Discovery used web-indexed public post pages; coverage is not exhaustive."
+      ],
+      "window_kind": "historical",
+      "window": {
+        "kind": "historical",
+        "from": "2026-07-29T00:00:00Z",
+        "through_exclusive": "2026-08-11T12:30:00Z"
+      },
+      "run_observed_at": "2026-08-11T00:00:00Z",
+      "filtered_outside_window": 0,
+      "missing_timestamp": 0
+    }
+  },
+  "actors": {
+    "act_repository_opensource-works": {
+      "id": "act_repository_opensource-works",
+      "kind": "organization",
+      "platform": "repository",
+      "platform_user_id": null,
+      "handle": "opensource-works",
+      "display_name": "opensource-works maintainers",
+      "profile_url": "https://github.com/opensource-works",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-11T00:00:00Z"
+    },
+    "act_x_minimax_ai": {
+      "id": "act_x_minimax_ai",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "MiniMax_AI",
+      "display_name": "MiniMax_AI",
+      "profile_url": "https://x.com/MiniMax_AI",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-11T00:00:00Z"
+    },
+    "act_x_artificialanlys": {
+      "id": "act_x_artificialanlys",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "ArtificialAnlys",
+      "display_name": "Artificial Analysis",
+      "profile_url": "https://x.com/ArtificialAnlys",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_callmediegojr": {
+      "id": "act_x_callmediegojr",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "CallMeDiegoJr",
+      "display_name": "Diego Jr",
+      "profile_url": "https://x.com/CallMeDiegoJr",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_leonardoai": {
+      "id": "act_x_leonardoai",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "LeonardoAi",
+      "display_name": "Leonardo.Ai",
+      "profile_url": "https://x.com/LeonardoAi",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_bdsqlsz": {
+      "id": "act_x_bdsqlsz",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "bdsqlsz",
+      "display_name": "青龍聖者",
+      "profile_url": "https://x.com/bdsqlsz",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_comfyui": {
+      "id": "act_x_comfyui",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "ComfyUI",
+      "display_name": "ComfyUI",
+      "profile_url": "https://x.com/ComfyUI",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_servasyy_ai": {
+      "id": "act_x_servasyy_ai",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "servasyy_ai",
+      "display_name": "huangserva",
+      "profile_url": "https://x.com/servasyy_ai",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_umesh_ai": {
+      "id": "act_x_umesh_ai",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "umesh_ai",
+      "display_name": "umesh_ai",
+      "profile_url": "https://x.com/umesh_ai",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-11T00:00:00Z"
+    },
+    "act_x_gorden_sun": {
+      "id": "act_x_gorden_sun",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "Gorden_Sun",
+      "display_name": "Gorden Sun",
+      "profile_url": "https://x.com/Gorden_Sun",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_riyazmd774": {
+      "id": "act_x_riyazmd774",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "riyazmd774",
+      "display_name": "Md Riyazuddin",
+      "profile_url": "https://x.com/riyazmd774",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_ai_for_success": {
+      "id": "act_x_ai_for_success",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "ai_for_success",
+      "display_name": "AshutoshShrivastava",
+      "profile_url": "https://x.com/ai_for_success",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_kiyoshi_shin": {
+      "id": "act_x_kiyoshi_shin",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "kiyoshi_shin",
+      "display_name": "新清士@AIコンテンツ開発者",
+      "profile_url": "https://x.com/kiyoshi_shin",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_ludoviccreator": {
+      "id": "act_x_ludoviccreator",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "LudovicCreator",
+      "display_name": "LudovicCreator",
+      "profile_url": "https://x.com/LudovicCreator",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_heyshrutimishra": {
+      "id": "act_x_heyshrutimishra",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "heyshrutimishra",
+      "display_name": "Shruti",
+      "profile_url": "https://x.com/heyshrutimishra",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_ben_escrito": {
+      "id": "act_x_ben_escrito",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "Ben_escrito",
+      "display_name": "Ben Pierron",
+      "profile_url": "https://x.com/Ben_escrito",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    },
+    "act_x_futurevibesai": {
+      "id": "act_x_futurevibesai",
+      "kind": "person",
+      "platform": "x",
+      "platform_user_id": null,
+      "handle": "FutureVibesAi",
+      "display_name": "Future Vibes AI - Educator",
+      "profile_url": "https://x.com/FutureVibesAi",
+      "avatar_url": null,
+      "aliases": [],
+      "observed_at": "2026-08-10T08:10:32Z"
+    }
+  },
+  "sources": {
+    "x:2082779062653845803": {
+      "id": "x:2082779062653845803",
+      "platform": "x",
+      "native_id": "2082779062653845803",
+      "kind": "post",
+      "url": "https://x.com/MiniMax_AI/status/2082779062653845803",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-30",
+      "posted_by_actor_id": "act_x_minimax_ai",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "f2a5bd08379355faa6d0dc42278633764bc9bff411711eefb003fa4eb43f76c2",
+        "length": 37
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 940665,
+        "likes": 3236,
+        "reposts": 225,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2082779062653845803:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082778044692135936",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 60000,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2082779062653845803"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083042088338538594": {
+      "id": "x:2083042088338538594",
+      "platform": "x",
+      "native_id": "2083042088338538594",
+      "kind": "post",
+      "url": "https://x.com/ArtificialAnlys/status/2083042088338538594",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_artificialanlys",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "ef6fc1455b9780d1cb22610c69a26de3fa5db213740e38fcb089c9519e337514",
+        "length": 1935
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 220288,
+        "likes": 915,
+        "reposts": 85,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083042088338538594:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": null,
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1620,
+          "height": 1482,
+          "duration_ms": 0,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083042088338538594"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2082554826349535341": {
+      "id": "x:2082554826349535341",
+      "platform": "x",
+      "native_id": "2082554826349535341",
+      "kind": "post",
+      "url": "https://x.com/CallMeDiegoJr/status/2082554826349535341",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-29",
+      "posted_by_actor_id": "act_x_callmediegojr",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "362fa361e7d7e14fadefa0d031246fff84bbe830fa43c96d9b98262a0ae2b876",
+        "length": 190
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 61894,
+        "likes": 144,
+        "reposts": 1,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2082554826349535341:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082554386631331840",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15080,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2082554826349535341"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083142947978047937": {
+      "id": "x:2083142947978047937",
+      "platform": "x",
+      "native_id": "2083142947978047937",
+      "kind": "post",
+      "url": "https://x.com/LeonardoAi/status/2083142947978047937",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_leonardoai",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "fafbc4ecce5ed965b890c6bcd46e577840113fd23958ff6099b79fc062976440",
+        "length": 399
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 61834,
+        "likes": 484,
+        "reposts": 6,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083142947978047937:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083142884044210176",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1920,
+          "height": 1080,
+          "duration_ms": 12230,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083142947978047937"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083023496842801456": {
+      "id": "x:2083023496842801456",
+      "platform": "x",
+      "native_id": "2083023496842801456",
+      "kind": "post",
+      "url": "https://x.com/bdsqlsz/status/2083023496842801456",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_bdsqlsz",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "b1253320477a8813f656dd3582bc50cda19d9953a09b215fdf0dfd26db6949e3",
+        "length": 261
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 52839,
+        "likes": 141,
+        "reposts": 18,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083023496842801456:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083023259378036736",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1920,
+          "height": 1080,
+          "duration_ms": 6590,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083023496842801456"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083071877891682784": {
+      "id": "x:2083071877891682784",
+      "platform": "x",
+      "native_id": "2083071877891682784",
+      "kind": "post",
+      "url": "https://x.com/ComfyUI/status/2083071877891682784",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_comfyui",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "29ff6285e5de1e95cf78c9e770c31ae6c09e1a654bd9a09539128b9952f6c0cc",
+        "length": 307
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 44779,
+        "likes": 396,
+        "reposts": 33,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083071877891682784:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083065132910063616",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1600,
+          "height": 900,
+          "duration_ms": 8200,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083071877891682784"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083024386567840185": {
+      "id": "x:2083024386567840185",
+      "platform": "x",
+      "native_id": "2083024386567840185",
+      "kind": "post",
+      "url": "https://x.com/servasyy_ai/status/2083024386567840185",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_servasyy_ai",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "793a321fa813eb36f4fd6f9373a9771b5ac5e4faeb57c7b37a2690b55a1a556b",
+        "length": 200
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 43900,
+        "likes": 66,
+        "reposts": 5,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083024386567840185:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083024276458962944",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15120,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083024386567840185"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2082499539735588916": {
+      "id": "x:2082499539735588916",
+      "platform": "x",
+      "native_id": "2082499539735588916",
+      "kind": "post",
+      "url": "https://x.com/umesh_ai/status/2082499539735588916",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-29",
+      "posted_by_actor_id": "act_x_umesh_ai",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "5eed88670bc78558b2123e26651e5f8cd0985c7326028e8793df1de82178aad9",
+        "length": 905
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 18094,
+        "likes": 305,
+        "reposts": 28,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2082499539735588916:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082499279680405504",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15080,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2082499539735588916"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083007741904441528": {
+      "id": "x:2083007741904441528",
+      "platform": "x",
+      "native_id": "2083007741904441528",
+      "kind": "post",
+      "url": "https://x.com/Gorden_Sun/status/2083007741904441528",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_gorden_sun",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "f433973d93ce55d7b60ac0fe8f354332a8b7f64d6fce95f9da232dc7ac0043b2",
+        "length": 224
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 9325,
+        "likes": 40,
+        "reposts": 5,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083007741904441528:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083007649210310656",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2546,
+          "height": 1080,
+          "duration_ms": 15100,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083007741904441528"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2082519642145485080": {
+      "id": "x:2082519642145485080",
+      "platform": "x",
+      "native_id": "2082519642145485080",
+      "kind": "post",
+      "url": "https://x.com/riyazmd774/status/2082519642145485080",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-29",
+      "posted_by_actor_id": "act_x_riyazmd774",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "e6cac520a228c4d87be96dd36e22ea65d73b54ee2a31b3d71fa457a59221b6fe",
+        "length": 307
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 7448,
+        "likes": 16,
+        "reposts": 0,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2082519642145485080:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082519543331852288",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15080,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2082519642145485080"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083017269886738837": {
+      "id": "x:2083017269886738837",
+      "platform": "x",
+      "native_id": "2083017269886738837",
+      "kind": "post",
+      "url": "https://x.com/ai_for_success/status/2083017269886738837",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_ai_for_success",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "233b1cdb6a96e506bdcea01463c401664491d9ceca369f0bacaf1d783bc8dcba",
+        "length": 59
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 6556,
+        "likes": 80,
+        "reposts": 4,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083017269886738837:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082724610186047488",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1920,
+          "height": 1080,
+          "duration_ms": 49930,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083017269886738837"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2082971035364946077": {
+      "id": "x:2082971035364946077",
+      "platform": "x",
+      "native_id": "2082971035364946077",
+      "kind": "post",
+      "url": "https://x.com/kiyoshi_shin/status/2082971035364946077",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-30",
+      "posted_by_actor_id": "act_x_kiyoshi_shin",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "72ccce17ef35bee24bd8feaa5aaeb50f1dcdbb4c778ac171e793ec34899fdcde",
+        "length": 170
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 5682,
+        "likes": 40,
+        "reposts": 9,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2082971035364946077:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082970378692141056",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15080,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2082971035364946077"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083628852165672988": {
+      "id": "x:2083628852165672988",
+      "platform": "x",
+      "native_id": "2083628852165672988",
+      "kind": "post",
+      "url": "https://x.com/LudovicCreator/status/2083628852165672988",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-08-01",
+      "posted_by_actor_id": "act_x_ludoviccreator",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "732e65847d327acf48cc53ccde5ddea6552cf1399c1cb81296e3bc746054450d",
+        "length": 197
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 5618,
+        "likes": 55,
+        "reposts": 6,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083628852165672988:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083628836285984768",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1440,
+          "height": 2560,
+          "duration_ms": 10120,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083628852165672988"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083163811398181247": {
+      "id": "x:2083163811398181247",
+      "platform": "x",
+      "native_id": "2083163811398181247",
+      "kind": "post",
+      "url": "https://x.com/heyshrutimishra/status/2083163811398181247",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_heyshrutimishra",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "b634e0311f48680d04c03a68056e6e04d9ab7abd91e2559bbae1176d755213c2",
+        "length": 1866
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 4953,
+        "likes": 18,
+        "reposts": 3,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083163811398181247:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083163783686463488",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15080,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083163811398181247"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2083091961544876128": {
+      "id": "x:2083091961544876128",
+      "platform": "x",
+      "native_id": "2083091961544876128",
+      "kind": "post",
+      "url": "https://x.com/Ben_escrito/status/2083091961544876128",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-31",
+      "posted_by_actor_id": "act_x_ben_escrito",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "58955d3270aff51af4aca5d3270e734c4195badcfa157e866a3e6fa5fab6b562",
+        "length": 599
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 4208,
+        "likes": 16,
+        "reposts": 9,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2083091961544876128:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2083091813477519360",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 2560,
+          "height": 1440,
+          "duration_ms": 15120,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2083091961544876128"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    },
+    "x:2082529869297246414": {
+      "id": "x:2082529869297246414",
+      "platform": "x",
+      "native_id": "2082529869297246414",
+      "kind": "post",
+      "url": "https://x.com/FutureVibesAi/status/2082529869297246414",
+      "parent_source_id": null,
+      "posted_at": null,
+      "posted_date": "2026-07-29",
+      "posted_by_actor_id": "act_x_futurevibesai",
+      "text": {
+        "status": "withheld_pending_review",
+        "value": null,
+        "language": null,
+        "sha256": "2c57bb215775a4f5aababea2435494073fabd7cd03d8778d63f642dc78c9a1f2",
+        "length": 698
+      },
+      "metrics": {
+        "observed_at": "2026-08-10T08:10:32Z",
+        "views": 3508,
+        "likes": 76,
+        "reposts": 8,
+        "comments": null
+      },
+      "media_observations": [
+        {
+          "source_media_id": "x-media:2082529869297246414:0",
+          "kind": "video",
+          "position": 0,
+          "platform_media_id": "2082529838179790848",
+          "direct_url": null,
+          "thumbnail_url": null,
+          "width": 1920,
+          "height": 1080,
+          "duration_ms": 15060,
+          "variants": [],
+          "observed_at": "2026-08-10T08:10:32Z",
+          "volatile": true
+        }
+      ],
+      "availability": {
+        "state": "available",
+        "checked_at": "2026-08-10T08:10:32Z",
+        "last_available_at": "2026-08-10T08:10:32Z",
+        "first_unavailable_at": null,
+        "confirmed_at": null,
+        "consecutive_failures": 0,
+        "http_status": 200,
+        "evidence_ids": [
+          "ev_source_x_2082529869297246414"
+        ]
+      },
+      "fetch": {
+        "adapter": "legacy-fxtwitter",
+        "observed_at": "2026-08-10T08:10:32Z",
+        "raw_sha256": null
+      }
+    }
+  },
+  "evidence": {
+    "ev_release_minimax_h3": {
+      "id": "ev_release_minimax_h3",
+      "kind": "model_release",
+      "url": "https://minimaxi.com/blog/minimax-h3",
+      "source_id": null,
+      "observed_at": "2026-08-11T00:00:00Z",
+      "excerpt": "Official MiniMax H3 release announcement.",
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_editorial_legacy_migration_20260811": {
+      "id": "ev_editorial_legacy_migration_20260811",
+      "kind": "editorial_review",
+      "url": "https://github.com/opensource-works/awesome-minimax-h3-prompts/blob/main/data/catalog.json",
+      "source_id": null,
+      "observed_at": "2026-08-11T00:00:00Z",
+      "excerpt": "Legacy entries approved for source-link indexing only; creator and rights remain unverified.",
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2082779062653845803": {
+      "id": "ev_source_x_2082779062653845803",
+      "kind": "source_post",
+      "url": "https://x.com/MiniMax_AI/status/2082779062653845803",
+      "source_id": "x:2082779062653845803",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083042088338538594": {
+      "id": "ev_source_x_2083042088338538594",
+      "kind": "source_post",
+      "url": "https://x.com/ArtificialAnlys/status/2083042088338538594",
+      "source_id": "x:2083042088338538594",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2082554826349535341": {
+      "id": "ev_source_x_2082554826349535341",
+      "kind": "source_post",
+      "url": "https://x.com/CallMeDiegoJr/status/2082554826349535341",
+      "source_id": "x:2082554826349535341",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083142947978047937": {
+      "id": "ev_source_x_2083142947978047937",
+      "kind": "source_post",
+      "url": "https://x.com/LeonardoAi/status/2083142947978047937",
+      "source_id": "x:2083142947978047937",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083023496842801456": {
+      "id": "ev_source_x_2083023496842801456",
+      "kind": "source_post",
+      "url": "https://x.com/bdsqlsz/status/2083023496842801456",
+      "source_id": "x:2083023496842801456",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083071877891682784": {
+      "id": "ev_source_x_2083071877891682784",
+      "kind": "source_post",
+      "url": "https://x.com/ComfyUI/status/2083071877891682784",
+      "source_id": "x:2083071877891682784",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083024386567840185": {
+      "id": "ev_source_x_2083024386567840185",
+      "kind": "source_post",
+      "url": "https://x.com/servasyy_ai/status/2083024386567840185",
+      "source_id": "x:2083024386567840185",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2082499539735588916": {
+      "id": "ev_source_x_2082499539735588916",
+      "kind": "source_post",
+      "url": "https://x.com/umesh_ai/status/2082499539735588916",
+      "source_id": "x:2082499539735588916",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_prompt_x_2082499539735588916": {
+      "id": "ev_prompt_x_2082499539735588916",
+      "kind": "prompt_source",
+      "url": "https://x.com/umesh_ai/status/2082499539735588916",
+      "source_id": "x:2082499539735588916",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083007741904441528": {
+      "id": "ev_source_x_2083007741904441528",
+      "kind": "source_post",
+      "url": "https://x.com/Gorden_Sun/status/2083007741904441528",
+      "source_id": "x:2083007741904441528",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2082519642145485080": {
+      "id": "ev_source_x_2082519642145485080",
+      "kind": "source_post",
+      "url": "https://x.com/riyazmd774/status/2082519642145485080",
+      "source_id": "x:2082519642145485080",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083017269886738837": {
+      "id": "ev_source_x_2083017269886738837",
+      "kind": "source_post",
+      "url": "https://x.com/ai_for_success/status/2083017269886738837",
+      "source_id": "x:2083017269886738837",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2082971035364946077": {
+      "id": "ev_source_x_2082971035364946077",
+      "kind": "source_post",
+      "url": "https://x.com/kiyoshi_shin/status/2082971035364946077",
+      "source_id": "x:2082971035364946077",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083628852165672988": {
+      "id": "ev_source_x_2083628852165672988",
+      "kind": "source_post",
+      "url": "https://x.com/LudovicCreator/status/2083628852165672988",
+      "source_id": "x:2083628852165672988",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083163811398181247": {
+      "id": "ev_source_x_2083163811398181247",
+      "kind": "source_post",
+      "url": "https://x.com/heyshrutimishra/status/2083163811398181247",
+      "source_id": "x:2083163811398181247",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2083091961544876128": {
+      "id": "ev_source_x_2083091961544876128",
+      "kind": "source_post",
+      "url": "https://x.com/Ben_escrito/status/2083091961544876128",
+      "source_id": "x:2083091961544876128",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    },
+    "ev_source_x_2082529869297246414": {
+      "id": "ev_source_x_2082529869297246414",
+      "kind": "source_post",
+      "url": "https://x.com/FutureVibesAi/status/2082529869297246414",
+      "source_id": "x:2082529869297246414",
+      "observed_at": "2026-08-10T08:10:32Z",
+      "excerpt": null,
+      "captured_by_actor_id": "act_repository_opensource-works",
+      "visibility": "public",
+      "integrity_sha256": null
+    }
+  },
+  "items": {
+    "itm_x_2082779062653845803_0": {
+      "id": "itm_x_2082779062653845803_0",
+      "display": {
+        "title": {
+          "text": "It's coming. @Hailuo_AI",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2082779062653845803"
+        ]
+      },
+      "canonical_source_id": "x:2082779062653845803",
+      "source_ids": [
+        "x:2082779062653845803"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2082779062653845803",
+            "actor_id": "act_x_minimax_ai"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2082779062653845803_0_0",
+          "source_id": "x:2082779062653845803",
+          "source_media_id": "x-media:2082779062653845803:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/MiniMax_AI/status/2082779062653845803",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083042088338538594_0": {
+      "id": "itm_x_2083042088338538594_0",
+      "display": {
+        "title": {
+          "text": "MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…",
+          "provenance": "generated",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "rule",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083042088338538594"
+        ]
+      },
+      "canonical_source_id": "x:2083042088338538594",
+      "source_ids": [
+        "x:2083042088338538594"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083042088338538594",
+            "actor_id": "act_x_artificialanlys"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083042088338538594_0_0",
+          "source_id": "x:2083042088338538594",
+          "source_media_id": "x-media:2083042088338538594:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/ArtificialAnlys/status/2083042088338538594",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2082554826349535341_0": {
+      "id": "itm_x_2082554826349535341_0",
+      "display": {
+        "title": {
+          "text": "Testing whether H3's native voice output handles Persian",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "audio-voice",
+          "label": "Audio & Voice",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2082554826349535341"
+        ]
+      },
+      "canonical_source_id": "x:2082554826349535341",
+      "source_ids": [
+        "x:2082554826349535341"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2082554826349535341",
+            "actor_id": "act_x_callmediegojr"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2082554826349535341_0_0",
+          "source_id": "x:2082554826349535341",
+          "source_media_id": "x-media:2082554826349535341:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/CallMeDiegoJr/status/2082554826349535341",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083142947978047937_0": {
+      "id": "itm_x_2083142947978047937_0",
+      "display": {
+        "title": {
+          "text": "MiniMax H3 is on Leonardo",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083142947978047937"
+        ]
+      },
+      "canonical_source_id": "x:2083142947978047937",
+      "source_ids": [
+        "x:2083142947978047937"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083142947978047937",
+            "actor_id": "act_x_leonardoai"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083142947978047937_0_0",
+          "source_id": "x:2083142947978047937",
+          "source_media_id": "x-media:2083142947978047937:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/LeonardoAi/status/2083142947978047937",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083023496842801456_0": {
+      "id": "itm_x_2083023496842801456_0",
+      "display": {
+        "title": {
+          "text": "MiniMax-H3 open source",
+          "provenance": "generated",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "rule",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083023496842801456"
+        ]
+      },
+      "canonical_source_id": "x:2083023496842801456",
+      "source_ids": [
+        "x:2083023496842801456"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083023496842801456",
+            "actor_id": "act_x_bdsqlsz"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083023496842801456_0_0",
+          "source_id": "x:2083023496842801456",
+          "source_media_id": "x-media:2083023496842801456:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/bdsqlsz/status/2083023496842801456",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083071877891682784_0": {
+      "id": "itm_x_2083071877891682784_0",
+      "display": {
+        "title": {
+          "text": "MiniMax H3 is now available in ComfyUI via Partner Nodes",
+          "provenance": "generated",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "rule",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083071877891682784"
+        ]
+      },
+      "canonical_source_id": "x:2083071877891682784",
+      "source_ids": [
+        "x:2083071877891682784"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083071877891682784",
+            "actor_id": "act_x_comfyui"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083071877891682784_0_0",
+          "source_id": "x:2083071877891682784",
+          "source_media_id": "x-media:2083071877891682784:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/ComfyUI/status/2083071877891682784",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083024386567840185_0": {
+      "id": "itm_x_2083024386567840185_0",
+      "display": {
+        "title": {
+          "text": "海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083024386567840185"
+        ]
+      },
+      "canonical_source_id": "x:2083024386567840185",
+      "source_ids": [
+        "x:2083024386567840185"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083024386567840185",
+            "actor_id": "act_x_servasyy_ai"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083024386567840185_0_0",
+          "source_id": "x:2083024386567840185",
+          "source_media_id": "x-media:2083024386567840185:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/servasyy_ai/status/2083024386567840185",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2082499539735588916_0": {
+      "id": "itm_x_2082499539735588916_0",
+      "display": {
+        "title": {
+          "text": "Speeder chase across a cliff city, single continuous shot",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "action-vfx",
+          "label": "Action & VFX",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2082499539735588916"
+        ]
+      },
+      "canonical_source_id": "x:2082499539735588916",
+      "source_ids": [
+        "x:2082499539735588916"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2082499539735588916",
+            "actor_id": "act_x_umesh_ai"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "verbatim",
+        "text": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.\n\n@Hailuo_AI  #MiniMaxH3",
+        "language": null,
+        "source_id": "x:2082499539735588916",
+        "source_url": "https://x.com/umesh_ai/status/2082499539735588916",
+        "capture_method": "post_text",
+        "is_verbatim": true,
+        "evidence_ids": [
+          "ev_prompt_x_2082499539735588916"
+        ]
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2082499539735588916_0_0",
+          "source_id": "x:2082499539735588916",
+          "source_media_id": "x-media:2082499539735588916:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/umesh_ai/status/2082499539735588916",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083007741904441528_0": {
+      "id": "itm_x_2083007741904441528_0",
+      "display": {
+        "title": {
+          "text": "Minimax发布视频模型MiniMax H3",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083007741904441528"
+        ]
+      },
+      "canonical_source_id": "x:2083007741904441528",
+      "source_ids": [
+        "x:2083007741904441528"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083007741904441528",
+            "actor_id": "act_x_gorden_sun"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083007741904441528_0_0",
+          "source_id": "x:2083007741904441528",
+          "source_media_id": "x-media:2083007741904441528:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/Gorden_Sun/status/2083007741904441528",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2082519642145485080_0": {
+      "id": "itm_x_2082519642145485080_0",
+      "display": {
+        "title": {
+          "text": "Burger vs Coke cinematic battle — one prompt, one generation, first roll",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "cinematic-film",
+          "label": "Cinematic & Film",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2082519642145485080"
+        ]
+      },
+      "canonical_source_id": "x:2082519642145485080",
+      "source_ids": [
+        "x:2082519642145485080"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2082519642145485080",
+            "actor_id": "act_x_riyazmd774"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2082519642145485080_0_0",
+          "source_id": "x:2082519642145485080",
+          "source_media_id": "x-media:2082519642145485080:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/riyazmd774/status/2082519642145485080",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083017269886738837_0": {
+      "id": "itm_x_2083017269886738837_0",
+      "display": {
+        "title": {
+          "text": "MiniMax is open-sourcing H3. This is going to be massive. 🔥",
+          "provenance": "generated",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "rule",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083017269886738837"
+        ]
+      },
+      "canonical_source_id": "x:2083017269886738837",
+      "source_ids": [
+        "x:2083017269886738837"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083017269886738837",
+            "actor_id": "act_x_ai_for_success"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083017269886738837_0_0",
+          "source_id": "x:2083017269886738837",
+          "source_media_id": "x-media:2083017269886738837:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/ai_for_success/status/2083017269886738837",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2082971035364946077_0": {
+      "id": "itm_x_2082971035364946077_0",
+      "display": {
+        "title": {
+          "text": "The same Blender MCP scene through H3: 6 image refs + 1 video ref at 2K",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "omni-reference-editing",
+          "label": "Omni-Reference & Editing",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2082971035364946077"
+        ]
+      },
+      "canonical_source_id": "x:2082971035364946077",
+      "source_ids": [
+        "x:2082971035364946077"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2082971035364946077",
+            "actor_id": "act_x_kiyoshi_shin"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2082971035364946077_0_0",
+          "source_id": "x:2082971035364946077",
+          "source_media_id": "x-media:2082971035364946077:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/kiyoshi_shin/status/2082971035364946077",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083628852165672988_0": {
+      "id": "itm_x_2083628852165672988_0",
+      "display": {
+        "title": {
+          "text": "Sci-fi motion poster animated from a single still",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "omni-reference-editing",
+          "label": "Omni-Reference & Editing",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083628852165672988"
+        ]
+      },
+      "canonical_source_id": "x:2083628852165672988",
+      "source_ids": [
+        "x:2083628852165672988"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083628852165672988",
+            "actor_id": "act_x_ludoviccreator"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "referenced_not_captured",
+        "text": null,
+        "language": null,
+        "source_id": "x:2083628852165672988",
+        "source_url": "https://x.com/LudovicCreator/status/2083628852165672988",
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": [
+          "ev_source_x_2083628852165672988"
+        ]
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083628852165672988_0_0",
+          "source_id": "x:2083628852165672988",
+          "source_media_id": "x-media:2083628852165672988:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/LudovicCreator/status/2083628852165672988",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083163811398181247_0": {
+      "id": "itm_x_2083163811398181247_0",
+      "display": {
+        "title": {
+          "text": "MiniMax H3 just became the best video editor in AI",
+          "provenance": "generated",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "launch-announcements",
+          "label": "Launch & Announcements",
+          "provenance": "rule",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083163811398181247"
+        ]
+      },
+      "canonical_source_id": "x:2083163811398181247",
+      "source_ids": [
+        "x:2083163811398181247"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083163811398181247",
+            "actor_id": "act_x_heyshrutimishra"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083163811398181247_0_0",
+          "source_id": "x:2083163811398181247",
+          "source_media_id": "x-media:2083163811398181247:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/heyshrutimishra/status/2083163811398181247",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2083091961544876128_0": {
+      "id": "itm_x_2083091961544876128_0",
+      "display": {
+        "title": {
+          "text": "🚨 MiniMax H3 llega a Topview",
+          "provenance": "generated",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "ads-ugc-product",
+          "label": "Ads, UGC & Product",
+          "provenance": "rule",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2083091961544876128"
+        ]
+      },
+      "canonical_source_id": "x:2083091961544876128",
+      "source_ids": [
+        "x:2083091961544876128"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2083091961544876128",
+            "actor_id": "act_x_ben_escrito"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2083091961544876128_0_0",
+          "source_id": "x:2083091961544876128",
+          "source_media_id": "x-media:2083091961544876128:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/Ben_escrito/status/2083091961544876128",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    },
+    "itm_x_2082529869297246414_0": {
+      "id": "itm_x_2082529869297246414_0",
+      "display": {
+        "title": {
+          "text": "Choreography-heavy street dance sequence with dynamic camera work",
+          "provenance": "legacy_unattributed",
+          "editor_actor_id": null,
+          "edited_at": null,
+          "evidence_ids": []
+        },
+        "category": {
+          "id": "music-dance",
+          "label": "Music & Dance",
+          "provenance": "legacy_unattributed",
+          "rule_version": "legacy",
+          "editor_actor_id": null,
+          "evidence_ids": []
+        }
+      },
+      "model": {
+        "family": "MiniMax",
+        "version": "H3",
+        "verification": "inferred",
+        "evidence_ids": [
+          "ev_source_x_2082529869297246414"
+        ]
+      },
+      "canonical_source_id": "x:2082529869297246414",
+      "source_ids": [
+        "x:2082529869297246414"
+      ],
+      "attribution": {
+        "posted_by": [
+          {
+            "source_id": "x:2082529869297246414",
+            "actor_id": "act_x_futurevibesai"
+          }
+        ],
+        "original_video_creators": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ],
+        "prompt_authors": [
+          {
+            "actor_id": null,
+            "status": "unknown",
+            "evidence_ids": [],
+            "note": null
+          }
+        ]
+      },
+      "prompt": {
+        "status": "not_provided",
+        "text": null,
+        "language": null,
+        "source_id": null,
+        "source_url": null,
+        "capture_method": "none",
+        "is_verbatim": false,
+        "evidence_ids": []
+      },
+      "annotations": [],
+      "provenance": {
+        "duplicate_cluster_id": null,
+        "fingerprints": [],
+        "repost_chain": []
+      },
+      "media": [
+        {
+          "media_id": "med_itm_x_2082529869297246414_0_0",
+          "source_id": "x:2082529869297246414",
+          "source_media_id": "x-media:2082529869297246414:0",
+          "kind": "video",
+          "delivery": {
+            "mode": "source_link",
+            "link_url": "https://x.com/FutureVibesAi/status/2082529869297246414",
+            "official_embed": null,
+            "mirrors": []
+          }
+        }
+      ],
+      "rights": {
+        "video_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        },
+        "prompt_republication": {
+          "status": "unknown",
+          "license_spdx": null,
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
+          "expires_at": null,
+          "evidence_ids": []
+        }
+      },
+      "curation": {
+        "status": "approved",
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ]
+      }
+    }
+  },
+  "candidates": {
+    "x:2082779062653845803": {
+      "source_id": "x:2082779062653845803",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2082779062653845803_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083042088338538594": {
+      "source_id": "x:2083042088338538594",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083042088338538594_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2082554826349535341": {
+      "source_id": "x:2082554826349535341",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2082554826349535341_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083142947978047937": {
+      "source_id": "x:2083142947978047937",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083142947978047937_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083023496842801456": {
+      "source_id": "x:2083023496842801456",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083023496842801456_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083071877891682784": {
+      "source_id": "x:2083071877891682784",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083071877891682784_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083024386567840185": {
+      "source_id": "x:2083024386567840185",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083024386567840185_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2082499539735588916": {
+      "source_id": "x:2082499539735588916",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2082499539735588916_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083007741904441528": {
+      "source_id": "x:2083007741904441528",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083007741904441528_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2082519642145485080": {
+      "source_id": "x:2082519642145485080",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2082519642145485080_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083017269886738837": {
+      "source_id": "x:2083017269886738837",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083017269886738837_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2082971035364946077": {
+      "source_id": "x:2082971035364946077",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2082971035364946077_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083628852165672988": {
+      "source_id": "x:2083628852165672988",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083628852165672988_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083163811398181247": {
+      "source_id": "x:2083163811398181247",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083163811398181247_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2083091961544876128": {
+      "source_id": "x:2083091961544876128",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2083091961544876128_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    },
+    "x:2082529869297246414": {
+      "source_id": "x:2082529869297246414",
+      "discoveries": [
+        {
+          "run_id": "run_legacy_urls_import_20260811",
+          "query_id": "legacy.urls.txt",
+          "found_at": "2026-08-11T00:00:00Z",
+          "rank": null,
+          "submitted_by_actor_id": null
+        }
+      ],
+      "review": {
+        "state": "included",
+        "reason_codes": [
+          "meets_scope"
+        ],
+        "note": "Approved for source-link indexing; authorship and republication rights are unverified.",
+        "item_id": "itm_x_2082529869297246414_0",
+        "duplicate_of_item_id": null,
+        "reviewer_actor_id": "act_repository_opensource-works",
+        "reviewed_at": "2026-08-11T00:00:00Z",
+        "evidence_ids": [
+          "ev_editorial_legacy_migration_20260811"
+        ],
+        "history": [
+          {
+            "state": "included",
+            "at": "2026-08-11T00:00:00Z",
+            "actor_id": "act_repository_opensource-works",
+            "reason_codes": [
+              "meets_scope"
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "public_visibility": "pass",
+        "target_model": "pass",
+        "has_video": "pass",
+        "original_source": "unknown",
+        "role_separation": "pass",
+        "delivery_policy": "pass"
+      }
+    }
+  }
+}

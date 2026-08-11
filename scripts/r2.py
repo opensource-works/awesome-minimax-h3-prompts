@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Minimal S3/SigV4 client for Cloudflare R2 — stdlib only."""
-import hashlib, hmac, os, sys, urllib.request, urllib.parse
+import hashlib, hmac, os, sys, urllib.error, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
 def _need(name):
@@ -60,6 +60,20 @@ def put(bucket, key, data, content_type):
                    extra={"cache-control": "public, max-age=31536000, immutable"})
 
 
+def head(bucket, key):
+    try:
+        status, _ = request("HEAD", bucket, key)
+        return status == 200
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return False
+        raise
+
+
+def delete(bucket, key):
+    return request("DELETE", bucket, key)
+
+
 def ls(bucket, prefix=""):
     q = "list-type=2" + (f"&prefix={urllib.parse.quote(prefix)}" if prefix else "")
     # canonical query string must be sorted by key
@@ -80,3 +94,8 @@ if __name__ == "__main__":
         bucket, key, path, ct = sys.argv[2:6]
         st, _ = put(bucket, key, open(path, "rb").read(), ct)
         print(st, key)
+    elif cmd == "head":
+        print("exists" if head(sys.argv[2], sys.argv[3]) else "missing")
+    elif cmd == "delete":
+        st, _ = delete(sys.argv[2], sys.argv[3])
+        print(st, sys.argv[3])

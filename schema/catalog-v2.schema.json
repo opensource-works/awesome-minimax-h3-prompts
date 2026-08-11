@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/opensource-works/awesome-minimax-h3-prompts/blob/main/schema/catalog-v2.schema.json",
+  "title": "opensource-works prompt catalog v2",
+  "type": "object",
+  "required": [
+    "$schema", "schema_version", "updated_at", "collection", "discovery_runs",
+    "actors", "sources", "evidence", "items", "candidates"
+  ],
+  "properties": {
+    "$schema": {"const": "../schema/catalog-v2.schema.json"},
+    "schema_version": {"const": "2.0.0"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "collection": {"type": "object", "required": ["id", "repo_url", "model_scope", "historical_window", "query_matrix_version"], "additionalProperties": true},
+    "discovery_runs": {"type": "object", "additionalProperties": {"type": "object"}},
+    "actors": {"type": "object", "additionalProperties": {"$ref": "#/$defs/actor"}},
+    "sources": {"type": "object", "additionalProperties": {"$ref": "#/$defs/source"}},
+    "evidence": {"type": "object", "additionalProperties": {"type": "object"}},
+    "items": {"type": "object", "additionalProperties": {"type": "object"}},
+    "candidates": {"type": "object", "additionalProperties": {"type": "object"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "actor": {
+      "type": "object",
+      "required": ["id", "kind", "platform", "observed_at"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^act_"},
+        "kind": {"enum": ["person", "organization", "unknown", "automation"]},
+        "platform": {"enum": ["x", "reddit", "github", "web", "repository"]},
+        "platform_user_id": {"type": ["string", "null"]},
+        "handle": {"type": ["string", "null"]},
+        "display_name": {"type": ["string", "null"]},
+        "profile_url": {"type": ["string", "null"], "format": "uri"},
+        "avatar_url": {"type": ["string", "null"], "format": "uri"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "observed_at": {"type": "string", "format": "date-time"}
+      },
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "platform", "native_id", "kind", "url", "posted_by_actor_id", "text", "metrics", "media_observations", "availability", "fetch"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^(x:|reddit:)"},
+        "platform": {"enum": ["x", "reddit"]},
+        "native_id": {"type": "string"},
+        "kind": {"enum": ["post", "comment"]},
+        "url": {"type": "string", "format": "uri"},
+        "posted_by_actor_id": {"type": "string", "pattern": "^act_"},
+        "media_observations": {"type": "array"},
+        "availability": {
+          "type": "object",
+          "required": ["state", "checked_at"],
+          "properties": {
+            "state": {"enum": ["available", "deleted", "private", "suspended", "geo_restricted", "age_restricted", "unknown", "transient_error"]},
+            "checked_at": {"type": "string", "format": "date-time"},
+            "consecutive_failures": {"type": "integer", "minimum": 0},
+            "consecutive_successful_missing": {"type": "integer", "minimum": 0}
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

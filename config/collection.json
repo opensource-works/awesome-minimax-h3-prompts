@@ -1,0 +1,41 @@
+{
+  "id": "awesome-minimax-h3-prompts",
+  "repo_url": "https://github.com/opensource-works/awesome-minimax-h3-prompts",
+  "site_url": "https://opensource-works.github.io/awesome-minimax-h3-prompts/",
+  "title": "Awesome MiniMax H3 Prompts",
+  "title_zh": "Awesome MiniMax H3 提示词",
+  "family": "MiniMax H3",
+  "model_scope": [
+    {
+      "family": "MiniMax",
+      "version": "H3",
+      "aliases": ["MiniMax H3", "MiniMax-H3", "#MiniMaxH3", "Hailuo H3", "Hailuo 3", "Hailuo 3.0", "Hailuo 03", "海螺 H3"],
+      "released_on": "2026-07-31",
+      "public_demo_from": "2026-07-29",
+      "evidence_ids": ["ev_release_minimax_h3"]
+    }
+  ],
+  "release_evidence": [
+    {
+      "id": "ev_release_minimax_h3",
+      "url": "https://minimaxi.com/blog/minimax-h3",
+      "observed_at": "2026-08-11T00:00:00Z",
+      "excerpt": "Official MiniMax H3 release announcement."
+    }
+  ],
+  "historical_window": {
+    "from": "2026-07-29",
+    "through": "2026-08-11",
+    "observed_through_exclusive": "2026-08-11T12:30:00Z"
+  },
+  "query_matrix_version": "2026-08-11",
+  "legacy_observed_at": "2026-08-10T08:10:32Z",
+  "migration_reviewed_at": "2026-08-11T00:00:00Z",
+  "try_url": "https://maxluo3.com",
+  "r2": {
+    "bucket": "minimax-h3",
+    "public_base": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev"
+  },
+  "accent": "#ff6a4d",
+  "categories": ["Showcase", "Cinematic & Film", "Anime & Animation", "Action & VFX", "Music & Dance", "Audio & Voice", "Omni-Reference & Editing", "Ads, UGC & Product", "Prompting & Workflow", "Model Comparisons", "Launch & Announcements"]
+}

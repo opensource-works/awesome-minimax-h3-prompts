@@ -1,0 +1,73 @@
+name: Submit a prompt/video candidate
+description: Propose a public X or Reddit source for human review.
+title: "[Candidate] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submissions are reviewed before publication. A public post is evidence of a source, not permission to download or re-host its media.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - X
+        - Reddit
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Exact source URL
+      description: Link to the original public post, not a search page or media CDN URL.
+      placeholder: https://x.com/.../status/... or https://www.reddit.com/r/.../comments/...
+    validations:
+      required: true
+  - type: input
+    id: prompt_source_url
+    attributes:
+      label: Prompt source URL
+      description: If the prompt is in a reply, comment, image, or another post, link to that exact evidence.
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt text
+      description: Copy only text that is visible at the cited source; preserve its original language.
+  - type: textarea
+    id: attribution
+    attributes:
+      label: Attribution evidence
+      description: Separately identify the poster, original video creator, and prompt author. Write "unknown" where the source does not establish a role.
+    validations:
+      required: true
+  - type: dropdown
+    id: permission
+    attributes:
+      label: Media re-hosting permission
+      description: This controls media mirroring; it does not affect whether the original source may be linked.
+      options:
+        - Unknown or not requested
+        - Explicitly denied
+        - Explicitly granted
+        - Covered by a public license
+    validations:
+      required: true
+  - type: textarea
+    id: permission_evidence
+    attributes:
+      label: Permission evidence and scopes
+      description: If granted, cite only public evidence and state whether download, GitHub/R2 mirroring, and preview derivation are allowed. Never paste DMs, private messages, contact details, or sensitive permission material into this public issue; say that it is available to maintainers through a private channel instead.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Context, annotations, or repost chain
+      description: Include relevant comments and their authors, repost relationships, duplicates, or uncertainty.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I supplied source links for factual claims and did not assume that the poster created the video or prompt.
+          required: true
+        - label: I did not paste private messages or sensitive permission evidence into this public issue.
+          required: true

@@ -1,0 +1,25 @@
+name: Validate catalog
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate, test, and reproduce generated files
+        run: |
+          python3 -m py_compile scripts/*.py
+          python3 scripts/validate.py
+          python3 scripts/authorized_manifests.py --check
+          python3 -m unittest discover -s tests -v
+          python3 scripts/build.py
+          python3 scripts/report_coverage.py --format markdown --json-out data/coverage-report.json --markdown-out COVERAGE.md > /dev/null
+          python3 scripts/validate.py
+          git diff --exit-code -- data/posts.json data/github-attachments.json data/coverage-report.json docs README.md README.zh-CN.md COVERAGE.md

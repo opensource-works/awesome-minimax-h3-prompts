@@ -1,62 +1,98 @@
-name: Refresh index
+name: Discover, refresh, and synchronize
 
-# Re-fetches every indexed post so view counts stay current and any URL merged
-# into scripts/urls.txt shows up in the gallery without a manual build.
 on:
   schedule:
-    - cron: "23 6 * * 1"   # Mondays, 06:23 UTC
-  push:
-    branches: [main]
-    paths:
-      - "scripts/urls.txt"
-      - "scripts/overrides.json"
-      - "scripts/harvest.py"
-      - "scripts/build.py"
+    - cron: "23 6 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh
+  group: weekly-catalog-refresh
   cancel-in-progress: true
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    env:
+      X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+      REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+      R2_ACCOUNT: ${{ secrets.R2_ACCOUNT }}
+      R2_KEY_ID: ${{ secrets.R2_KEY_ID }}
+      R2_SECRET: ${{ secrets.R2_SECRET }}
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-
-      - name: Harvest posts
-        run: python3 scripts/harvest.py
-
-      # Copies any clip that isn't on R2 yet and renders its animated preview.
-      # Existing objects are skipped, so a normal run only touches new posts.
-      - name: Mirror new clips to R2
-        env:
-          R2_ACCOUNT: ${{ secrets.R2_ACCOUNT }}
-          R2_KEY_ID: ${{ secrets.R2_KEY_ID }}
-          R2_SECRET: ${{ secrets.R2_SECRET }}
-        run: python3 scripts/mirror.py
-
-      - name: Build gallery and READMEs
-        run: python3 scripts/build.py
-
-      - name: Commit if anything changed
+      - name: Discover recent X candidates
+        if: ${{ env.X_BEARER_TOKEN != '' }}
+        continue-on-error: true
+        run: python3 scripts/discover.py --platform x --window ongoing
+      - name: Discover recent Reddit candidates
+        if: ${{ env.REDDIT_CLIENT_ID != '' && env.REDDIT_CLIENT_SECRET != '' }}
+        continue-on-error: true
+        run: python3 scripts/discover.py --platform reddit --window ongoing
+      - name: Hydrate pending X candidates
+        if: ${{ env.X_BEARER_TOKEN != '' }}
+        continue-on-error: true
+        run: >-
+          python3 scripts/hydrate.py --platform x --pending-only --with-comments
+          --x-comment-mode recent --volatile-cache .cache/media-locators.json
+      - name: Hydrate pending Reddit candidates
+        if: ${{ env.REDDIT_CLIENT_ID != '' && env.REDDIT_CLIENT_SECRET != '' }}
+        continue-on-error: true
+        run: >-
+          python3 scripts/hydrate.py --platform reddit --pending-only --with-comments
+          --volatile-cache .cache/media-locators.json
+      - name: Synchronize X deletions and metrics
+        if: ${{ env.X_BEARER_TOKEN != '' }}
+        run: python3 scripts/sync_availability.py --platform x
+      - name: Synchronize Reddit removals and metrics
+        if: ${{ env.REDDIT_CLIENT_ID != '' && env.REDDIT_CLIENT_SECRET != '' }}
+        run: python3 scripts/sync_availability.py --platform reddit
+      - name: Retire expired rights and rebuild authorized manifests
         run: |
-          git config user.name  "github-actions[bot]"
+          python3 scripts/sync_rights_expiry.py
+          python3 scripts/authorized_manifests.py
+      - name: Validate before any media operation
+        run: python3 scripts/validate.py
+      - name: Mirror authorized media only
+        if: ${{ env.R2_ACCOUNT != '' && env.R2_KEY_ID != '' && env.R2_SECRET != '' }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          set +e
+          python3 scripts/mirror.py --volatile-cache .cache/media-locators.json
+          mirror_status=$?
+          set -e
+          if [ "$mirror_status" -ne 0 ] && [ -f data/r2-upload-recovery.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -- data/r2-upload-recovery.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: record interrupted R2 upload recovery"
+              git push
+            fi
+          fi
+          exit "$mirror_status"
+      - name: Build public artifacts and coverage report
+        run: |
+          python3 scripts/validate.py
+          python3 scripts/build.py
+          python3 scripts/report_coverage.py --format markdown --json-out data/coverage-report.json --markdown-out COVERAGE.md > /dev/null
+          python3 scripts/validate.py
+          python3 -m unittest discover -s tests -v
+      - name: Commit catalog refresh
+        run: |
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data docs README.md README.zh-CN.md; then
+          git add data docs README.md README.zh-CN.md COVERAGE.md
+          if git diff --cached --quiet; then
             echo "nothing changed"
             exit 0
           fi
-          git add data docs README.md README.zh-CN.md
-          git commit -m "chore: refresh MiniMax H3 post index"
+          git commit -m "chore: refresh discovery and source status"
           git push
