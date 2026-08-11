@@ -1,8 +1,8 @@
 # Coverage report: awesome-minimax-h3-prompts
 
-Generated: `2026-08-11T12:49:48Z`
+Generated: `2026-08-11T16:52:51Z`
 
-Catalog updated: `2026-08-11T12:49:48Z`
+Catalog updated: `2026-08-11T16:52:51Z`
 
 ## Overview
 
@@ -10,10 +10,10 @@ Catalog updated: `2026-08-11T12:49:48Z`
 | --- | --- |
 | discovery_runs | 3 |
 | queries | 12 |
-| sources | 79 |
+| sources | 80 |
 | candidates | 79 |
 | items | 16 |
-| evidence | 82 |
+| evidence | 84 |
 | actors | 34 |
 
 ## Queries
@@ -62,14 +62,14 @@ Historical and ongoing results are reported separately; window end times are exc
 | Platform | Sources | Candidates | Items |
 | --- | --- | --- | --- |
 | reddit | 22 | 22 | 0 |
-| x | 57 | 57 | 16 |
+| x | 58 | 57 | 16 |
 
 ## Source availability
 
 | Status | Count |
 | --- | --- |
 | age_restricted | 0 |
-| available | 16 |
+| available | 17 |
 | deleted | 0 |
 | geo_restricted | 0 |
 | private | 0 |
@@ -83,12 +83,12 @@ Historical and ongoing results are reported separately; window end times are exc
 | --- | --- |
 | not_provided | 14 |
 | partial | 0 |
-| referenced_not_captured | 1 |
+| referenced_not_captured | 0 |
 | removed | 0 |
 | unavailable | 0 |
-| verbatim | 1 |
+| verbatim | 2 |
 
-Items with prompt text: **1**
+Items with prompt text: **2**
 
 Items with a prompt source URL: **2**
 
@@ -119,26 +119,26 @@ Items with a prompt source URL: **2**
 | Scope | Status | Count |
 | --- | --- | --- |
 | prompt_republication | denied | 0 |
-| prompt_republication | granted | 0 |
+| prompt_republication | granted | 2 |
 | prompt_republication | not_requested | 0 |
 | prompt_republication | public_license | 0 |
 | prompt_republication | requested | 0 |
 | prompt_republication | revoked | 0 |
-| prompt_republication | unknown | 16 |
+| prompt_republication | unknown | 14 |
 | video_republication | denied | 0 |
-| video_republication | granted | 0 |
+| video_republication | granted | 16 |
 | video_republication | not_requested | 0 |
 | video_republication | public_license | 0 |
 | video_republication | requested | 0 |
 | video_republication | revoked | 0 |
-| video_republication | unknown | 16 |
+| video_republication | unknown | 0 |
 
 ## Mirror quarantine
 
 | Metric | Count |
 | --- | --- |
 | All mirrors | 48 |
-| Quarantined or pending delete | 48 |
+| Quarantined or pending delete | 32 |
 | Items affected | 16 |
 
 ## Exclusions and removals

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mirror only media with explicit, evidence-backed republication rights.
+"""Mirror only media with explicit, verified republication rights.
 
 No download occurs until the catalog rights gate proves download and mirror_r2
 scopes. Animated previews additionally require derive_preview. Catalog
@@ -379,7 +379,7 @@ def main() -> None:
     jobs = eligible_jobs(catalog, load_volatile_cache(args.volatile_cache, catalog))
     if args.limit:
         jobs = jobs[:args.limit]
-    print(f"{len(jobs)} media objects pass the evidence-backed R2 rights gate")
+    print(f"{len(jobs)} media objects pass the verified R2 rights gate")
     if args.dry_run:
         for job in jobs:
             print(f"- {job['item_key']} / {job['media']['media_id']}")

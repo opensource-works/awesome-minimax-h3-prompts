@@ -153,8 +153,9 @@ retaining the comment source and commenter attribution.
 
 Source linking is the default. `scripts/mirror.py` downloads and uploads only
 when `video_republication` is `granted` or covered by a public license, the
-permission evidence resolves, and the exact scopes include `download` plus the
-destination scope. Animated previews additionally require `derive_preview`.
+grant is verified by public evidence or a maintainer attestation, and the exact
+scopes include `download` plus the destination scope. Animated previews
+additionally require `derive_preview`.
 This is a structural catalog gate, not a legal judgment: a human must still
 verify the substance of the evidence, the grantor's authority, license terms,
 asset identity, and intended use.
@@ -165,7 +166,7 @@ python3 scripts/mirror.py
 ```
 
 R2 needs `R2_ACCOUNT`, `R2_KEY_ID`, and `R2_SECRET`; preview generation also
-needs `ffmpeg`. Successful R2 runs regenerate the evidence-backed, namespaced
+needs `ffmpeg`. Successful R2 runs regenerate the authorized, namespaced
 `data/r2-mirrors.json`; the old `data/mirror.json` remains `{}`. A partial
 upload failure rolls back every new object, preserves pre-existing keys, and
 retains `data/r2-upload-recovery.json` only when cleanup cannot be confirmed.

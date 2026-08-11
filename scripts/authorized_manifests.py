@@ -40,7 +40,7 @@ ASSET_RE = re.compile(
 
 
 def build_r2_manifest(catalog: dict, generated_at: str | None = None) -> dict:
-    """Project only current, public, evidence-backed R2 objects."""
+    """Project only current, public, rights-gated R2 objects."""
     catalog = public_catalog(catalog)
     mirrors: dict[str, dict] = {}
     for item_id in sorted(catalog.get("items") or {}):

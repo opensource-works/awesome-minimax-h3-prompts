@@ -100,7 +100,7 @@ sizes, and partial range requests are not accepted. Success must report `N/N`.
 Only then does the script prepare the catalog changes, activate the
 mirrors, set delivery to `authorized_mirror`, and refresh `data/posts.json`,
 `data/github-attachments.json`, and `data/r2-mirrors.json` from the same updated
-catalog. Both manifests contain only active, evidence-backed mirrors keyed by
+catalog. Both manifests contain only active, rights-gated mirrors keyed by
 `item_id/media_id/mirror_id`.
 
 Any missing mapping, failed download, byte mismatch, hash mismatch, changed

@@ -206,8 +206,13 @@ class AvailabilityDependencyTests(unittest.TestCase):
             },
         ]
         sync_availability.ensure_automation(value, at)
-        self.assertEqual(1, len(sync_availability.build_r2_manifest(value, at)["mirrors"]))
-        self.assertEqual(1, len(sync_availability.build_github_attachment_manifest(value, at)["attachments"]))
+        r2_key = f"{item['id']}/{media['media_id']}/mir_r2_root_redaction"
+        github_key = f"{item['id']}/{media['media_id']}/mir_github_root_redaction"
+        self.assertIn(r2_key, sync_availability.build_r2_manifest(value, at)["mirrors"])
+        self.assertIn(
+            github_key,
+            sync_availability.build_github_attachment_manifest(value, at)["attachments"],
+        )
 
         sync_availability.redact_and_retire(
             value, source_id, "private", at, secret,
@@ -226,8 +231,11 @@ class AvailabilityDependencyTests(unittest.TestCase):
         self.assertIsNone(candidate["review"]["note"])
         self.assertTrue(all(entry.get("note") is None for entry in candidate["review"]["history"]))
         self.assertNotIn(item["id"], {post["item_id"] for post in catalog.export_posts(value)})
-        self.assertEqual({}, sync_availability.build_r2_manifest(value, at)["mirrors"])
-        self.assertEqual({}, sync_availability.build_github_attachment_manifest(value, at)["attachments"])
+        self.assertNotIn(r2_key, sync_availability.build_r2_manifest(value, at)["mirrors"])
+        self.assertNotIn(
+            github_key,
+            sync_availability.build_github_attachment_manifest(value, at)["attachments"],
+        )
         self.assertEqual([], catalog.validate_catalog(value))
 
 

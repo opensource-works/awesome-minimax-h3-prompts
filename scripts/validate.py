@@ -391,8 +391,12 @@ def validate_rights_and_mirrors(catalog: dict) -> list[str]:
                     errors.append(f"{tag} active mirror needs a positive byte count")
                 if not sha256.fullmatch(str(mirror.get("sha256") or "")):
                     errors.append(f"{tag} active mirror needs a SHA-256 digest")
-                if not _is_rfc3339(mirror.get("uploaded_at")):
-                    errors.append(f"{tag} active mirror needs uploaded_at")
+                uploaded_at = mirror.get("uploaded_at")
+                verified_at = mirror.get("verified_at") or mirror.get("last_checked_at")
+                if uploaded_at is not None and not _is_rfc3339(uploaded_at):
+                    errors.append(f"{tag} active mirror uploaded_at is invalid")
+                if not _is_rfc3339(uploaded_at) and not _is_rfc3339(verified_at):
+                    errors.append(f"{tag} active mirror needs uploaded_at or verified_at")
             mode = delivery.get("mode")
             if mode == "authorized_mirror":
                 if not any(m.get("artifact") == "video" for m in active):

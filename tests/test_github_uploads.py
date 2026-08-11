@@ -133,7 +133,7 @@ class VerificationProjectionTests(unittest.TestCase):
         payload = b"verified github attachment"
         digest = hashlib.sha256(payload).hexdigest()
         mirror_id = mirror_id_for(item["id"], media["media_id"])
-        media["delivery"]["mirrors"].append({
+        media["delivery"]["mirrors"] = [{
             "mirror_id": mirror_id,
             "provider": "github_attachment",
             "artifact": "video",
@@ -144,7 +144,7 @@ class VerificationProjectionTests(unittest.TestCase):
             "staged_filename": filename,
             "permission_evidence_ids": [evidence_id],
             "uploaded_at": "2026-08-11T00:00:00Z",
-        })
+        }]
         entry = {
             "filename": filename,
             "item_id": item["id"],

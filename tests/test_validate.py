@@ -14,7 +14,8 @@ import build as builder  # noqa: E402
 import authorized_manifests  # noqa: E402
 import sync_rights_expiry  # noqa: E402
 from catalog import (  # noqa: E402
-    export_posts, mirror_needs_cleanup, public_catalog, refresh_retirement_manifest,
+    export_posts, mirror_is_authorized, mirror_needs_cleanup, public_catalog,
+    refresh_retirement_manifest,
 )
 
 
@@ -138,6 +139,19 @@ class RepositoryValidationTests(unittest.TestCase):
         public_mirrors = public_item["media"][0]["delivery"]["mirrors"]
         self.assertEqual([value["mirror_id"] for value in public_mirrors], [mirror["mirror_id"]])
 
+    def test_maintainer_attestation_can_activate_without_publishing_call_notes(self):
+        catalog, item, mirror = self._authorized_r2_catalog()
+        rights = item["rights"]["video_republication"]
+        rights["evidence_ids"] = []
+        rights["grant_verification"] = "maintainer_attestation"
+        mirror["permission_evidence_ids"] = []
+        self.assertTrue(validator.mirror_is_authorized(item, mirror, catalog))
+        self.assertEqual([], validator.validate_catalog(catalog))
+        public = public_catalog(catalog)
+        public_rights = public["items"][item["id"]]["rights"]["video_republication"]
+        self.assertEqual("maintainer_attestation", public_rights["grant_verification"])
+        self.assertEqual([], public_rights["evidence_ids"])
+
     def test_direct_grant_requires_grantor_and_timestamp(self):
         catalog, item, mirror = self._authorized_r2_catalog()
         rights = item["rights"]["video_republication"]
@@ -147,6 +161,20 @@ class RepositoryValidationTests(unittest.TestCase):
         errors = validator.validate_canonical(catalog, self.schema, self.config)
         self.assertTrue(any("needs a grantor" in error for error in errors))
         self.assertTrue(any("needs granted_at" in error for error in errors))
+
+    def test_maintainer_attestation_cannot_replace_public_license_evidence(self):
+        catalog, item, mirror = self._authorized_r2_catalog()
+        rights = item["rights"]["video_republication"]
+        rights.update({
+            "status": "public_license",
+            "license_spdx": "CC-BY-4.0",
+            "evidence_ids": [],
+            "grant_verification": "maintainer_attestation",
+        })
+        mirror["permission_evidence_ids"] = []
+        self.assertFalse(validator.mirror_is_authorized(item, mirror, catalog))
+        errors = validator.validate_catalog(catalog)
+        self.assertTrue(any("needs evidence or maintainer attestation" in error for error in errors))
 
     def test_rights_expiry_compares_instants_not_timestamp_strings(self):
         catalog, item, mirror = self._authorized_r2_catalog()
@@ -220,7 +248,11 @@ class RepositoryValidationTests(unittest.TestCase):
                 self.assertEqual(observation.get("variants"), [])
         for item in public["items"].values():
             for media in item.get("media") or []:
-                self.assertEqual(media["delivery"].get("mirrors"), [])
+                for mirror in media["delivery"].get("mirrors") or []:
+                    self.assertEqual("active", mirror.get("state"))
+                    self.assertTrue(
+                        mirror_is_authorized(item, mirror, public.get("evidence") or {})
+                    )
         self.assertEqual(validator.validate_public_projection(self.catalog), [])
 
     def test_public_projection_excludes_pending_candidates_and_private_evidence(self):
@@ -285,6 +317,20 @@ class RepositoryValidationTests(unittest.TestCase):
         errors = validator.validate_canonical(catalog, self.schema, self.config)
         self.assertTrue(any("missing evidence ev_missing" in error for error in errors))
 
+    def test_verbatim_prompt_requires_exact_text_integrity(self):
+        catalog = copy.deepcopy(self.catalog)
+        item = next(
+            value for value in catalog["items"].values()
+            if (value.get("prompt") or {}).get("status") == "verbatim"
+        )
+        prompt = item["prompt"]
+        evidence_id = (prompt.get("segments") or [{
+            "evidence_ids": prompt["evidence_ids"],
+        }])[0]["evidence_ids"][0]
+        catalog["evidence"][evidence_id]["integrity_sha256"] = None
+        errors = validator.validate_catalog(catalog)
+        self.assertTrue(any("exact prompt-text integrity evidence" in error for error in errors))
+
     def _authorized_r2_catalog(self):
         catalog = copy.deepcopy(self.catalog)
         item = next(iter(catalog["items"].values()))
@@ -314,7 +360,8 @@ class RepositoryValidationTests(unittest.TestCase):
         }
         delivery = item["media"][0]["delivery"]
         delivery["mode"] = "authorized_mirror"
-        mirror = delivery["mirrors"][0]
+        mirror = copy.deepcopy(delivery["mirrors"][0])
+        delivery["mirrors"] = [mirror]
         mirror.update({
             "provider": "r2",
             "artifact": "video",
@@ -383,28 +430,29 @@ class RepositoryValidationTests(unittest.TestCase):
         manifest = authorized_manifests.build_github_attachment_manifest(
             catalog, "2026-08-11T00:00:00Z"
         )
-        self.assertEqual(1, len(manifest["attachments"]))
+        manifest_key = f"{item['id']}/{item['media'][0]['media_id']}/{mirror['mirror_id']}"
+        self.assertIn(manifest_key, manifest["attachments"])
 
         revoked = copy.deepcopy(catalog)
         revoked["items"][item["id"]]["rights"]["video_republication"]["status"] = "revoked"
         self.assertTrue(authorized_manifests.validate_github_attachment_manifest(revoked, manifest))
-        self.assertEqual({}, authorized_manifests.build_github_attachment_manifest(
+        self.assertNotIn(manifest_key, authorized_manifests.build_github_attachment_manifest(
             revoked, "2026-08-11T00:00:00Z"
         )["attachments"])
 
         removed = copy.deepcopy(catalog)
         removed["items"][item["id"]]["curation"]["status"] = "removed"
         self.assertTrue(authorized_manifests.validate_github_attachment_manifest(removed, manifest))
-        self.assertEqual({}, authorized_manifests.build_github_attachment_manifest(
+        self.assertNotIn(manifest_key, authorized_manifests.build_github_attachment_manifest(
             removed, "2026-08-11T00:00:00Z"
         )["attachments"])
 
         private = copy.deepcopy(catalog)
         private["evidence"][evidence_id]["visibility"] = "attested_private"
-        self.assertEqual({}, authorized_manifests.build_github_attachment_manifest(
+        self.assertNotIn(manifest_key, authorized_manifests.build_github_attachment_manifest(
             private, "2026-08-11T00:00:00Z"
         )["attachments"])
-        self.assertEqual({}, authorized_manifests.build_r2_manifest(
+        self.assertNotIn(manifest_key, authorized_manifests.build_r2_manifest(
             private, "2026-08-11T00:00:00Z"
         )["mirrors"])
 

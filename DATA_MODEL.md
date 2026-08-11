@@ -41,6 +41,11 @@ valid result; it is safer than silently collapsing roles.
 A prompt record states status, text, language, source ID/URL, capture method,
 whether it is verbatim, and evidence IDs.
 
+Every verbatim prompt, or every segment of a multi-reply prompt, is bound to
+`prompt_source` evidence whose `integrity_subject: prompt_text` SHA-256 matches
+the exact published text. This detects any later silent edit independently of
+the surrounding source-post hash.
+
 - A prompt copied exactly from the post body points to the post and uses
   `capture_method: post_text`.
 - A prompt copied from a reply/comment points to that comment source, uses
@@ -74,10 +79,12 @@ Each media record has a delivery mode:
 - `authorized_mirror` — serve a recorded mirror only after a rights gate.
 
 `video_republication` and `prompt_republication` are separate. Each records a
-status, license, scopes, grantors, grant/expiry times, and evidence. An active
-R2 or GitHub mirror is public only when evidence exists and the video grant
-covers `download` plus `mirror_r2` or `mirror_github`; previews also require
-`derive_preview`. See [RIGHTS.md](RIGHTS.md).
+status, license, scopes, grantors, grant/expiry times, and either public evidence
+or a maintainer attestation of a private grant. An active R2 or GitHub mirror is
+public only when that verification exists and the video grant covers `download`
+plus `mirror_r2` or `mirror_github`; previews also require `derive_preview`.
+Private supporting material remains outside Git. See
+[RIGHTS.md](RIGHTS.md).
 
 Prompt capture and prompt republication are also separate. The public index may
 display `verbatim`/`partial` text from a public source with exact provenance,
@@ -96,8 +103,9 @@ are not a deletion claim; only `deleted` after a remote check means verified del
 Discovery never includes a candidate. Every include/exclude/remove mutation
 requires a human-review reason, existing evidence IDs, an existing actor, and a
 timestamp. Safe inclusion starts source-link-only with creator, prompt author,
-and republication rights unknown. Later attribution or rights claims require
-their own evidence; curation approval is not permission.
+and republication rights unknown. Later attribution claims require their own
+evidence. Rights claims require public permission evidence or an explicit
+maintainer attestation; curation approval alone is not permission.
 
 Removal for `creator_takedown`, `permission_revoked`, `rights_denied`, source
 unavailability, or safety reasons is content-redacting: source text, prompt
@@ -132,8 +140,9 @@ methodology; it is not MiniMax H3 data or a coverage count for either repository
 
 ## Legacy migration
 
-Legacy v1 records were migrated with limited provenance. Mirrors without
-permission evidence were removed from public manifests and quarantined. The
-2026-08-11 retirement ledger has 48 entries, all `pending_delete`; it is a work
-queue for verified remote cleanup, not proof that the underlying R2 or GitHub
+Legacy v1 records were migrated with limited provenance. The initial retirement
+ledger contained 48 mirrors. After the maintainer confirmed the private grants
+and every asset passed a full byte/hash check, 16 GitHub video attachments were
+reactivated. The remaining retirement queue contains 32 R2 video/preview
+records; it is a work queue for verified remote cleanup, not proof that those
 objects were erased or that a live URL is absent from maintenance data.

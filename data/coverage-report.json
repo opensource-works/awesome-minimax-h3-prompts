@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T12:49:48Z",
-  "catalog_updated_at": "2026-08-11T12:49:48Z",
+  "generated_at": "2026-08-11T16:52:51Z",
+  "catalog_updated_at": "2026-08-11T16:52:51Z",
   "collection": {
     "id": "awesome-minimax-h3-prompts",
     "query_matrix_version": "2026-08-11",
@@ -9,10 +9,10 @@
   "totals": {
     "discovery_runs": 3,
     "queries": 12,
-    "sources": 79,
+    "sources": 80,
     "candidates": 79,
     "items": 16,
-    "evidence": 82,
+    "evidence": 84,
     "actors": 34
   },
   "queries": {
@@ -212,7 +212,7 @@
   "platforms": {
     "sources": {
       "reddit": 22,
-      "x": 57
+      "x": 58
     },
     "candidates": {
       "reddit": 22,
@@ -226,7 +226,7 @@
   "status": {
     "source_availability": {
       "age_restricted": 0,
-      "available": 16,
+      "available": 17,
       "deleted": 0,
       "geo_restricted": 0,
       "private": 0,
@@ -239,16 +239,16 @@
     "by_status": {
       "not_provided": 14,
       "partial": 0,
-      "referenced_not_captured": 1,
+      "referenced_not_captured": 0,
       "removed": 0,
       "unavailable": 0,
-      "verbatim": 1
+      "verbatim": 2
     },
-    "with_text": 1,
+    "with_text": 2,
     "with_source_url": 2
   },
   "attribution": {
-    "posted_by_records": 16,
+    "posted_by_records": 17,
     "original_video_creators_by_status": {
       "claimed": 0,
       "confirmed": 0,
@@ -268,46 +268,45 @@
     "by_scope_and_status": {
       "prompt_republication": {
         "denied": 0,
-        "granted": 0,
+        "granted": 2,
         "not_requested": 0,
         "public_license": 0,
         "requested": 0,
         "revoked": 0,
-        "unknown": 16
+        "unknown": 14
       },
       "video_republication": {
         "denied": 0,
-        "granted": 0,
+        "granted": 16,
         "not_requested": 0,
         "public_license": 0,
         "requested": 0,
         "revoked": 0,
-        "unknown": 16
+        "unknown": 0
       }
     },
     "delivery_modes": {
-      "authorized_mirror": 0,
+      "authorized_mirror": 16,
       "official_embed": 0,
-      "source_link": 16
+      "source_link": 0
     }
   },
   "quarantine": {
     "mirrors_total": 48,
     "mirrors_by_state": {
-      "active": 0,
+      "active": 16,
       "deleted": 0,
       "pending_delete": 0,
-      "quarantined": 48
+      "quarantined": 32
     },
-    "quarantined_or_pending_delete": 48,
+    "quarantined_or_pending_delete": 32,
     "items_affected": 16,
     "by_provider": {
-      "github_attachment": 16,
       "r2": 32
     },
     "by_artifact": {
       "animated_preview": 16,
-      "video": 32
+      "video": 16
     }
   },
   "exclusions": {
