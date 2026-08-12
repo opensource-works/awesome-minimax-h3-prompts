@@ -40,30 +40,12 @@ fields with their editor/rule, timestamp, and evidence. They must not be marked
 `is_verbatim: true` and must not silently transfer authorship to an editor or
 the parent-post author.
 
-Verified reply imports are bound to the exact reviewed payload bytes. The
-tracked `data/verified-prompt-imports.json` additionally locks every reviewed
-reply ID, root/item identity, public URL, author handle, timestamp, parent, and
-prompt-text SHA-256. The command refuses a changed or unreviewed file before
-importing any prompt text:
-
-```bash
-python3 scripts/import_verified_prompt_threads.py verified-prompts.json \
-  --payload-sha256 REVIEWED_PAYLOAD_SHA256 \
-  --grantor-map .cache/confirmed-grantors.json \
-  --grantor-map-sha256 REVIEWED_GRANTOR_MAP_SHA256 \
-  --repo-key minimax \
-  --captured-at 2026-08-11T16:52:51Z \
-  --granted-at 2026-08-11T16:52:51Z \
-  --confirm-maintainer-attestation
-```
-
 ## Separate permission records
 
 Video and prompt rights are evaluated separately in `video_republication` and
 `prompt_republication`. Each record must state the rights status, grantor,
-time, expiry (if any), and exact scopes. A grant is verified either by public
-evidence or by a maintainer attestation for a private confirmation. Attribution
-is required but does not replace permission, and `unknown` is not a grant.
+time, expiry (if any), exact scopes, and evidence. Attribution is required but
+does not replace permission, and `unknown` is not a grant.
 
 For video media, the implemented scope strings are:
 
@@ -98,22 +80,16 @@ terms. A public-license record also needs the license name/version and a source
 showing that the license applies to that exact work. Likes, credits, platform
 availability, API access, and “please share” without scope are not permission.
 
-The machine gate enforces that distinction. A direct grant can cite public
-evidence with `kind: permission`, or it can use
-`grant_verification: maintainer_attestation` when a maintainer has privately
-confirmed the grant. The attestation form still requires the grantor, grant time,
-and exact scopes, but keeps `evidence_ids` and mirror
-`permission_evidence_ids` empty. Supporting private material is never
-committed.
-
-Evidence-backed records need a `rights_assertion` whose `asset_item_ids`,
+The machine gate enforces that distinction. A direct grant must cite evidence
+with `kind: permission`; a public license must cite `kind: public_license`.
+Each such record needs a `rights_assertion` whose `asset_item_ids`,
 `grantor_actor_ids`, and `granted_scopes` cover the same item, grantor, and
 scopes as the rights record. Public-license assertions must also repeat the
 matching `license_spdx`. A `model_release`, source post, like, or other generic
-public record cannot activate a mirror. Public evidence may be projected with
-its URL; a maintainer attestation can activate the same scoped gate without
-publishing private proof or representing that such proof is publicly
-verifiable.
+public record cannot activate a mirror. Only permission evidence with
+`visibility: public` can carry a URL into either public authorized-media
+manifest; a private attestation may support internal review but is not
+published as a publicly verifiable mirror claim.
 
 Run `python3 scripts/sync_rights_expiry.py` before validation or generation.
 It converts elapsed positive grants to `revoked`, queues video mirrors for
@@ -223,44 +199,15 @@ attachment can also be audited/downloaded
 with `curl --fail --location` and its recorded URL. Do not use an issue as a
 rights-evidence store when the evidence contains private information.
 
-## Private-grant recovery
-
-When a maintainer confirms a grant privately, supporting material and private
-locators stay in gitignored, access-controlled storage. A
-previously uploaded GitHub attachment can be reactivated only after the private
-recovery report covers every catalog item and the downloaded file matches its
-recorded byte count and SHA-256:
-
-```bash
-python3 scripts/activate_verified_attachments.py \
-  --report .cache/media-recovery-report.json \
-  --report-sha256 REVIEWED_REPORT_SHA256 \
-  --locator-cache .cache/retired-media-locators.json \
-  --grantor-map .cache/confirmed-grantors.json \
-  --grantor-map-sha256 REVIEWED_GRANTOR_MAP_SHA256 \
-  --staging .cache/authorized-media-staging \
-  --granted-at 2026-08-11T16:52:51Z \
-  --confirm-maintainer-attestation
-```
-
-Add `--confirm-prompt-republication` only when the prompt-republication scope
-was separately confirmed; video confirmation alone never enables prompt text.
-
-The private grantor map binds each catalog item to the actor whose grant was
-separately confirmed; the script never infers that actor from poster or creator
-fields. The command writes only the grantor, time, scopes, verification mode, attachment
-identity, and integrity metadata to the catalog. It never copies the private
-report, locator cache, or supporting material into Git.
-
 ## Legacy-media quarantine
 
-The initial 2026-08-11 retirement ledger listed 48 legacy mirrors (32 R2 and 16
-GitHub attachments). After private grants were confirmed and full-file integrity
-checks passed, the 16 GitHub video attachments were reactivated for the gallery.
-The remaining retirement queue contains 32 R2 video/preview records. Their raw
-URLs stay out of the public catalog; exact operational locators belong only in
-an access-controlled private cache. This redaction is not proof that a remote
-object was erased.
+The 2026-08-11 retirement ledger lists 48 legacy mirror records (32 R2 and 16
+GitHub attachments) that lacked permission evidence. They were removed from
+the generated gallery/README/public projections. Every ledger entry remains
+`pending_delete`, while the repository-visible catalog immediately removes raw
+mirror URLs and keeps only integrity hashes and lifecycle metadata. Exact
+locators, when operationally required, belong in an access-controlled private
+cache. This redaction is not proof that the remote object was erased.
 
 R2 objects require an explicit, verified key deletion and a recorded follow-up
 check. GitHub attachment cleanup may require removing the hosting issue/comment

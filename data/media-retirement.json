@@ -4,6 +4,182 @@
   "policy": "All legacy mirrors lacked permission evidence and were removed from public manifests.",
   "entries": [
     {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2082499539735588916_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "6995eeaeadc94b194a048837dcc91d7f4dedc22701c061c7c6370c969ce0496b",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2082499539735588916",
+      "item_id": "itm_x_2082499539735588916_0",
+      "media_id": "med_itm_x_2082499539735588916_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2082519642145485080_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "16cbd98ffefb64beffeed5fd4a49a763d7d5b6acca5ba9b0b2f7bbb044f8af04",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2082519642145485080",
+      "item_id": "itm_x_2082519642145485080_0",
+      "media_id": "med_itm_x_2082519642145485080_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2082529869297246414_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "d03cb6399cdf8ed508b2c85626eb56469ba920d28c5d6658d39881cfe65e7477",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2082529869297246414",
+      "item_id": "itm_x_2082529869297246414_0",
+      "media_id": "med_itm_x_2082529869297246414_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2082554826349535341_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "9eca9bcf1c6f5e132b3b1ab741862625968c4a12e564b6f0e65ce60f23a496a6",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2082554826349535341",
+      "item_id": "itm_x_2082554826349535341_0",
+      "media_id": "med_itm_x_2082554826349535341_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2082779062653845803_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "294dfa12a0437fb9ec232a94b9d30ca5e05a9518ed8d8b098b83815009adf867",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2082779062653845803",
+      "item_id": "itm_x_2082779062653845803_0",
+      "media_id": "med_itm_x_2082779062653845803_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2082971035364946077_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "82e215482186199f6497845edc5cf16a5972bbba853bc7fd1cbde99fc2059621",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2082971035364946077",
+      "item_id": "itm_x_2082971035364946077_0",
+      "media_id": "med_itm_x_2082971035364946077_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083007741904441528_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "1dec74da98dd3140e7778e1ed1213f8ab280807b336a00fa7976a972d69b590d",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083007741904441528",
+      "item_id": "itm_x_2083007741904441528_0",
+      "media_id": "med_itm_x_2083007741904441528_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083017269886738837_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "5b06b187ca97ec73f4ee256a439ffb3e791872cd7b4a3296d6040a4e5868156b",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083017269886738837",
+      "item_id": "itm_x_2083017269886738837_0",
+      "media_id": "med_itm_x_2083017269886738837_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083023496842801456_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "0bc9a8ee99a7df1083754704798a6d1dcc5d0b823677bb59e461b8bf0c657163",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083023496842801456",
+      "item_id": "itm_x_2083023496842801456_0",
+      "media_id": "med_itm_x_2083023496842801456_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083024386567840185_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "413b142402908d45b9e67afe9839082faa734aab0d063b7b46796b6faf6ce2fd",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083024386567840185",
+      "item_id": "itm_x_2083024386567840185_0",
+      "media_id": "med_itm_x_2083024386567840185_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083042088338538594_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "e3f0681e86dce9af3cfa853b641d0d97441c97df9d3fe31684f1b3cadceebd24",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083042088338538594",
+      "item_id": "itm_x_2083042088338538594_0",
+      "media_id": "med_itm_x_2083042088338538594_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083071877891682784_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "702b10db2d9087a0c21d867ee1af7d6b9f26be55765b00d25361887420d6577e",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083071877891682784",
+      "item_id": "itm_x_2083071877891682784_0",
+      "media_id": "med_itm_x_2083071877891682784_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083091961544876128_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "7eac5711a071b1bcf72564578054211d9563edffb194915f8b2aea65409698de",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083091961544876128",
+      "item_id": "itm_x_2083091961544876128_0",
+      "media_id": "med_itm_x_2083091961544876128_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083142947978047937_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "867d67b4f9caffe95a8e9ef516882ff8ff45a3d9644dc1795b47a3033b0b8b30",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083142947978047937",
+      "item_id": "itm_x_2083142947978047937_0",
+      "media_id": "med_itm_x_2083142947978047937_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083163811398181247_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "a7cca71095c86f99b0a913507bbaecd61d71150045a3561c2aa786f5da07bdbd",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083163811398181247",
+      "item_id": "itm_x_2083163811398181247_0",
+      "media_id": "med_itm_x_2083163811398181247_0_0"
+    },
+    {
+      "mirror_id": "mir_legacy_github_attachment_itm_x_2083628852165672988_0_2",
+      "provider": "github_attachment",
+      "artifact": "video",
+      "url_sha256": "745d983705f5c058832af18d16224179955eb11bbe6ad6bd0abed1bc8f9a985e",
+      "state": "pending_delete",
+      "note": "Removed from public manifests; remote cleanup still requires confirmation.",
+      "source_id": "x:2083628852165672988",
+      "item_id": "itm_x_2083628852165672988_0",
+      "media_id": "med_itm_x_2083628852165672988_0_0"
+    },
+    {
       "mirror_id": "mir_legacy_r2_itm_x_2082499539735588916_0_0",
       "provider": "r2",
       "artifact": "video",
@@ -356,5 +532,5 @@
       "media_id": "med_itm_x_2083628852165672988_0_0"
     }
   ],
-  "updated_at": "2026-08-11T16:32:19Z"
+  "updated_at": "2026-08-11T12:49:48Z"
 }

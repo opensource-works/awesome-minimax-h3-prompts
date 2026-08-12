@@ -11,8 +11,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-30",
@@ -46,9 +44,9 @@
       "height": 1440,
       "duration": 60.0,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 940665,
@@ -58,19 +56,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_minimax_ai"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -103,8 +95,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -138,9 +128,9 @@
       "height": 1482,
       "duration": 0.0,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 220288,
@@ -150,19 +140,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_artificialanlys"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -195,8 +179,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Audio & Voice",
     "date": "2026-07-29",
@@ -230,9 +212,9 @@
       "height": 1440,
       "duration": 15.08,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 61894,
@@ -242,19 +224,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_callmediegojr"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -287,8 +263,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -322,9 +296,9 @@
       "height": 1080,
       "duration": 12.23,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 61834,
@@ -334,19 +308,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_leonardoai"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -379,8 +347,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -414,9 +380,9 @@
       "height": 1080,
       "duration": 6.59,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 52839,
@@ -426,19 +392,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_bdsqlsz"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -471,8 +431,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -506,9 +464,9 @@
       "height": 900,
       "duration": 8.2,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 44779,
@@ -518,19 +476,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_comfyui"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -563,8 +515,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -598,9 +548,9 @@
       "height": 1440,
       "duration": 15.12,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 43900,
@@ -610,19 +560,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_servasyy_ai"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -655,10 +599,6 @@
     "prompt": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.\n\n@Hailuo_AI  #MiniMaxH3",
     "prompt_in_thread": false,
     "prompt_source_url": "https://x.com/umesh_ai/status/2082499539735588916",
-    "prompt_source_urls": [
-      "https://x.com/umesh_ai/status/2082499539735588916"
-    ],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Action & VFX",
     "date": "2026-07-29",
@@ -692,9 +632,9 @@
       "height": 1440,
       "duration": 15.08,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 18094,
@@ -704,33 +644,22 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_umesh_ai"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "reproduce_prompt"
-        ],
-        "grantor_actor_ids": [
-          "act_x_umesh_ai"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       }
     },
     "review": {
@@ -754,8 +683,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -789,9 +716,9 @@
       "height": 1080,
       "duration": 15.1,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/d62d64f5-19e5-48ec-81bd-3f3fa7e77579",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 9325,
@@ -801,19 +728,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_gorden_sun"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -846,8 +767,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Cinematic & Film",
     "date": "2026-07-29",
@@ -881,9 +800,9 @@
       "height": 1440,
       "duration": 15.08,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/46cb4256-2731-4a88-ab24-9bcc58d5f200",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 7448,
@@ -893,19 +812,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_riyazmd774"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -938,8 +851,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -973,9 +884,9 @@
       "height": 1080,
       "duration": 49.93,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 6556,
@@ -985,19 +896,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_ai_for_success"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -1030,8 +935,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Omni-Reference & Editing",
     "date": "2026-07-30",
@@ -1065,9 +968,9 @@
       "height": 1440,
       "duration": 15.08,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/97fbca07-1570-4a65-ae56-f547a69de5c1",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 5682,
@@ -1077,19 +980,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_kiyoshi_shin"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -1119,23 +1016,9 @@
     "url": "https://x.com/LudovicCreator/status/2083628852165672988",
     "title": "Sci-fi motion poster animated from a single still",
     "text": "",
-    "prompt": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
-    "prompt_in_thread": false,
-    "prompt_source_url": "https://x.com/LudovicCreator/status/2083628879407632890",
-    "prompt_source_urls": [
-      "https://x.com/LudovicCreator/status/2083628879407632890"
-    ],
-    "prompt_segments": [
-      {
-        "text": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
-        "source_id": "x:2083628879407632890",
-        "source_url": "https://x.com/LudovicCreator/status/2083628879407632890",
-        "is_verbatim": true,
-        "evidence_ids": [
-          "ev_prompt_x_2083628879407632890"
-        ]
-      }
-    ],
+    "prompt": null,
+    "prompt_in_thread": true,
+    "prompt_source_url": "https://x.com/LudovicCreator/status/2083628852165672988",
     "model": "MiniMax H3",
     "category": "Omni-Reference & Editing",
     "date": "2026-08-01",
@@ -1169,9 +1052,9 @@
       "height": 2560,
       "duration": 10.12,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 5618,
@@ -1181,33 +1064,22 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_ludoviccreator"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "reproduce_prompt"
-        ],
-        "grantor_actor_ids": [
-          "act_x_ludoviccreator"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       }
     },
     "review": {
@@ -1231,8 +1103,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -1266,9 +1136,9 @@
       "height": 1440,
       "duration": 15.08,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 4953,
@@ -1278,19 +1148,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_heyshrutimishra"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -1323,8 +1187,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Ads, UGC & Product",
     "date": "2026-07-31",
@@ -1358,9 +1220,9 @@
       "height": 1440,
       "duration": 15.12,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 4208,
@@ -1370,19 +1232,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_ben_escrito"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",
@@ -1415,8 +1271,6 @@
     "prompt": null,
     "prompt_in_thread": false,
     "prompt_source_url": null,
-    "prompt_source_urls": [],
-    "prompt_segments": [],
     "model": "MiniMax H3",
     "category": "Music & Dance",
     "date": "2026-07-29",
@@ -1450,9 +1304,9 @@
       "height": 1080,
       "duration": 15.06,
       "formats": [],
-      "attachment": "https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59",
+      "attachment": null,
       "source_url": null,
-      "media_mode": "authorized_mirror"
+      "media_mode": "source_link"
     },
     "stats": {
       "views": 3508,
@@ -1462,19 +1316,13 @@
     },
     "rights": {
       "video_republication": {
-        "status": "granted",
+        "status": "unknown",
         "license_spdx": null,
-        "granted_scopes": [
-          "download",
-          "mirror_github"
-        ],
-        "grantor_actor_ids": [
-          "act_x_futurevibesai"
-        ],
-        "granted_at": "2026-08-11T16:52:51Z",
+        "granted_scopes": [],
+        "grantor_actor_ids": [],
+        "granted_at": null,
         "expires_at": null,
-        "evidence_ids": [],
-        "grant_verification": "maintainer_attestation"
+        "evidence_ids": []
       },
       "prompt_republication": {
         "status": "unknown",

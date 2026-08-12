@@ -22,18 +22,11 @@ SCRIPTS = ROOT / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
-from catalog import (  # noqa: E402
-    export_posts, mirror_has_integrity, mirror_is_authorized, public_catalog,
-)
+from catalog import export_posts, mirror_is_authorized, public_catalog  # noqa: E402
 
 CATALOG_PATH = ROOT / "data/catalog.json"
 CONFIG_PATH = ROOT / "config/collection.json"
 DOCS = ROOT / "docs"
-GITHUB_ATTACHMENT_RE = re.compile(
-    r"https://github\.com/user-attachments/assets/"
-    r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-"
-    r"[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
-)
 
 
 def read_json(path: Path):
@@ -116,83 +109,6 @@ def poster_text(post: dict) -> str:
     handle = poster.get("handle")
     label = name + (f" (@{handle})" if handle and handle.lower() != str(name).lower() else "")
     return f"[{md_escape(label)}]({poster['url']})" if poster.get("url") else md_escape(label)
-
-
-def video_credit_text(post: dict, *, zh=False) -> str:
-    """Prefer a verified creator; otherwise credit the source account explicitly."""
-    creator = (post.get("roles") or {}).get("original_video_creator") or {}
-    if creator.get("person"):
-        return role_text(creator, zh=zh)
-    qualifier = "来源账号；不据此推定原始创作者" if zh else "source account; original creator not inferred"
-    return f"{poster_text(post)} — {qualifier}"
-
-
-def prompt_credit_text(post: dict, *, zh=False) -> str:
-    """Give a useful prompt citation without turning a source into authorship."""
-    author = (post.get("roles") or {}).get("prompt_author") or {}
-    if author.get("person"):
-        return role_text(author, zh=zh)
-    if post.get("prompt") or post.get("prompt_in_thread") or post.get("prompt_source_url"):
-        qualifier = "提示词来源账号；作者身份未核验" if zh else "prompt source account; authorship unverified"
-        return f"{poster_text(post)} — {qualifier}"
-    return "未提供" if zh else "Not provided"
-
-
-def readme_github_attachment(post: dict, catalog: dict) -> str | None:
-    """Return a bare, playable GitHub URL only through the existing rights gate."""
-    video = post.get("video") or {}
-    url = video.get("attachment")
-    if (
-        video.get("media_mode") != "authorized_mirror"
-        or not GITHUB_ATTACHMENT_RE.fullmatch(str(url or ""))
-    ):
-        return None
-    item = (catalog.get("items") or {}).get(post.get("item_id")) or {}
-    evidence = catalog.get("evidence") or {}
-    rights = ((item.get("rights") or {}).get("video_republication") or {})
-    maintainer_attested = rights.get("grant_verification") == "maintainer_attestation"
-    for media in item.get("media") or []:
-        for mirror in (media.get("delivery") or {}).get("mirrors") or []:
-            permission_ids = mirror.get("permission_evidence_ids") or []
-            if (
-                mirror.get("url") == url
-                and mirror.get("provider") == "github_attachment"
-                and mirror.get("artifact") == "video"
-                and mirror.get("state") == "active"
-                and mirror_has_integrity(mirror)
-                and (permission_ids or maintainer_attested)
-                and all(
-                    (evidence.get(evidence_id) or {}).get("visibility") == "public"
-                    for evidence_id in permission_ids
-                )
-                and mirror_is_authorized(item, mirror, catalog)
-            ):
-                return url
-    return None
-
-
-def readme_full_prompt(post: dict, catalog: dict) -> str | None:
-    """Expose only an explicitly captured, verbatim full prompt in the README."""
-    item = (catalog.get("items") or {}).get(post.get("item_id")) or {}
-    prompt = item.get("prompt") or {}
-    text = prompt.get("text")
-    if (
-        prompt.get("status") != "verbatim"
-        or prompt.get("is_verbatim") is not True
-        or not isinstance(text, str)
-        or not text.strip()
-        or post.get("prompt") != text
-    ):
-        return None
-    return text
-
-
-def readme_prompt_is_incomplete(post: dict, catalog: dict) -> bool:
-    item = (catalog.get("items") or {}).get(post.get("item_id")) or {}
-    status = ((item.get("prompt") or {}).get("status"))
-    return status in {"partial", "referenced_not_captured"} or bool(
-        post.get("prompt_in_thread")
-    )
 
 
 def ordered_groups(posts: list[dict], config: dict):
@@ -413,54 +329,31 @@ def readme(catalog: dict, posts: list[dict], config: dict, *, zh=False) -> str:
             source_label = platform_label(post.get("platform"), zh=zh)
             model = md_escape(post.get("model") or ("未知模型" if zh else "Unknown model"))
             date = post.get("date") or "—"
-            attachment = readme_github_attachment(post, catalog)
-            if attachment:
-                # A bare user-attachments URL is the legacy GitHub README player.
-                lines.append(attachment + "\n")
-            elif zh:
-                lines.append("> **视频：** 仅提供原帖链接；此处没有通过公开权利校验的媒体副本。\n")
-            else:
-                lines.append("> **Video:** Source link only; no media copy passed the public rights gate.\n")
             if zh:
-                lines.append(f"- **视频署名 / 来源（Video credit）：** {video_credit_text(post, zh=True)}")
-                lines.append(f"- **提示词署名 / 来源（Prompt credit）：** {prompt_credit_text(post, zh=True)}")
-                lines.append(
-                    f"- **原帖（Original post）：** [{source_label}]({post['url']}) · "
-                    f"{poster_text(post)} · {model} · {date}"
-                )
+                lines.append(f"- **原帖：** [{source_label}]({post['url']}) · {model} · {date}")
+                lines.append(f"- **发帖者：** {poster_text(post)}")
+                lines.append(f"- **原始视频创作者：** {role_text((post.get('roles') or {}).get('original_video_creator'), zh=True)}")
+                lines.append(f"- **提示词作者：** {role_text((post.get('roles') or {}).get('prompt_author'), zh=True)}")
+                media_note = "有明确授权的媒体副本" if (post.get("video") or {}).get("media_mode") == "authorized_mirror" else "仅链接原帖 / 官方嵌入"
+                lines.append(f"- **视频提供方式：** {media_note}")
             else:
-                lines.append(f"- **Video credit / source:** {video_credit_text(post)}")
-                lines.append(f"- **Prompt credit / source:** {prompt_credit_text(post)}")
-                lines.append(
-                    f"- **Original post:** [{source_label}]({post['url']}) · "
-                    f"{poster_text(post)} · {model} · {date}"
-                )
-            prompt_urls = post.get("prompt_source_urls") or (
-                [post["prompt_source_url"]] if post.get("prompt_source_url") else []
-            )
-            if prompt_urls:
+                lines.append(f"- **Source:** [{source_label}]({post['url']}) · {model} · {date}")
+                lines.append(f"- **Poster:** {poster_text(post)}")
+                lines.append(f"- **Original video creator:** {role_text((post.get('roles') or {}).get('original_video_creator'))}")
+                lines.append(f"- **Prompt author:** {role_text((post.get('roles') or {}).get('prompt_author'))}")
+                media_note = "Authorized media copy" if (post.get("video") or {}).get("media_mode") == "authorized_mirror" else "Source link / official embed only"
+                lines.append(f"- **Video delivery:** {media_note}")
+            if post.get("prompt_source_url"):
                 label = "提示词出处" if zh else "Prompt source"
-                links = " · ".join(
-                    f"[{source_label} {index}]({url})" if len(prompt_urls) > 1
-                    else f"[{source_label}]({url})"
-                    for index, url in enumerate(prompt_urls, 1)
-                )
-                lines.append(f"- **{label}:** {links}")
+                lines.append(f"- **{label}:** [{source_label}]({post['prompt_source_url']})")
             lines.append("")
-            full_prompt = readme_full_prompt(post, catalog)
-            if full_prompt:
-                fence = code_fence(full_prompt)
-                lines.append("<details><summary><b>" + ("提示词" if zh else "Prompt") + "</b></summary>\n")
-                lines.extend([f"{fence}text", full_prompt, fence, "", "</details>\n"])
-            elif readme_prompt_is_incomplete(post, catalog):
-                prompt_url = post.get("prompt_source_url") or post["url"]
-                if zh:
-                    message = "尚未捕获完整提示词，因此这里不会转载或推断提示词正文。"
-                    link = "查看原始出处"
-                else:
-                    message = "The full prompt was not captured, so no prompt text is reproduced or inferred."
-                    link = "Check the original source"
-                lines.append(f"> {message} [{link}]({prompt_url}).\n")
+            if post.get("prompt"):
+                fence = code_fence(post["prompt"])
+                lines.append("<details><summary><b>" + ("提示词正文" if zh else "Prompt text") + "</b></summary>\n")
+                lines.extend([f"{fence}text", post["prompt"], fence, "", "</details>\n"])
+            elif post.get("prompt_in_thread"):
+                message = "原帖称提示词位于回复中，但尚未核验并捕获具体回复。" if zh else "The source says the prompt is in a reply, but the exact reply has not yet been verified and captured."
+                lines.append(f"> {message}\n")
             for annotation in post.get("annotation_views") or []:
                 kind = annotation.get("kind")
                 kind_label = ("网友注释" if kind == "community_comment" else "仓库编辑注释") if zh else ("Community annotation" if kind == "community_comment" else "Editorial annotation")
@@ -528,8 +421,8 @@ function person(person){if(!person)return 'Unknown (not inferred from poster)';c
 function role(value){if(!value||!value.person)return 'Unknown (not inferred from poster)';return `${person(value.person)} <span>· ${esc(value.status||'unknown')}</span>`}
 function annotations(post){if(!post.annotation_views?.length)return '';return `<div class="annotations">${post.annotation_views.map(a=>{const community=a.kind==='community_comment',label=community?'Community annotation':'Editorial annotation',author=a.author||{},who=author.url?`<a href="${esc(author.url)}" target="_blank" rel="noopener">${esc(author.name||author.handle||'Unknown')}</a>`:esc(author.name||author.handle||'Unknown'),head=a.source_url?`<a href="${esc(a.source_url)}" target="_blank" rel="noopener">${label}</a>`:label;return `<div class="annotation ${community?'community':'editorial'}"><b>${head} · ${who}</b><br>${esc(a.text)}</div>`}).join('')}</div>`}
 function media(post){const video=post.video||{},url=video.url||video.attachment;if(url){const poster=video.thumbnail?` poster="${esc(video.thumbnail)}"`:'';return `<div class="media"><video src="${esc(url)}"${poster} controls playsinline preload="metadata"></video><div class="badges"><span class="badge">Authorized mirror</span><span class="badge">${esc(pLabel(post.platform))}</span></div></div>`}return `<div class="media"><div class="badges"><span class="badge">Source link only</span><span class="badge">${esc(pLabel(post.platform))}</span></div><div class="sourcebox"><strong>No unlicensed media copy</strong><span>Watch this entry at its original source.</span><a class="sourcebtn" href="${esc(post.url)}" target="_blank" rel="noopener">Open on ${esc(pLabel(post.platform))} ↗</a></div></div>`}
-function prompt(post){if(post.prompt){const urls=post.prompt_source_urls?.length?post.prompt_source_urls:(post.prompt_source_url?[post.prompt_source_url]:[]),source=urls.length?`<div class="sourcehint">Prompt source${urls.length>1?'s':''}: ${urls.map((url,i)=>`<a href="${esc(url)}" target="_blank" rel="noopener">${urls.length>1?`reply ${i+1}`:'original post or comment'} ↗</a>`).join(' · ')}</div>`:'';return `<details class="prompt"><summary>Prompt text</summary><pre>${esc(post.prompt)}</pre>${source}</details>`}if(post.prompt_in_thread)return `<div class="sourcehint">Prompt referenced in a reply, but the exact reply is not yet captured. ${post.prompt_source_url?`<a href="${esc(post.prompt_source_url)}" target="_blank" rel="noopener">Source ↗</a>`:''}</div>`;return ''}
-function card(post){const poster=post.roles?.poster||post.author||{};return `<article class="card">${media(post)}<div class="body"><h2 class="title"><a href="${esc(post.url)}" target="_blank" rel="noopener">${esc(post.title)}</a></h2><dl class="roles"><div class="role"><dt>Video/source credit</dt><dd>${person(poster)}</dd></div><div class="role"><dt>Original video creator</dt><dd>${role(post.roles?.original_video_creator)}</dd></div><div class="role"><dt>Prompt author</dt><dd>${role(post.roles?.prompt_author)}</dd></div></dl>${prompt(post)}${annotations(post)}<div class="meta"><span>${esc(post.model||'Unknown model')}</span><span>${esc(post.date||'—')}</span><span>${metric(post.stats?.views)} views</span><span><a href="${esc(post.url)}" target="_blank" rel="noopener">Source ↗</a></span></div></div></article>`}
+function prompt(post){if(post.prompt){const source=post.prompt_source_url?`<div class="sourcehint">Prompt source: <a href="${esc(post.prompt_source_url)}" target="_blank" rel="noopener">original post or comment ↗</a></div>`:'';return `<details class="prompt"><summary>Prompt text</summary><pre>${esc(post.prompt)}</pre>${source}</details>`}if(post.prompt_in_thread)return `<div class="sourcehint">Prompt referenced in a reply, but the exact reply is not yet captured. ${post.prompt_source_url?`<a href="${esc(post.prompt_source_url)}" target="_blank" rel="noopener">Source ↗</a>`:''}</div>`;return ''}
+function card(post){const poster=post.roles?.poster||post.author||{};return `<article class="card">${media(post)}<div class="body"><h2 class="title"><a href="${esc(post.url)}" target="_blank" rel="noopener">${esc(post.title)}</a></h2><dl class="roles"><div class="role"><dt>Poster</dt><dd>${person(poster)}</dd></div><div class="role"><dt>Original video creator</dt><dd>${role(post.roles?.original_video_creator)}</dd></div><div class="role"><dt>Prompt author</dt><dd>${role(post.roles?.prompt_author)}</dd></div></dl>${prompt(post)}${annotations(post)}<div class="meta"><span>${esc(post.model||'Unknown model')}</span><span>${esc(post.date||'—')}</span><span>${metric(post.stats?.views)} views</span><span><a href="${esc(post.url)}" target="_blank" rel="noopener">Source ↗</a></span></div></div></article>`}
 function render(){const q=$('#search').value.toLowerCase().trim(),platform=$('#platform').value,model=$('#model').value,category=$('#category').value;const list=POSTS.filter(p=>{if(platform&&p.platform!==platform||model&&p.model!==model||category&&p.category!==category)return false;const notes=(p.annotation_views||[]).map(a=>a.text+' '+(a.author?.name||'')).join(' '),roles=[p.roles?.poster,p.roles?.original_video_creator?.person,p.roles?.prompt_author?.person].filter(Boolean).map(r=>(r.name||'')+' '+(r.handle||'')).join(' '),hay=[p.title,p.text,p.prompt,p.model,p.category,roles,notes].join(' ').toLowerCase();return !q||q.split(/\s+/).every(word=>hay.includes(word))});$('#grid').innerHTML=list.map(card).join('');$('#resultline').textContent=`${list.length} of ${POSTS.length} public entries`;$('#empty').hidden=!!list.length}['#search','#platform','#model','#category'].forEach(id=>$(id).addEventListener(id==='#search'?'input':'change',render));render();
 </script>
 </body></html>

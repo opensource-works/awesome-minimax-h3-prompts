@@ -37,7 +37,6 @@ RIGHTS_EVIDENCE_KINDS = {
     "granted": "permission",
     "public_license": "public_license",
 }
-GRANT_VERIFICATION_MODES = {"public_evidence", "maintainer_attestation"}
 DELIVERY_MODES = {"source_link", "official_embed", "authorized_mirror"}
 MIRROR_STATES = {"active", "quarantined", "pending_delete", "deleted"}
 REASON_CODES = {
@@ -224,29 +223,6 @@ def _string_set(value) -> set[str]:
     )
 
 
-def rights_are_maintainer_attested(rights: dict) -> bool:
-    """Whether the maintainer confirmed a private grant without publishing proof."""
-    return (
-        rights.get("status") == "granted"
-        and rights.get("grant_verification") == "maintainer_attestation"
-    )
-
-
-def mirror_has_integrity(mirror: dict) -> bool:
-    """Whether a mirror has the minimum immutable identity needed for publishing."""
-    timestamp = (
-        mirror.get("uploaded_at")
-        or mirror.get("verified_at")
-        or mirror.get("last_checked_at")
-    )
-    return (
-        isinstance(mirror.get("bytes"), int)
-        and mirror["bytes"] > 0
-        and bool(re.fullmatch(r"[0-9a-f]{64}", str(mirror.get("sha256") or "")))
-        and _parse_rfc3339(timestamp) is not None
-    )
-
-
 def rights_evidence_applies(item: dict, rights: dict, record: dict,
                             required_scopes=None) -> bool:
     """Return whether one evidence record supports this exact rights claim.
@@ -295,10 +271,7 @@ def mirror_is_authorized(item: dict, mirror: dict, catalog: dict, now: str | Non
     if not _valid_expiry(rights, now):
         return False
     evidence = rights.get("evidence_ids") or []
-    maintainer_attested = rights_are_maintainer_attested(rights)
-    if any(e not in catalog.get("evidence", {}) for e in evidence):
-        return False
-    if not evidence and not maintainer_attested:
+    if not evidence or any(e not in catalog.get("evidence", {}) for e in evidence):
         return False
     scopes = _string_set(rights.get("granted_scopes"))
     needed = {"download"}
@@ -313,10 +286,6 @@ def mirror_is_authorized(item: dict, mirror: dict, catalog: dict, now: str | Non
         needed.add("derive_preview")
     permission_evidence = _string_set(mirror.get("permission_evidence_ids"))
     evidence_records = catalog.get("evidence", {})
-    if maintainer_attested and not evidence:
-        # The repository records only the grant status/scope; supporting
-        # private material stays outside the public catalog.
-        return needed <= scopes and not permission_evidence
     return (
         needed <= scopes
         and bool(permission_evidence)
@@ -380,11 +349,7 @@ def export_posts(catalog: dict) -> list[dict]:
         observation = media_observation(observation_source, media.get("source_media_id")) or {}
         mirrors = [
             m for m in ((media.get("delivery") or {}).get("mirrors") or [])
-            if (
-                m.get("state") == "active"
-                and mirror_has_integrity(m)
-                and mirror_is_authorized(item, m, catalog)
-            )
+            if m.get("state") == "active" and mirror_is_authorized(item, m, catalog)
         ]
         video_mirror = next((m for m in mirrors if m.get("artifact") == "video" and m.get("provider") == "r2"), None)
         preview = next((m for m in mirrors if m.get("artifact") == "animated_preview"), None)
@@ -412,10 +377,6 @@ def export_posts(catalog: dict) -> list[dict]:
             "prompt": prompt_text,
             "prompt_in_thread": prompt.get("status") == "referenced_not_captured",
             "prompt_source_url": prompt.get("source_url"),
-            "prompt_source_urls": copy.deepcopy(prompt.get("source_urls") or (
-                [prompt.get("source_url")] if prompt.get("source_url") else []
-            )) if prompt_text else [],
-            "prompt_segments": copy.deepcopy(prompt.get("segments") or []) if prompt_text else [],
             "model": " ".join(filter(None, [item.get("model", {}).get("family"), item.get("model", {}).get("version")])),
             "category": category,
             "date": source.get("posted_date") or "",
@@ -495,13 +456,11 @@ def _downgrade_unverifiable_public_claims(item: dict) -> None:
     if prompt_rights.get("status") in {"denied", "revoked"} or not _valid_expiry(prompt_rights):
         prompt.update({
             "status": "removed", "text": None, "source_url": None,
-            "source_ids": [], "source_urls": [], "segments": [],
             "capture_method": "none", "is_verbatim": False,
         })
     if prompt.get("status") in {"verbatim", "partial"} and not prompt.get("evidence_ids"):
         prompt.update({
             "status": "referenced_not_captured", "text": None,
-            "source_ids": [], "source_urls": [], "segments": [],
             "capture_method": "none", "is_verbatim": False,
         })
     for rights in (item.get("rights") or {}).values():
@@ -510,15 +469,10 @@ def _downgrade_unverifiable_public_claims(item: dict) -> None:
                 "status": "revoked", "license_spdx": None, "granted_scopes": [],
                 "grantor_actor_ids": [], "granted_at": None,
             })
-        if (
-            rights.get("status") in {"granted", "public_license"}
-            and not rights.get("evidence_ids")
-            and not rights_are_maintainer_attested(rights)
-        ):
+        if rights.get("status") in {"granted", "public_license"} and not rights.get("evidence_ids"):
             rights.update({
                 "status": "unknown", "license_spdx": None, "granted_scopes": [],
                 "grantor_actor_ids": [], "granted_at": None, "expires_at": None,
-                "grant_verification": None,
             })
     item["annotations"] = [
         annotation for annotation in item.get("annotations") or []
@@ -582,7 +536,6 @@ def public_catalog(catalog: dict) -> dict:
             delivery["mirrors"] = [
                 mirror for mirror in delivery.get("mirrors") or []
                 if mirror.get("state") == "active"
-                and mirror_has_integrity(mirror)
                 and mirror_is_authorized(item, mirror, out)
                 and set(mirror.get("permission_evidence_ids") or []) <= public_evidence_ids
             ]
@@ -726,41 +679,6 @@ def validate_catalog(catalog: dict) -> list[str]:
             _need(errors, prompt.get("source_id") in sources, f"{tag}.prompt source is missing")
             _need(errors, bool(prompt.get("source_url")), f"{tag}.prompt source_url is required")
             _need(errors, bool(prompt.get("evidence_ids")), f"{tag}.prompt evidence is required")
-        if pstatus == "verbatim":
-            _need(errors, prompt.get("is_verbatim") is True, f"{tag}.verbatim prompt needs is_verbatim")
-            segments = prompt.get("segments") or []
-            integrity_values = segments or [{
-                "text": prompt.get("text"),
-                "evidence_ids": prompt.get("evidence_ids") or [],
-            }]
-            if segments:
-                _need(
-                    errors,
-                    prompt.get("text") == "\n\n---\n\n".join(
-                        str(segment.get("text") or "") for segment in segments
-                    ),
-                    f"{tag}.prompt text differs from its verbatim segments",
-                )
-            for index, value in enumerate(integrity_values):
-                segment_text = value.get("text")
-                segment_hash = (
-                    hashlib.sha256(segment_text.encode()).hexdigest()
-                    if isinstance(segment_text, str) and segment_text else None
-                )
-                segment_evidence = [
-                    evidence.get(evidence_id) or {}
-                    for evidence_id in value.get("evidence_ids") or []
-                ]
-                _need(
-                    errors,
-                    bool(segment_hash) and any(
-                        record.get("kind") == "prompt_source"
-                        and record.get("integrity_subject") == "prompt_text"
-                        and record.get("integrity_sha256") == segment_hash
-                        for record in segment_evidence
-                    ),
-                    f"{tag}.prompt segment {index} lacks exact prompt-text integrity evidence",
-                )
         if pstatus == "referenced_not_captured":
             _need(errors, prompt.get("text") is None, f"{tag}.referenced prompt text must be null")
         for annotation in item.get("annotations") or []:
@@ -776,44 +694,19 @@ def validate_catalog(catalog: dict) -> list[str]:
         for right_name, rights in (item.get("rights") or {}).items():
             right_status = rights.get("status")
             _need(errors, right_status in RIGHTS_STATES, f"{tag}.rights.{right_name}.status is invalid")
-            verification = rights.get("grant_verification")
-            _need(
-                errors,
-                verification in GRANT_VERIFICATION_MODES | {None},
-                f"{tag}.rights.{right_name}.grant_verification is invalid",
-            )
-            evidence_ids = rights.get("evidence_ids") or []
-            if verification == "maintainer_attestation":
-                _need(
-                    errors,
-                    right_status != "public_license",
-                    f"{tag}.rights.{right_name} maintainer attestation cannot establish a public license",
-                )
-                if right_status == "granted":
-                    _need(
-                        errors,
-                        not evidence_ids,
-                        f"{tag}.rights.{right_name} maintainer attestation must not publish evidence",
-                    )
             if right_status in {"granted", "public_license"}:
-                maintainer_attested = rights_are_maintainer_attested(rights)
-                _need(
-                    errors,
-                    bool(evidence_ids) or maintainer_attested,
-                    f"{tag}.rights.{right_name} needs evidence or maintainer attestation",
-                )
+                _need(errors, bool(rights.get("evidence_ids")), f"{tag}.rights.{right_name} needs evidence")
                 _need(errors, bool(rights.get("grantor_actor_ids")), f"{tag}.rights.{right_name} needs a grantor")
                 _need(errors, bool(rights.get("granted_scopes")), f"{tag}.rights.{right_name} needs granted_scopes")
                 semantic_evidence = [
                     evidence.get(evidence_id) or {}
-                    for evidence_id in evidence_ids
+                    for evidence_id in rights.get("evidence_ids") or []
                 ]
-                if evidence_ids:
-                    _need(
-                        errors,
-                        any(rights_evidence_applies(item, rights, record) for record in semantic_evidence),
-                        f"{tag}.rights.{right_name} needs semantically bound permission evidence",
-                    )
+                _need(
+                    errors,
+                    any(rights_evidence_applies(item, rights, record) for record in semantic_evidence),
+                    f"{tag}.rights.{right_name} needs semantically bound permission evidence",
+                )
             if right_status == "granted":
                 _need(errors, bool(rights.get("grantor_actor_ids")), f"{tag}.rights.{right_name} needs a grantor")
                 _need(errors, bool(rights.get("granted_at")), f"{tag}.rights.{right_name} needs granted_at")

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/catalog-v2.schema.json",
   "schema_version": "2.0.0",
-  "updated_at": "2026-08-11T16:52:51Z",
+  "updated_at": "2026-08-11T12:49:48Z",
   "collection": {
     "id": "awesome-minimax-h3-prompts",
     "repo_url": "https://github.com/opensource-works/awesome-minimax-h3-prompts",
@@ -1242,49 +1242,6 @@
         "observed_at": "2026-08-10T08:10:32Z",
         "raw_sha256": null
       }
-    },
-    "x:2083628879407632890": {
-      "id": "x:2083628879407632890",
-      "platform": "x",
-      "native_id": "2083628879407632890",
-      "kind": "comment",
-      "url": "https://x.com/LudovicCreator/status/2083628879407632890",
-      "parent_source_id": "x:2083628852165672988",
-      "posted_at": "2026-08-01T19:00:11Z",
-      "posted_date": "2026-08-01",
-      "posted_by_actor_id": "act_x_ludoviccreator",
-      "text": {
-        "status": "withheld_pending_review",
-        "value": null,
-        "language": null,
-        "sha256": "8e7aebd0a1350ab18ff4566823c30a8a4fe2e9f8846030d81ade1717ccc6f80c",
-        "length": 1300
-      },
-      "metrics": {
-        "observed_at": "2026-08-11T16:52:51Z",
-        "views": null,
-        "likes": null,
-        "reposts": null,
-        "comments": null
-      },
-      "media_observations": [],
-      "availability": {
-        "state": "available",
-        "checked_at": "2026-08-11T16:52:51Z",
-        "last_available_at": "2026-08-11T16:52:51Z",
-        "first_unavailable_at": null,
-        "confirmed_at": null,
-        "consecutive_failures": 0,
-        "http_status": 200,
-        "evidence_ids": [
-          "ev_source_x_2083628879407632890"
-        ]
-      },
-      "fetch": {
-        "adapter": "verified-fxtwitter-v2",
-        "observed_at": "2026-08-11T16:52:51Z",
-        "raw_sha256": "8e7aebd0a1350ab18ff4566823c30a8a4fe2e9f8846030d81ade1717ccc6f80c"
-      }
     }
   },
   "evidence": {
@@ -1407,8 +1364,7 @@
       "excerpt": null,
       "captured_by_actor_id": "act_repository_opensource-works",
       "visibility": "public",
-      "integrity_sha256": "4a58935c5a1eecd359d7efb53abb9c6dc0043349c8b8c0607e8e7d81ce27cec7",
-      "integrity_subject": "prompt_text"
+      "integrity_sha256": null
     },
     "ev_source_x_2083007741904441528": {
       "id": "ev_source_x_2083007741904441528",
@@ -1497,29 +1453,6 @@
       "captured_by_actor_id": "act_repository_opensource-works",
       "visibility": "public",
       "integrity_sha256": null
-    },
-    "ev_source_x_2083628879407632890": {
-      "id": "ev_source_x_2083628879407632890",
-      "kind": "source_snapshot",
-      "url": "https://x.com/LudovicCreator/status/2083628879407632890",
-      "source_id": "x:2083628879407632890",
-      "observed_at": "2026-08-11T16:52:51Z",
-      "excerpt": null,
-      "captured_by_actor_id": "act_repository_opensource-works",
-      "visibility": "public",
-      "integrity_sha256": "8e7aebd0a1350ab18ff4566823c30a8a4fe2e9f8846030d81ade1717ccc6f80c"
-    },
-    "ev_prompt_x_2083628879407632890": {
-      "id": "ev_prompt_x_2083628879407632890",
-      "kind": "prompt_source",
-      "url": "https://x.com/LudovicCreator/status/2083628879407632890",
-      "source_id": "x:2083628879407632890",
-      "observed_at": "2026-08-11T16:52:51Z",
-      "excerpt": null,
-      "captured_by_actor_id": "act_repository_opensource-works",
-      "visibility": "public",
-      "integrity_sha256": "8e7aebd0a1350ab18ff4566823c30a8a4fe2e9f8846030d81ade1717ccc6f80c",
-      "integrity_subject": "prompt_text"
     }
   },
   "items": {
@@ -1601,45 +1534,22 @@
           "source_media_id": "x-media:2082779062653845803:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/MiniMax_AI/status/2082779062653845803",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2082779062653845803_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957",
-                "bytes": 7239376,
-                "sha256": "8b3ecce8d55b8ddbfba14789e71eadd1742ff4ab72b9e54399ee7cc41485d3e8",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "294dfa12a0437fb9ec232a94b9d30ca5e05a9518ed8d8b098b83815009adf867",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_minimax_ai"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -1738,45 +1648,22 @@
           "source_media_id": "x-media:2083042088338538594:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/ArtificialAnlys/status/2083042088338538594",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083042088338538594_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e",
-                "bytes": 1117831,
-                "sha256": "41786c9fd34298a9e890053bd2a5a1ca79dd28563eea69f2122a7b922233aff9",
-                "width": 1620,
-                "height": 1482,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "e3f0681e86dce9af3cfa853b641d0d97441c97df9d3fe31684f1b3cadceebd24",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_artificialanlys"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -1875,45 +1762,22 @@
           "source_media_id": "x-media:2082554826349535341:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/CallMeDiegoJr/status/2082554826349535341",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2082554826349535341_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609",
-                "bytes": 1510467,
-                "sha256": "88957c11df6aeb7a8c54583946a5681d16cd9c6c6fd703bd9558f970fa55d47a",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "9eca9bcf1c6f5e132b3b1ab741862625968c4a12e564b6f0e65ce60f23a496a6",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_callmediegojr"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2012,45 +1876,22 @@
           "source_media_id": "x-media:2083142947978047937:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/LeonardoAi/status/2083142947978047937",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083142947978047937_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125",
-                "bytes": 1082758,
-                "sha256": "8d1752ce40178dca7ab6a809e8d9a843e9ab278e8664f394c680654d7af02df4",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "867d67b4f9caffe95a8e9ef516882ff8ff45a3d9644dc1795b47a3033b0b8b30",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_leonardoai"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2149,45 +1990,22 @@
           "source_media_id": "x-media:2083023496842801456:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/bdsqlsz/status/2083023496842801456",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083023496842801456_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405",
-                "bytes": 2689879,
-                "sha256": "983fa3ad54f1b2f81655e44dce6d90b7c53976aef66e5c824e210bfaf8fe96cb",
-                "width": 1920,
-                "height": 1080,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "0bc9a8ee99a7df1083754704798a6d1dcc5d0b823677bb59e461b8bf0c657163",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_bdsqlsz"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2286,45 +2104,22 @@
           "source_media_id": "x-media:2083071877891682784:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/ComfyUI/status/2083071877891682784",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083071877891682784_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8",
-                "bytes": 3647609,
-                "sha256": "481f7a841e0ca455891ef51e4cc6afe41aea0b807011749efc7c3f0b1b0086b4",
-                "width": 1600,
-                "height": 900,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "702b10db2d9087a0c21d867ee1af7d6b9f26be55765b00d25361887420d6577e",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_comfyui"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2423,45 +2218,22 @@
           "source_media_id": "x-media:2083024386567840185:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/servasyy_ai/status/2083024386567840185",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083024386567840185_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e",
-                "bytes": 1400988,
-                "sha256": "c40090a74f73853e17b68a8add870dfd22f275c326672b5b0a2eb03d06aed044",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "413b142402908d45b9e67afe9839082faa734aab0d063b7b46796b6faf6ce2fd",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_servasyy_ai"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2562,59 +2334,31 @@
           "source_media_id": "x-media:2082499539735588916:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/umesh_ai/status/2082499539735588916",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2082499539735588916_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb",
-                "bytes": 3951345,
-                "sha256": "89864b48fe66334f180c913a40ded17e09a3c4fe1eab59927cb68a26365aafa6",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "6995eeaeadc94b194a048837dcc91d7f4dedc22701c061c7c6370c969ce0496b",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_umesh_ai"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "reproduce_prompt"
-          ],
-          "grantor_actor_ids": [
-            "act_x_umesh_ai"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         }
       },
       "curation": {
@@ -2704,45 +2448,22 @@
           "source_media_id": "x-media:2083007741904441528:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/Gorden_Sun/status/2083007741904441528",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083007741904441528_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/d62d64f5-19e5-48ec-81bd-3f3fa7e77579",
-                "bytes": 5677653,
-                "sha256": "ef8e8da330fe7669e3245d20b18cca668ad76fbe36832cd866e0fa7b7c06c2d7",
-                "width": 2546,
-                "height": 1080,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "1dec74da98dd3140e7778e1ed1213f8ab280807b336a00fa7976a972d69b590d",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_gorden_sun"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2841,45 +2562,22 @@
           "source_media_id": "x-media:2082519642145485080:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/riyazmd774/status/2082519642145485080",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2082519642145485080_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/46cb4256-2731-4a88-ab24-9bcc58d5f200",
-                "bytes": 3168227,
-                "sha256": "6ba632c4d043a851a4f41161e5bc03966803cafa69d27284fb2976ae75b10f90",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "16cbd98ffefb64beffeed5fd4a49a763d7d5b6acca5ba9b0b2f7bbb044f8af04",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_riyazmd774"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -2978,45 +2676,22 @@
           "source_media_id": "x-media:2083017269886738837:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/ai_for_success/status/2083017269886738837",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083017269886738837_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4",
-                "bytes": 41295699,
-                "sha256": "56bf7014f39ac6cc494b9c07277f0a62e6d49715df091c3ad3f73786dff97069",
-                "width": 1920,
-                "height": 1080,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "5b06b187ca97ec73f4ee256a439ffb3e791872cd7b4a3296d6040a4e5868156b",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_ai_for_success"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -3115,45 +2790,22 @@
           "source_media_id": "x-media:2082971035364946077:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/kiyoshi_shin/status/2082971035364946077",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2082971035364946077_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/97fbca07-1570-4a65-ae56-f547a69de5c1",
-                "bytes": 1794129,
-                "sha256": "738757adc18f69b11b0bd8ba36e83f16b00b5793ebd2fdb505ef7aff09141e95",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "82e215482186199f6497845edc5cf16a5972bbba853bc7fd1cbde99fc2059621",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_kiyoshi_shin"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -3203,17 +2855,12 @@
       },
       "canonical_source_id": "x:2083628852165672988",
       "source_ids": [
-        "x:2083628852165672988",
-        "x:2083628879407632890"
+        "x:2083628852165672988"
       ],
       "attribution": {
         "posted_by": [
           {
             "source_id": "x:2083628852165672988",
-            "actor_id": "act_x_ludoviccreator"
-          },
-          {
-            "source_id": "x:2083628879407632890",
             "actor_id": "act_x_ludoviccreator"
           }
         ],
@@ -3230,37 +2877,20 @@
             "actor_id": null,
             "status": "unknown",
             "evidence_ids": [],
-            "note": "The linked account is credited as the prompt source; authorship is not inferred."
+            "note": null
           }
         ]
       },
       "prompt": {
-        "status": "verbatim",
-        "text": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
+        "status": "referenced_not_captured",
+        "text": null,
         "language": null,
-        "source_id": "x:2083628879407632890",
-        "source_url": "https://x.com/LudovicCreator/status/2083628879407632890",
-        "source_ids": [
-          "x:2083628879407632890"
-        ],
-        "source_urls": [
-          "https://x.com/LudovicCreator/status/2083628879407632890"
-        ],
-        "segments": [
-          {
-            "text": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
-            "source_id": "x:2083628879407632890",
-            "source_url": "https://x.com/LudovicCreator/status/2083628879407632890",
-            "is_verbatim": true,
-            "evidence_ids": [
-              "ev_prompt_x_2083628879407632890"
-            ]
-          }
-        ],
-        "capture_method": "verified_reply_text",
-        "is_verbatim": true,
+        "source_id": "x:2083628852165672988",
+        "source_url": "https://x.com/LudovicCreator/status/2083628852165672988",
+        "capture_method": "none",
+        "is_verbatim": false,
         "evidence_ids": [
-          "ev_prompt_x_2083628879407632890"
+          "ev_source_x_2083628852165672988"
         ]
       },
       "annotations": [],
@@ -3276,59 +2906,31 @@
           "source_media_id": "x-media:2083628852165672988:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/LudovicCreator/status/2083628852165672988",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083628852165672988_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5",
-                "bytes": 459453,
-                "sha256": "f33105fd19e8d2e42ab232ebc51c99c4e9ff6ff980959dbf03d4c7a503f0009c",
-                "width": 480,
-                "height": 852,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "745d983705f5c058832af18d16224179955eb11bbe6ad6bd0abed1bc8f9a985e",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_ludoviccreator"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "reproduce_prompt"
-          ],
-          "grantor_actor_ids": [
-            "act_x_ludoviccreator"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         }
       },
       "curation": {
@@ -3418,45 +3020,22 @@
           "source_media_id": "x-media:2083163811398181247:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/heyshrutimishra/status/2083163811398181247",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083163811398181247_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65",
-                "bytes": 2237092,
-                "sha256": "bdd1021573f18a7be4a5ef2be749dffb09ee4fcd9e83699629bd50edfcd52627",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "a7cca71095c86f99b0a913507bbaecd61d71150045a3561c2aa786f5da07bdbd",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_heyshrutimishra"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -3555,45 +3134,22 @@
           "source_media_id": "x-media:2083091961544876128:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/Ben_escrito/status/2083091961544876128",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2083091961544876128_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212",
-                "bytes": 3067883,
-                "sha256": "2a664dfde96819a154909e8fff8c15598b309ce9a584350c8f8a244bfb578d25",
-                "width": 1280,
-                "height": 720,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "7eac5711a071b1bcf72564578054211d9563edffb194915f8b2aea65409698de",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_ben_escrito"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
@@ -3692,45 +3248,22 @@
           "source_media_id": "x-media:2082529869297246414:0",
           "kind": "video",
           "delivery": {
-            "mode": "authorized_mirror",
+            "mode": "source_link",
             "link_url": "https://x.com/FutureVibesAi/status/2082529869297246414",
             "official_embed": null,
-            "mirrors": [
-              {
-                "mirror_id": "mir_legacy_github_attachment_itm_x_2082529869297246414_0_2",
-                "provider": "github_attachment",
-                "artifact": "video",
-                "url": "https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59",
-                "bytes": 7878903,
-                "sha256": "10c580e86f90b8165f1916b8699c0d123d9d68d67a585df60dc8d2797a509778",
-                "width": 1920,
-                "height": 1080,
-                "uploaded_at": null,
-                "state": "active",
-                "permission_evidence_ids": [],
-                "last_checked_at": "2026-08-11T16:32:19Z",
-                "former_url_sha256": "d03cb6399cdf8ed508b2c85626eb56469ba920d28c5d6658d39881cfe65e7477",
-                "verified_at": "2026-08-11T16:32:19Z"
-              }
-            ]
+            "mirrors": []
           }
         }
       ],
       "rights": {
         "video_republication": {
-          "status": "granted",
+          "status": "unknown",
           "license_spdx": null,
-          "granted_scopes": [
-            "download",
-            "mirror_github"
-          ],
-          "grantor_actor_ids": [
-            "act_x_futurevibesai"
-          ],
-          "granted_at": "2026-08-11T16:52:51Z",
+          "granted_scopes": [],
+          "grantor_actor_ids": [],
+          "granted_at": null,
           "expires_at": null,
-          "evidence_ids": [],
-          "grant_verification": "maintainer_attestation"
+          "evidence_ids": []
         },
         "prompt_republication": {
           "status": "unknown",
