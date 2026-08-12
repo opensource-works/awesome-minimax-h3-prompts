@@ -46,6 +46,8 @@ def load():
     for p in posts:
         m = mirror.get(p["id"])
         p["video"]["source_url"] = p["video"]["url"]
+        if p.get("prompt") and not p.get("prompt_source_urls"):
+            p["prompt_source_urls"] = [p["url"]]
         if m:
             p["video"]["url"] = m["mp4"]
             p["video"]["preview"] = m["webp"]
@@ -91,6 +93,21 @@ def still(p):
     WebP through <img>, so the mirrored loop is the only way to show motion
     without leaving the page; the static thumbnail is the fallback."""
     return p["video"].get("preview") or p["video"]["thumbnail"]
+
+
+def prompt_source_links(p, zh=False):
+    """Markdown links to the exact post/replies from which prompt text came."""
+    urls = p.get("prompt_source_urls") or [p["url"]]
+    links = []
+    for i, url in enumerate(urls, 1):
+        if url == p["url"]:
+            label = "X 原帖" if zh else "Original post"
+        elif len(urls) == 1:
+            label = "X 回复" if zh else "X reply"
+        else:
+            label = f"X 回复 {i}" if zh else f"X reply {i}"
+        links.append(f"[{label}]({url})")
+    return " · ".join(links)
 
 
 # ============================================================== GitHub Pages site
@@ -208,6 +225,9 @@ main{padding:26px 0 70px}
 .who .n:hover{color:var(--accent-fg)}
 .who .h{font-size:11.5px;color:var(--fg-faint);text-decoration:none}
 .who .h:hover{color:var(--accent-fg)}
+.source,.prompt-source{font-size:11.5px;color:var(--fg-faint);line-height:1.5}
+.source a,.prompt-source a{color:var(--accent-fg);text-decoration:none}
+.source a:hover,.prompt-source a:hover{text-decoration:underline;text-underline-offset:2px}
 .meta{display:flex;gap:12px;font-size:11.5px;color:var(--fg-faint);
   font-variant-numeric:tabular-nums;flex-wrap:wrap;margin-top:auto;padding-top:2px}
 .meta span{display:inline-flex;align-items:center;gap:4px}
@@ -220,6 +240,7 @@ details.prompt summary::before{content:"▸";font-size:10px;transition:.15s;disp
 details.prompt[open] summary::before{transform:rotate(90deg)}
 .ptext{margin:0;padding:0 11px 11px;font:11.5px/1.62 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   color:var(--fg-dim);white-space:pre-wrap;word-break:break-word;max-height:280px;overflow:auto}
+.prompt-source{padding:0 11px 9px}
 .copy{margin:0 11px 11px;border:1px solid var(--line);background:var(--card);color:var(--fg-dim);
   border-radius:7px;padding:5px 11px;font-size:11.5px;cursor:pointer;font-family:inherit;transition:.15s}
 .copy:hover{border-color:var(--accent);color:var(--accent-fg)}
@@ -245,10 +266,10 @@ footer p{margin:0 0 8px;max-width:78ch}
   <div class="wrap head">
     <h1>Awesome <span class="g">MiniMax H3</span> Prompts</h1>
     <p class="tagline">Every MiniMax H3 clip people are posting on X, collected in one place — play the video,
-      read the exact prompt, and go straight to the creator who made it.</p>
+      read the exact prompt, and follow the cited source account and post.</p>
     <div class="metrics">
       <div class="metric"><b>__NPOSTS__</b> posts</div>
-      <div class="metric"><b>__NCREATORS__</b> creators</div>
+      <div class="metric"><b>__NCREATORS__</b> source accounts</div>
       <div class="metric"><b>__NPROMPTS__</b> full prompts</div>
       <div class="metric"><b>__NVIEWS__</b> views on X</div>
     </div>
@@ -283,8 +304,8 @@ footer p{margin:0 0 8px;max-width:78ch}
   No post matches that. Try a looser search.</div></main>
 
 <footer><div class="wrap">
-  <p><b>Every video, prompt and name here belongs to the person who posted it on X.</b>
-     Every card links back to the original post. If you are a creator and want your post changed or
+  <p><b>Every card credits the X source account and links to the original post and prompt source.</b>
+     Source credit does not infer ownership beyond what the linked posts show. If you want an entry changed or
      removed, <a href="__REPO__/issues/new">open an issue</a> and it comes down, no questions asked.</p>
   <p>MiniMax H3 — also shipped as Hailuo 3.0 in the Hailuo AI app — is a video model by MiniMax.
      This is an unaffiliated, community-run index.
@@ -335,12 +356,19 @@ $('#sort').addEventListener('change', e => { state.sort = e.target.value; render
 function card(p) {
   const tall = p.video.height > p.video.width;
   const isH3 = p.model === 'MiniMax H3';
+  const promptLinks = (p.prompt_source_urls || []).map((url, i, all) => {
+    const label = url === p.url ? 'Original post' : (all.length > 1 ? 'X reply ' + (i + 1) : 'X reply');
+    return `<a href="${esc(url)}" target="_blank" rel="noopener">${label}</a>`;
+  }).join(' · ');
   const promptBlock = p.prompt
     ? `<details class="prompt"><summary>Prompt</summary>
          <pre class="ptext">${esc(p.prompt)}</pre>
+         <div class="prompt-source"><b>Prompt credit / source:</b>
+           <a href="${esc(p.author.url)}" target="_blank" rel="noopener">@${esc(p.author.handle)}</a>
+           · ${promptLinks}</div>
          <button class="copy" type="button" data-id="${p.id}">Copy prompt</button></details>`
     : p.prompt_in_thread
-      ? `<a class="thread" href="${esc(p.url)}" target="_blank" rel="noopener">Prompt is in the thread on X ↗</a>`
+      ? `<a class="thread" href="${esc(p.url)}" target="_blank" rel="noopener">Prompt mentioned in the X thread ↗</a>`
       : '';
   return `<article class="card" data-id="${p.id}">
     <div class="player${tall ? ' tall' : ''}">
@@ -360,12 +388,14 @@ function card(p) {
           <a class="h" href="${esc(p.author.url)}" target="_blank" rel="noopener">@${esc(p.author.handle)}</a>
         </div>
       </div>
+      <div class="source"><b>Video credit / source:</b>
+        <a href="${esc(p.author.url)}" target="_blank" rel="noopener">@${esc(p.author.handle)}</a>
+        · <a href="${esc(p.url)}" target="_blank" rel="noopener">Original post ↗</a></div>
       ${promptBlock}
       <div class="meta">
         <span>${esc(p.date)}</span>
         <span>${human(p.stats.views)} views</span>
         <span>${human(p.stats.likes)} likes</span>
-        <span><a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:inherit">on X ↗</a></span>
       </div>
     </div>
   </article>`;
@@ -447,6 +477,7 @@ def build_site(posts, repo, updated):
     slim = [{
         "id": p["id"], "url": p["url"], "title": p["title"], "text": p["text"],
         "prompt": p["prompt"], "prompt_in_thread": p["prompt_in_thread"],
+        "prompt_source_urls": p.get("prompt_source_urls", []),
         "model": p["model"], "category": p["category"], "date": p["date"],
         "author": p["author"], "stats": p["stats"],
         "video": {k: v for k, v in p["video"].items() if k != "formats"},
@@ -473,7 +504,7 @@ def readme_en(posts, repo, site, updated):
     L = []
     L.append("# Awesome MiniMax H3 Prompts\n")
     L.append("**Every MiniMax H3 clip people are posting on X, collected in one place — "
-             "play the video, read the exact prompt, and go straight to the creator who made it.**\n")
+             "play the video, read the exact prompt, and follow the cited source account and post.**\n")
     L.append(f"[![Try it yourself](https://img.shields.io/badge/✨%20Try%20it%20yourself-"
              f"{TRY_HOST.replace('-', '--')}-C6F24E?style=flat-square&labelColor=0A0B0A)]({TRY_URL})\n"
              "[![Watch the gallery](https://img.shields.io/badge/▶%20Watch%20the%20gallery-"
@@ -494,7 +525,7 @@ def readme_en(posts, repo, site, updated):
     L.append("## What's in here\n")
     L.append(f"| | |\n|---|---|\n"
              f"| Posts | **{len(posts)}** |\n"
-             f"| Creators credited | **{len({p['author']['handle'] for p in posts})}** |\n"
+             f"| Source accounts credited | **{len({p['author']['handle'] for p in posts})}** |\n"
              f"| Posts with the full prompt | **{nprompt}** |\n"
              f"| Combined views on X | **{human(sum(p['stats']['views'] for p in posts))}** |\n"
              f"| Models covered | {', '.join(f'**{m}** ({n})' for m, n in Counter(p['model'] for p in posts).most_common())} |\n"
@@ -528,22 +559,25 @@ def readme_en(posts, repo, site, updated):
             else:
                 L.append(f'<a href="{p["url"]}"><img src="{still(p)}" '
                          f'width="460" alt="{html.escape(p["title"])}"></a>\n')
-            L.append(f"**[{p['author']['name']}]({p['author']['url']})** · "
-                     f"[@{p['author']['handle']}]({p['author']['url']}) · {p['model']} · {p['date']} · "
-                     f"{human(p['stats']['views'])} views · [▶ Watch on X]({p['url']})\n")
+            L.append(f"**Video credit / source:** [{p['author']['name']}]({p['author']['url']}) · "
+                     f"[@{p['author']['handle']}]({p['author']['url']}) · [Original post]({p['url']}) · "
+                     f"{p['model']} · {p['date']} · {human(p['stats']['views'])} views\n")
             if p["prompt"]:
                 L.append("<details><summary><b>Prompt</b></summary>\n")
                 L.append("```text")
                 L.append(p["prompt"])
                 L.append("```\n")
                 L.append("</details>\n")
+                L.append(f"**Prompt credit / source:** [@{p['author']['handle']}]({p['author']['url']}) · "
+                         f"{prompt_source_links(p)}\n")
             elif p["prompt_in_thread"]:
-                L.append(f"> The creator posted the prompt further down [the thread]({p['url']}).\n")
+                L.append(f"> A prompt is mentioned in the [X thread]({p['url']}); "
+                         "the exact reply has not been indexed yet.\n")
         L.append("")
 
     L.append("## Credit and takedowns\n")
-    L.append("Every video, prompt and name in this repo belongs to the person who posted it on X, "
-             "and every entry links back to the original post.\n")
+    L.append("Every entry credits the X source account and links to the original post and exact prompt source. "
+             "Source credit does not infer ownership beyond what the linked posts show.\n")
     L.append("If you are a creator and want your post edited or removed, "
              f"[open an issue]({repo}/issues/new) and it comes down, no questions asked.\n")
     L.append("## Adding a post\n")
@@ -563,7 +597,7 @@ def readme_zh(posts, repo, site, updated):
     L = []
     L.append("# Awesome MiniMax H3 Prompts\n")
     L.append("**把 X 上大家发的 MiniMax H3 视频集中到一个入口——直接播放、看到完整提示词、"
-             "并且一键找到作者本人。**\n")
+             "并且一键找到有明确引用的来源账号和原帖。**\n")
     L.append(f"[![自己试试](https://img.shields.io/badge/✨%20自己试一试-"
              f"{TRY_HOST.replace('-', '--')}-C6F24E?style=flat-square&labelColor=0A0B0A)]({TRY_URL})\n"
              f"[![观看画廊](https://img.shields.io/badge/▶%20打开视频画廊-opensource--works.github.io-FF6A4D?style=flat-square)]({site})\n"
@@ -582,7 +616,7 @@ def readme_zh(posts, repo, site, updated):
     L.append("## 收录概况\n")
     L.append(f"| | |\n|---|---|\n"
              f"| 帖子数 | **{len(posts)}** |\n"
-             f"| 署名作者 | **{len({p['author']['handle'] for p in posts})}** |\n"
+             f"| 署名来源账号 | **{len({p['author']['handle'] for p in posts})}** |\n"
              f"| 含完整提示词 | **{nprompt}** |\n"
              f"| X 上累计播放 | **{human(sum(p['stats']['views'] for p in posts))}** |\n"
              f"| 覆盖模型 | {', '.join(f'**{m}**（{n}）' for m, n in Counter(p['model'] for p in posts).most_common())} |\n"
@@ -605,21 +639,24 @@ def readme_zh(posts, repo, site, updated):
             else:
                 L.append(f'<a href="{p["url"]}"><img src="{still(p)}" '
                          f'width="460" alt="{html.escape(p["title"])}"></a>\n')
-            L.append(f"**[{p['author']['name']}]({p['author']['url']})** · "
-                     f"[@{p['author']['handle']}]({p['author']['url']}) · {p['model']} · {p['date']} · "
-                     f"{human(p['stats']['views'])} 播放 · [▶ 在 X 上观看]({p['url']})\n")
+            L.append(f"**视频署名 / 来源：** [{p['author']['name']}]({p['author']['url']}) · "
+                     f"[@{p['author']['handle']}]({p['author']['url']}) · [X 原帖]({p['url']}) · "
+                     f"{p['model']} · {p['date']} · {human(p['stats']['views'])} 播放\n")
             if p["prompt"]:
                 L.append("<details><summary><b>提示词</b></summary>\n")
                 L.append("```text")
                 L.append(p["prompt"])
                 L.append("```\n")
                 L.append("</details>\n")
+                L.append(f"**提示词署名 / 来源：** [@{p['author']['handle']}]({p['author']['url']}) · "
+                         f"{prompt_source_links(p, zh=True)}\n")
             elif p["prompt_in_thread"]:
-                L.append(f"> 作者把提示词发在了[原帖的楼中楼]({p['url']})。\n")
+                L.append(f"> [X 帖子串]({p['url']})提到了提示词，但尚未索引到准确回复。\n")
         L.append("")
 
     L.append("## 署名与下架\n")
-    L.append("这里的每一个视频、提示词和名字都属于在 X 上发布它的人，每一条都链回原帖。\n")
+    L.append("每条内容都会标注 X 来源账号，并链接到视频原帖和提示词的准确来源。"
+             "来源署名不额外推断链接帖子未说明的原创归属。\n")
     L.append(f"如果你是作者，希望修改或删除自己的内容，[提一个 issue]({repo}/issues/new) 即可，我们立刻下架。\n")
     L.append("## 投稿\n")
     L.append("把 X 链接加进 `scripts/urls.txt` 提 PR 即可，剩下的交给脚本。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。\n")
