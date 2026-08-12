@@ -128,6 +128,7 @@ def main():
         print(f"{len(failed)} failed:")
         for h, e in failed:
             print(f"  @{h}: {e}")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

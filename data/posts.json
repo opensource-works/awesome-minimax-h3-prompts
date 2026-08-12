@@ -49,9 +49,9 @@
       ]
     },
     "stats": {
-      "views": 940665,
-      "likes": 3236,
-      "retweets": 225
+      "views": 943975,
+      "likes": 3233,
+      "retweets": 224
     }
   },
   {
@@ -86,8 +86,8 @@
       ]
     },
     "stats": {
-      "views": 220288,
-      "likes": 915,
+      "views": 220750,
+      "likes": 913,
       "retweets": 85
     }
   },
@@ -141,8 +141,8 @@
       ]
     },
     "stats": {
-      "views": 61894,
-      "likes": 144,
+      "views": 62275,
+      "likes": 143,
       "retweets": 1
     }
   },
@@ -190,7 +190,7 @@
       ]
     },
     "stats": {
-      "views": 61834,
+      "views": 61913,
       "likes": 484,
       "retweets": 6
     }
@@ -245,8 +245,8 @@
       ]
     },
     "stats": {
-      "views": 52839,
-      "likes": 141,
+      "views": 55087,
+      "likes": 140,
       "retweets": 18
     }
   },
@@ -300,8 +300,8 @@
       ]
     },
     "stats": {
-      "views": 44779,
-      "likes": 396,
+      "views": 44899,
+      "likes": 394,
       "retweets": 33
     }
   },
@@ -355,7 +355,7 @@
       ]
     },
     "stats": {
-      "views": 43900,
+      "views": 43967,
       "likes": 66,
       "retweets": 5
     }
@@ -410,9 +410,9 @@
       ]
     },
     "stats": {
-      "views": 18094,
-      "likes": 305,
-      "retweets": 28
+      "views": 18152,
+      "likes": 306,
+      "retweets": 27
     }
   },
   {
@@ -465,7 +465,7 @@
       ]
     },
     "stats": {
-      "views": 9325,
+      "views": 9342,
       "likes": 40,
       "retweets": 5
     }
@@ -520,7 +520,7 @@
       ]
     },
     "stats": {
-      "views": 7448,
+      "views": 7451,
       "likes": 16,
       "retweets": 0
     }
@@ -575,7 +575,7 @@
       ]
     },
     "stats": {
-      "views": 6556,
+      "views": 6568,
       "likes": 80,
       "retweets": 4
     }
@@ -630,7 +630,7 @@
       ]
     },
     "stats": {
-      "views": 5682,
+      "views": 5697,
       "likes": 40,
       "retweets": 9
     }
@@ -640,8 +640,8 @@
     "url": "https://x.com/LudovicCreator/status/2083628852165672988",
     "title": "Sci-fi motion poster animated from a single still",
     "text": "Honestly the animations possibilities with Minimax H3 are really great .\n\nHere an example for poster.\n\nFind the image used and prompt in first comment.\n\nMade in MinimaxHub @Hailuo_AI #MiniMaxH3\n1/2",
-    "prompt": null,
-    "prompt_in_thread": true,
+    "prompt": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
+    "prompt_in_thread": false,
     "model": "MiniMax H3",
     "category": "Omni-Reference & Editing",
     "date": "2026-08-01",
@@ -679,10 +679,13 @@
       ]
     },
     "stats": {
-      "views": 5618,
+      "views": 5625,
       "likes": 55,
       "retweets": 6
-    }
+    },
+    "prompt_source_urls": [
+      "https://x.com/LudovicCreator/status/2083628879407632890"
+    ]
   },
   {
     "id": "2083163811398181247",
@@ -728,7 +731,7 @@
       ]
     },
     "stats": {
-      "views": 4953,
+      "views": 4979,
       "likes": 18,
       "retweets": 3
     }
@@ -783,7 +786,7 @@
       ]
     },
     "stats": {
-      "views": 4208,
+      "views": 4234,
       "likes": 16,
       "retweets": 9
     }
@@ -838,9 +841,9 @@
       ]
     },
     "stats": {
-      "views": 3508,
+      "views": 3534,
       "likes": 76,
-      "retweets": 8
+      "retweets": 7
     }
   }
 ]

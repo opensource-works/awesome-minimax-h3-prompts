@@ -252,21 +252,25 @@ def main():
         unique.append(p)
     posts = unique
 
-    # Manual overrides let a human fix a bad auto-title or category without
-    # hand-editing generated data. See scripts/overrides.json. Only title and
-    # category are honoured — prompts, authors and stats must stay as posted.
+    # Manual overrides fix titles/categories and preserve prompts copied
+    # verbatim from author-posted replies. Reply prompts must include their
+    # public X URLs so the generated gallery can cite the exact source.
     ov_path = os.path.join(ROOT, "scripts", "overrides.json")
     if os.path.exists(ov_path):
         ov = json.load(open(ov_path))
         for p in posts:
-            p.update({k: v for k, v in ov.get(p["id"], {}).items() if k in ("title", "category")})
+            patch = {k: v for k, v in ov.get(p["id"], {}).items()
+                     if k in ("title", "category", "prompt", "prompt_source_urls", "prompt_in_thread")}
+            if patch.get("prompt") and not patch.get("prompt_source_urls"):
+                raise ValueError(f"{p['id']}: an overridden prompt needs prompt_source_urls")
+            p.update(patch)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(posts, open(OUT, "w"), indent=2, ensure_ascii=False)
     with_prompt = sum(1 for p in posts if p["prompt"])
     in_thread = sum(1 for p in posts if p["prompt_in_thread"])
     print(f"wrote {len(posts)} posts to data/posts.json "
-          f"({with_prompt} with an inline prompt, {in_thread} with the prompt in a reply)")
+          f"({with_prompt} with a prompt, {in_thread} with an unindexed prompt in a reply)")
     detail = ", ".join(f"{n} {k}" for k, n in dropped.items() if n)
     print(f"dropped {sum(dropped.values())}" + (f": {detail}" if detail else ""))
 

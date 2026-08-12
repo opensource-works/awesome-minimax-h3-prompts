@@ -6,6 +6,7 @@
     "text": "It's coming. @Hailuo_AI  \n\n#MiniMaxH3",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-30",
@@ -16,9 +17,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_200x200.jpg"
     },
     "stats": {
-      "views": 940665,
-      "likes": 3236,
-      "retweets": 225
+      "views": 943975,
+      "likes": 3233,
+      "retweets": 224
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.mp4",
@@ -38,6 +39,7 @@
     "text": "MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video on Artificial Analysis. MiniMax plans to release its weights under the MiniMax Community License, which would make it the leading open weights model by far\n\nMiniMax H3 is the latest video model from MiniMax and the successor to their Hailuo family. The model has a multimodal architecture, accepting text, images, videos, and audio clips as input to generate 5-15s clips at 24fps with native audio generation. Video input support also makes MiniMax H3 one of the few models capable of instruction-based video editing, where it takes the #1 spot in our Video Editing Leaderboard. The model is also #2 in Text to Video, and #3 in Image to Video.\n\nMiniMax H3 is available now in the Hailuo AI app and via the MiniMax API. MiniMax lists MiniMax H3 at $0.13 per second of 2K video ($7.80 per minute), with a 768p tier at $0.09 per second ($5.40 per minute) marked as coming soon in their documentation. The first five reference images are free, with each additional image at $0.04 and reference audio free. Our evaluation was conducted on the 2K tier.\n\nAt $7.80 per minute with audio, MiniMax H3 at 2K ($7.80/min) undercuts Dreamina Seedance 2.0 1080p ($22.45/min), HappyHorse-1.1 ($9.90/min), and Kling 3.0 1080p ($20.16/min), but is still at a premium over Google’s Gemini Omni Flash at $6.00/min.\n\nMiniMax plans to release the weights under the MiniMax Community License, which permits commercial use for organizations under $20M in revenue, subject to prominent attribution requirements. If released, MiniMax H3 would become the strongest open weights video model, well ahead of the previous open weights leader LTX-2.3.\n\nWe’ll be sharing more insights into our evaluation soon - congratulations to @Hailuo_AI on the release!\n\nSee below for comparisons between MiniMax H3 and other leading models in the Artificial Analysis Video Editing Arena 🧵",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -48,8 +50,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_200x200.jpg"
     },
     "stats": {
-      "views": 220288,
-      "likes": 915,
+      "views": 220750,
+      "likes": 913,
       "retweets": 85
     },
     "video": {
@@ -70,6 +72,7 @@
     "text": "اگر براتون سواله که مدل MiniMax H3 در @Hailuo_AI زبان فارسی رو هم پشتیبانی می‌کنه یا نه، باید بگم اگر تنوین‌ها رو برای حروف نذارید، خروجی صدا آقای پرتقال خانم پیازی طور می‌شه! 😂\n\n #MiniMaxH3",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Audio & Voice",
     "date": "2026-07-29",
@@ -80,8 +83,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/2004688279782699008/8jMYzXU3_200x200.jpg"
     },
     "stats": {
-      "views": 61894,
-      "likes": 144,
+      "views": 62275,
+      "likes": 143,
       "retweets": 1
     },
     "video": {
@@ -102,6 +105,7 @@
     "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -112,7 +116,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
     },
     "stats": {
-      "views": 61834,
+      "views": 61913,
       "likes": 484,
       "retweets": 6
     },
@@ -134,6 +138,7 @@
     "text": "MiniMax-H3 open source:\na general-purpose multimodal generative model that unified understanding of multimodalof text, images, video, and audio, and is capable of generating audio and video with native stereo sound, supporting up to 15 seconds at 2K resolution.",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -144,8 +149,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/649098801119121408/5WTuzsXc_200x200.jpg"
     },
     "stats": {
-      "views": 52839,
-      "likes": 141,
+      "views": 55087,
+      "likes": 140,
       "retweets": 18
     },
     "video": {
@@ -166,6 +171,7 @@
     "text": "MiniMax H3 is now available in ComfyUI via Partner Nodes.\n\n→ Multimodal I/O: T2V, First/Last Frame, Omni Reference\n\n→ Native stereo audio on every clip \n\n→Up to 2K, 5-15s at 24 FPS\n\n→ Edit characters, scenes, dialogue, and voice in place\n\nAPI access is live today. Native open-weight support is coming soon.",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -176,8 +182,8 @@
       "avatar": "https://pbs.twimg.com/profile_images/2047708517570887680/vasvAmZR_200x200.jpg"
     },
     "stats": {
-      "views": 44779,
-      "likes": 396,
+      "views": 44899,
+      "likes": 394,
       "retweets": 33
     },
     "video": {
@@ -198,6 +204,7 @@
     "text": "海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。\n\n这模型的路子是文、图、音、视频一起喂,直接出带声音的成片:原生 2K,单段 15 秒,主体、产品、运镜、声音都能拿自然语言改,不用再拆成好几个模型接力。\n\n价格更直接——只有 Seedance 2.0 的 30%,权重还开源。\n\n在 @TopviewAIhq 上就能用,Ultra 年费用户 60 天不限量,想测的正是时候。",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -208,7 +215,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1998970271458537475/jcT0J2z6_200x200.jpg"
     },
     "stats": {
-      "views": 43900,
+      "views": 43967,
       "likes": 66,
       "retweets": 5
     },
@@ -230,6 +237,9 @@
     "text": "Minimax H3 from Hailuo AI is here!\n\nOne of my first tests! more coming soon..\n\nPrompt : Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.\n\n@Hailuo_AI  #MiniMaxH3",
     "prompt": "Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.\n\n@Hailuo_AI  #MiniMaxH3",
     "prompt_in_thread": false,
+    "prompt_source_urls": [
+      "https://x.com/umesh_ai/status/2082499539735588916"
+    ],
     "model": "MiniMax H3",
     "category": "Action & VFX",
     "date": "2026-07-29",
@@ -240,9 +250,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/1661812165949489186/vhwQU-Fk_200x200.jpg"
     },
     "stats": {
-      "views": 18094,
-      "likes": 305,
-      "retweets": 28
+      "views": 18152,
+      "likes": 306,
+      "retweets": 27
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/umesh_ai_2082499279680405504.mp4",
@@ -262,6 +272,7 @@
     "text": "Minimax发布视频模型MiniMax H3\n全模态，支持输入文本、图像、视频、声音，输出原生双声道的音视频，最高可输出 15s 2K 分辨率的视频。\nSeedance的直接竞争者，看宣传视频效果还可以，不过今天字节会上线Seedance 2.5，字节还是领先一大步。\n\n但是，MiniMax H3后续会开源！！！开源可玩性就太高了！\n\n官方介绍：https://mp.weixin.qq.com/s/XhU4W02gvLxm77el13cpIQ",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -272,7 +283,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1522159828231409664/GPpXyPT1_200x200.jpg"
     },
     "stats": {
-      "views": 9325,
+      "views": 9342,
       "likes": 40,
       "retweets": 5
     },
@@ -294,6 +305,7 @@
     "text": "Tried @Hailuo_AI's new H3 model and...with a Burger 🍔 vs Coke 🥤 cinematic battle. they absolutely cooked. 🔥\n\nMiniMax H3 is back.\n\nOne prompt. One generation. First roll. No cherry-picking.\n\nThe cinematic quality, camera movement, and consistency are seriously impressive.\n\nMore tests coming soon.\n#MiniMaxH3",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Cinematic & Film",
     "date": "2026-07-29",
@@ -304,7 +316,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1909539944189624320/cOei_LOK_200x200.jpg"
     },
     "stats": {
-      "views": 7448,
+      "views": 7451,
       "likes": 16,
       "retweets": 0
     },
@@ -326,6 +338,7 @@
     "text": "MiniMax is open-sourcing H3. This is going to be massive. 🔥",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -336,7 +349,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1687401026805256192/uQ1o2wVQ_200x200.jpg"
     },
     "stats": {
-      "views": 6556,
+      "views": 6568,
       "likes": 80,
       "retweets": 4
     },
@@ -358,6 +371,7 @@
     "text": "Hailuo（ @Hailuo_AI ）の動画AIの新モデル「MiniMax H3」の先行アクセスで試すものを、Blender MCPで作ったこの記事の作例と全く同条件で作ってみました。OmniReference 画像6枚+動画1つで試しましたが、2kでまったくSeedance2に遜色ない品質。これが半額は大きいかも #MiniMaxH3",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Omni-Reference & Editing",
     "date": "2026-07-30",
@@ -368,7 +382,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/570258232968552448/lfXJ6w2b_200x200.jpeg"
     },
     "stats": {
-      "views": 5682,
+      "views": 5697,
       "likes": 40,
       "retweets": 9
     },
@@ -388,8 +402,11 @@
     "url": "https://x.com/LudovicCreator/status/2083628852165672988",
     "title": "Sci-fi motion poster animated from a single still",
     "text": "Honestly the animations possibilities with Minimax H3 are really great .\n\nHere an example for poster.\n\nFind the image used and prompt in first comment.\n\nMade in MinimaxHub @Hailuo_AI #MiniMaxH3\n1/2",
-    "prompt": null,
-    "prompt_in_thread": true,
+    "prompt": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
+    "prompt_in_thread": false,
+    "prompt_source_urls": [
+      "https://x.com/LudovicCreator/status/2083628879407632890"
+    ],
     "model": "MiniMax H3",
     "category": "Omni-Reference & Editing",
     "date": "2026-08-01",
@@ -400,7 +417,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1948789718683955200/1PP5EsV7_200x200.jpg"
     },
     "stats": {
-      "views": 5618,
+      "views": 5625,
       "likes": 55,
       "retweets": 6
     },
@@ -422,6 +439,7 @@
     "text": "MiniMax H3 just became the best video editor in AI.\n\n#1 on Artificial Analysis's Video Editing Leaderboard, #2 in Text to Video, #3 in Image to Video. And unlike every model above it, H3 can take a video as input, not just generate one from scratch.\n\nThat changes what video AI actually means in production.\n\nRight now, the tools people use to package video for advertising and brand content are Adobe After Effects, DaVinci Resolve, and manual compositing workflows. They're powerful, but they require technical operators and hours of iteration to get timing, text overlays, and motion graphics aligned.\n\nH3 takes text, images, existing video clips, and audio together as inputs, generates 5 to 15 second clips at 24fps with native audio embedded. The instruction-based editing is what makes it different. You're not starting from scratch with a prompt. You're directing an existing clip.\n\nFor creative fields specifically, this is where it gets interesting. \n\nAdvertising teams spend enormous effort on visual packaging: supers (on-screen text), brand color grading, transitions, and audio sync. These are all instructable edits, and H3's multimodal architecture is built to handle exactly that layer. The model has a strong enough aesthetic sense to respond to directorial intent, not just literal prompts.\nPricing is also positioned to win. At $7.80 per minute for 2K video with audio, H3 significantly undercuts Kling 3.0 ($20.16/min) and Dreamina Seedance 2.0 ($22.45/min).\n\nAnd MiniMax plans to release the weights under a Community License that permits commercial use for companies under $20M revenue, with attribution. If that ships, H3 becomes the strongest open-weights video model by a wide margin, ahead of LTX-2.3 which held that position before.\n\nMost video AI is still about generation. H3 is the first model that starts to feel like post-production.",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Launch & Announcements",
     "date": "2026-07-31",
@@ -432,7 +450,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/2069500193737994240/_NLmpT9-_200x200.jpg"
     },
     "stats": {
-      "views": 4953,
+      "views": 4979,
       "likes": 18,
       "retweets": 3
     },
@@ -454,6 +472,7 @@
     "text": "🚨 MiniMax H3 llega a Topview.\n\nEste nuevo modelo de vídeo acepta texto, imágenes, audio y vídeo al mismo tiempo, y genera vídeos nativos en 2K con sonido sincronizado. Sin herramientas desconectadas ni procesos separados.\n\n> Clips de hasta 15 segundos a 24 fps.\n> Transferencia de movimiento de vídeo a vídeo (V2V) para mantener personajes coherentes entre escenas.\n> Edición guiada por instrucciones para modificar productos, texto, estilo y escenas.\n> Calidad profesional para anuncios, e-commerce, videojuegos e interfaces de usuario.\n\nY funciona con un coste un 30 % inferior al de Seedance 2.0.",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Ads, UGC & Product",
     "date": "2026-07-31",
@@ -464,7 +483,7 @@
       "avatar": "https://pbs.twimg.com/profile_images/1985637392087465985/LV5VUjkI_200x200.jpg"
     },
     "stats": {
-      "views": 4208,
+      "views": 4234,
       "likes": 16,
       "retweets": 9
     },
@@ -486,6 +505,7 @@
     "text": "MiniMax H3 is actually built different. 🔥\n\nTested the new MiniMax H3 Early Access with a fast, choreography-heavy street dance sequence  floor sweeps, pop locking, rotations, aerial movement + dynamic camera work.\n\nWhat impressed me most: how well it handled complex motion, character consistency, camera direction, and precise instruction-following in the same generation.\n\nAnd H3 goes way beyond text-to-video:\n→ Multi-asset / Omni Reference\n→ Character + camera references\n→ Motion transfer\n→ Voice cloning\n→ Precision editing & control\n→ Commercial-grade Ads, MVs & CG\n\nThis is exactly the kind of control AI filmmakers have been asking for.\n\nCreated with MiniMax H3 by @Hailuo_AI\n 👇\n#MiniMaxH3",
     "prompt": null,
     "prompt_in_thread": false,
+    "prompt_source_urls": [],
     "model": "MiniMax H3",
     "category": "Music & Dance",
     "date": "2026-07-29",
@@ -496,9 +516,9 @@
       "avatar": "https://pbs.twimg.com/profile_images/2021718581126606850/2o_ds9Yy_200x200.jpg"
     },
     "stats": {
-      "views": 3508,
+      "views": 3534,
       "likes": 76,
-      "retweets": 8
+      "retweets": 7
     },
     "video": {
       "url": "https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/FutureVibesAi_2082529838179790848.mp4",

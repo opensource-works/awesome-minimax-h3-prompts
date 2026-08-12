@@ -1,5 +1,5 @@
 {
-  "_comment": "Hand-curated fixes on top of the auto-extracted data, keyed by post id. Only 'title' and 'category' are honoured by harvest.py — never the prompt, the author or the stats, which must stay exactly as the author posted them. Titles here shorten or clarify what the post itself says; they never add a claim the post does not make.",
+  "_comment": "Hand-curated fixes on top of auto-extracted data, keyed by post id. Allowed fields: title, category, and verbatim reply prompts with prompt_source_urls and prompt_in_thread=false. Authors and stats are never overridden.",
 
   "2082779062653845803": { "category": "Launch & Announcements" },
   "2082554826349535341": { "title": "Testing whether H3's native voice output handles Persian", "category": "Audio & Voice" },
@@ -11,5 +11,13 @@
   "2082519642145485080": { "title": "Burger vs Coke cinematic battle — one prompt, one generation, first roll", "category": "Cinematic & Film" },
   "2082529869297246414": { "title": "Choreography-heavy street dance sequence with dynamic camera work", "category": "Music & Dance" },
   "2082971035364946077": { "title": "The same Blender MCP scene through H3: 6 image refs + 1 video ref at 2K", "category": "Omni-Reference & Editing" },
-  "2083628852165672988": { "title": "Sci-fi motion poster animated from a single still", "category": "Omni-Reference & Editing" }
+  "2083628852165672988": {
+    "title": "Sci-fi motion poster animated from a single still",
+    "category": "Omni-Reference & Editing",
+    "prompt": "Prompt :\n\nAnimate the source artwork as a 10-second premium sci-fi motion poster while preserving the white gallery background, thin border, navy-and-orange palette, typography, composition and original poster design. Begin on an almost empty white canvas, then progressively assemble the poster: the outer frame draws itself on, the orange “ORIGIN” background typography slides vertically into place, the planetary landscape fades and expands inside the central frame, and the colossal station descends from above as its lights activate. Bring the cloaked traveler forward from the distant landscape toward the foreground with strong dimensional parallax, allowing the figure and rocky base to slightly break outside the inner frame. Introduce the smaller titles, numbering, studio credits, graphic marks and footer icons one after another with clean pop-in, slide and type-on animations, accompanied by light futuristic clicks, playful digital typing sounds and soft mechanical impacts. Finish with a restrained camera push-in, subtle station lights, drifting mist and a gentle movement in the traveler’s coat while the completed poster remains perfectly readable and close to the original still image. No major scene transformation, no camera orbit, no distorted typography, no altered layout.\n2/2",
+    "prompt_source_urls": [
+      "https://x.com/LudovicCreator/status/2083628879407632890"
+    ],
+    "prompt_in_thread": false
+  }
 }
