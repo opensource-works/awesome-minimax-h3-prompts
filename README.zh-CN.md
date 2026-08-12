@@ -1,63 +1,67 @@
-# Awesome MiniMax H3 提示词
+# Awesome MiniMax H3 Prompts
 
-**一个覆盖 X 与 Reddit、来源可核验的视频提示词索引。每条记录都链接原帖，并明确区分发帖者、原始视频创作者和提示词作者。**
+**把 X 上大家发的 MiniMax H3 视频集中到一个入口——直接播放、看到完整提示词、并且一键找到作者本人。**
 
-[打开视频索引](https://opensource-works.github.io/awesome-minimax-h3-prompts/) · [投稿指南](CONTRIBUTING.md) · [权利与授权](RIGHTS.md) · [下架流程](TAKEDOWN.md) · [覆盖率报告](COVERAGE.md)
+[![自己试试](https://img.shields.io/badge/✨%20自己试一试-maxluo3.com-C6F24E?style=flat-square&labelColor=0A0B0A)](https://maxluo3.com)
+[![观看画廊](https://img.shields.io/badge/▶%20打开视频画廊-opensource--works.github.io-FF6A4D?style=flat-square)](https://opensource-works.github.io/awesome-minimax-h3-prompts/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 [English](README.md) | **简体中文**
 
-## 覆盖范围与状态
+### ✨ 想亲手试试？上 **[maxluo3.com](https://maxluo3.com)** 直接用 Hailuo 3 生成
 
-“全量”只指既定查询矩阵、时间窗口和公开可检索内容，不包括私密、已删除或平台搜索不可见内容。当前历史窗口为 **2026-07-29 至 2026-08-11**，数据时间为 **2026-08-11T12:49:48Z**。
+把这里任意一条提示词复制到 [maxluo3.com](https://maxluo3.com)，几分钟就能拿到你自己的片子——免安装、免排队，注册即送免费额度。
 
-| 指标 | 数量 |
-|---|---:|
-| 公开收录 | **16** |
-| 发现候选 | **79** |
-| 待人工审核 | **53** |
-| 已排除 | **10** |
-| 已移除 | **0** |
-| 含提示词正文 | **1** |
-| 仅指出回复中有提示词 | **1** |
-| 仅链接/官方嵌入 | **16** |
-| 具有授权媒体 | **0** |
+### ▶ [打开视频画廊](https://opensource-works.github.io/awesome-minimax-h3-prompts/)
 
-## 署名如何阅读
+MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hailuo 3.0**，API 的 model id 是 `MiniMax-H3`。这个索引只收 H3 的帖子，Hailuo 2.3 及更早版本不在收录范围内。
 
-- **发帖者**：发布这条 X/Reddit 帖子的账号。这不自动意味着其创作了视频。
-- **原始视频创作者**：只有证据支持时才标注；否则诚实显示为未知。
-- **提示词作者**：与发帖者、视频创作者独立记录；转载提示词不会改变作者身份。
-- **网友注释**链接具体评论及评论者；**仓库编辑注释**则标明编辑身份和审核依据。
+想跨提示词搜索、按分类筛选、或者一键复制提示词，去画廊。
 
-## 权利与播放
+## 收录概况
 
-未取得明确再发布许可的内容只提供原帖链接或平台允许的官方嵌入。只有授权范围明确包含下载和对应镜像方式时，索引才会提供媒体副本。详见 [RIGHTS.md](RIGHTS.md)；权利人可依照 [TAKEDOWN.md](TAKEDOWN.md) 申请修正或下架。
+| | |
+|---|---|
+| 帖子数 | **16** |
+| 署名作者 | **16** |
+| 含完整提示词 | **1** |
+| X 上累计播放 | **1.5M** |
+| 覆盖模型 | **MiniMax H3**（16） |
+| 最近更新 | 2026-08-10 |
 
-## 条目
+## 目录
 
-### Cinematic & Film
+- [电影感短片](#cinematic-film) — 1 条
+- [动作与特效](#action-vfx) — 1 条
+- [音乐与舞蹈](#music-dance) — 1 条
+- [原生音频与配音](#audio-voice) — 1 条
+- [多模态参考与视频编辑](#omni-reference-editing) — 2 条
+- [广告 / UGC / 产品](#ads-ugc-product) — 1 条
+- [发布与官方消息](#launch-announcements) — 9 条
 
-#### [Burger vs Coke cinematic battle — one prompt, one generation, first roll](https://x.com/riyazmd774/status/2082519642145485080)
+## 电影感短片
 
-- **原帖：** [X](https://x.com/riyazmd774/status/2082519642145485080) · MiniMax H3 · 2026-07-29
-- **发帖者：** [Md Riyazuddin (@riyazmd774)](https://x.com/riyazmd774)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+<a id="cinematic-film"></a>
+
+### Burger vs Coke cinematic battle — one prompt, one generation, first roll
+
+https://github.com/user-attachments/assets/46cb4256-2731-4a88-ab24-9bcc58d5f200
+
+**[Md Riyazuddin](https://x.com/riyazmd774)** · [@riyazmd774](https://x.com/riyazmd774) · MiniMax H3 · 2026-07-29 · 7.4K 播放 · [▶ 在 X 上观看](https://x.com/riyazmd774/status/2082519642145485080)
 
 
-### Action & VFX
+## 动作与特效
 
-#### [Speeder chase across a cliff city, single continuous shot](https://x.com/umesh_ai/status/2082499539735588916)
+<a id="action-vfx"></a>
 
-- **原帖：** [X](https://x.com/umesh_ai/status/2082499539735588916) · MiniMax H3 · 2026-07-29
-- **发帖者：** [umesh_ai](https://x.com/umesh_ai)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-- **提示词出处:** [X](https://x.com/umesh_ai/status/2082499539735588916)
+### Speeder chase across a cliff city, single continuous shot
 
-<details><summary><b>提示词正文</b></summary>
+https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb
+
+**[Umesh](https://x.com/umesh_ai)** · [@umesh_ai](https://x.com/umesh_ai) · MiniMax H3 · 2026-07-29 · 18.1K 播放 · [▶ 在 X 上观看](https://x.com/umesh_ai/status/2082499539735588916)
+
+<details><summary><b>提示词</b></summary>
 
 ```text
 Speeder chase across a cliff city (single continuous shot) From a monumental cliffside city carved into stone, the camera dives toward a tiny streak of light ripping along a narrow ledge-road. Lock-on: a speeder hugging the wall at insane speed. The camera slingshots ahead, whips back, then drops tight to the rear thrusters: heat haze, grit snapping off the ledge, warning lights flashing. A collapsing balcony rains debris; the rider snaps a last-inch swerve under a falling arch, then threads through hanging laundry lines and open windows in one fluid line. The camera darts through the same openings, staying glued to the motion. One final bend and sudden calm: the camera blasts outward into a reveal of the city opening onto a boundless waterfall-fed valley, mist turning into rainbow.
@@ -68,138 +72,125 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 </details>
 
 
-### Music & Dance
+## 音乐与舞蹈
 
-#### [Choreography-heavy street dance sequence with dynamic camera work](https://x.com/FutureVibesAi/status/2082529869297246414)
+<a id="music-dance"></a>
 
-- **原帖：** [X](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29
-- **发帖者：** [Future Vibes AI - Educator (@FutureVibesAi)](https://x.com/FutureVibesAi)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+### Choreography-heavy street dance sequence with dynamic camera work
 
+https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
-### Audio & Voice
-
-#### [Testing whether H3's native voice output handles Persian](https://x.com/CallMeDiegoJr/status/2082554826349535341)
-
-- **原帖：** [X](https://x.com/CallMeDiegoJr/status/2082554826349535341) · MiniMax H3 · 2026-07-29
-- **发帖者：** [Diego Jr (@CallMeDiegoJr)](https://x.com/CallMeDiegoJr)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+**[Future Vibes AI - Educator](https://x.com/FutureVibesAi)** · [@FutureVibesAi](https://x.com/FutureVibesAi) · MiniMax H3 · 2026-07-29 · 3.5K 播放 · [▶ 在 X 上观看](https://x.com/FutureVibesAi/status/2082529869297246414)
 
 
-### Omni-Reference & Editing
+## 原生音频与配音
 
-#### [The same Blender MCP scene through H3: 6 image refs + 1 video ref at 2K](https://x.com/kiyoshi_shin/status/2082971035364946077)
+<a id="audio-voice"></a>
 
-- **原帖：** [X](https://x.com/kiyoshi_shin/status/2082971035364946077) · MiniMax H3 · 2026-07-30
-- **发帖者：** [新清士@AIコンテンツ開発者 (@kiyoshi_shin)](https://x.com/kiyoshi_shin)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+### Testing whether H3's native voice output handles Persian
 
-#### [Sci-fi motion poster animated from a single still](https://x.com/LudovicCreator/status/2083628852165672988)
+https://github.com/user-attachments/assets/ce3c4cf2-b464-45ac-857d-b1ddc915f609
 
-- **原帖：** [X](https://x.com/LudovicCreator/status/2083628852165672988) · MiniMax H3 · 2026-08-01
-- **发帖者：** [LudovicCreator](https://x.com/LudovicCreator)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-- **提示词出处:** [X](https://x.com/LudovicCreator/status/2083628852165672988)
-
-> 原帖称提示词位于回复中，但尚未核验并捕获具体回复。
+**[Diego Jr](https://x.com/CallMeDiegoJr)** · [@CallMeDiegoJr](https://x.com/CallMeDiegoJr) · MiniMax H3 · 2026-07-29 · 61.9K 播放 · [▶ 在 X 上观看](https://x.com/CallMeDiegoJr/status/2082554826349535341)
 
 
-### Ads, UGC & Product
+## 多模态参考与视频编辑
 
-#### [🚨 MiniMax H3 llega a Topview](https://x.com/Ben_escrito/status/2083091961544876128)
+<a id="omni-reference-editing"></a>
 
-- **原帖：** [X](https://x.com/Ben_escrito/status/2083091961544876128) · MiniMax H3 · 2026-07-31
-- **发帖者：** [Ben Pierron (@Ben_escrito)](https://x.com/Ben_escrito)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+### The same Blender MCP scene through H3: 6 image refs + 1 video ref at 2K
 
+https://github.com/user-attachments/assets/97fbca07-1570-4a65-ae56-f547a69de5c1
 
-### Launch & Announcements
+**[新清士@AIコンテンツ開発者](https://x.com/kiyoshi_shin)** · [@kiyoshi_shin](https://x.com/kiyoshi_shin) · MiniMax H3 · 2026-07-30 · 5.7K 播放 · [▶ 在 X 上观看](https://x.com/kiyoshi_shin/status/2082971035364946077)
 
-#### [It's coming. @Hailuo_AI](https://x.com/MiniMax_AI/status/2082779062653845803)
+### Sci-fi motion poster animated from a single still
 
-- **原帖：** [X](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30
-- **发帖者：** [MiniMax_AI](https://x.com/MiniMax_AI)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+https://github.com/user-attachments/assets/e554edfc-006b-4b6f-9983-8c9af7fdbca5
 
-#### [MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…](https://x.com/ArtificialAnlys/status/2083042088338538594)
+**[LudovicCreator](https://x.com/LudovicCreator)** · [@LudovicCreator](https://x.com/LudovicCreator) · MiniMax H3 · 2026-08-01 · 5.6K 播放 · [▶ 在 X 上观看](https://x.com/LudovicCreator/status/2083628852165672988)
 
-- **原帖：** [X](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31
-- **发帖者：** [Artificial Analysis (@ArtificialAnlys)](https://x.com/ArtificialAnlys)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [MiniMax H3 is on Leonardo](https://x.com/LeonardoAi/status/2083142947978047937)
-
-- **原帖：** [X](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31
-- **发帖者：** [Leonardo.Ai (@LeonardoAi)](https://x.com/LeonardoAi)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [MiniMax-H3 open source](https://x.com/bdsqlsz/status/2083023496842801456)
-
-- **原帖：** [X](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31
-- **发帖者：** [青龍聖者 (@bdsqlsz)](https://x.com/bdsqlsz)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [MiniMax H3 is now available in ComfyUI via Partner Nodes](https://x.com/ComfyUI/status/2083071877891682784)
-
-- **原帖：** [X](https://x.com/ComfyUI/status/2083071877891682784) · MiniMax H3 · 2026-07-31
-- **发帖者：** [ComfyUI](https://x.com/ComfyUI)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。](https://x.com/servasyy_ai/status/2083024386567840185)
-
-- **原帖：** [X](https://x.com/servasyy_ai/status/2083024386567840185) · MiniMax H3 · 2026-07-31
-- **发帖者：** [huangserva (@servasyy_ai)](https://x.com/servasyy_ai)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [Minimax发布视频模型MiniMax H3](https://x.com/Gorden_Sun/status/2083007741904441528)
-
-- **原帖：** [X](https://x.com/Gorden_Sun/status/2083007741904441528) · MiniMax H3 · 2026-07-31
-- **发帖者：** [Gorden Sun (@Gorden_Sun)](https://x.com/Gorden_Sun)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [MiniMax is open-sourcing H3. This is going to be massive. 🔥](https://x.com/ai_for_success/status/2083017269886738837)
-
-- **原帖：** [X](https://x.com/ai_for_success/status/2083017269886738837) · MiniMax H3 · 2026-07-31
-- **发帖者：** [AshutoshShrivastava (@ai_for_success)](https://x.com/ai_for_success)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
-
-#### [MiniMax H3 just became the best video editor in AI](https://x.com/heyshrutimishra/status/2083163811398181247)
-
-- **原帖：** [X](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31
-- **发帖者：** [Shruti (@heyshrutimishra)](https://x.com/heyshrutimishra)
-- **原始视频创作者：** 未知（未根据发帖账号推定）
-- **提示词作者：** 未知（未根据发帖账号推定）
-- **视频提供方式：** 仅链接原帖 / 官方嵌入
+> 作者把提示词发在了[原帖的楼中楼](https://x.com/LudovicCreator/status/2083628852165672988)。
 
 
-## 投稿与维护
+## 广告 / UGC / 产品
 
-新候选会先进入发现与人工审核队列，而不是自动公开或镜像。查询范围、排除理由和缺口见 [COVERAGE.md](COVERAGE.md)，投稿格式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+<a id="ads-ugc-product"></a>
 
-仓库代码和编辑性文字采用 MIT 协议；被索引的帖子、提示词和视频保留其各自权利状态。
+### 🚨 MiniMax H3 llega a Topview
+
+https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
+
+**[Ben Pierron](https://x.com/Ben_escrito)** · [@Ben_escrito](https://x.com/Ben_escrito) · MiniMax H3 · 2026-07-31 · 4.2K 播放 · [▶ 在 X 上观看](https://x.com/Ben_escrito/status/2083091961544876128)
+
+
+## 发布与官方消息
+
+<a id="launch-announcements"></a>
+
+### It's coming. @Hailuo_AI
+
+https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
+
+**[MiniMax (official)](https://x.com/MiniMax_AI)** · [@MiniMax_AI](https://x.com/MiniMax_AI) · MiniMax H3 · 2026-07-30 · 940.7K 播放 · [▶ 在 X 上观看](https://x.com/MiniMax_AI/status/2082779062653845803)
+
+### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
+
+https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
+
+**[Artificial Analysis](https://x.com/ArtificialAnlys)** · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · MiniMax H3 · 2026-07-31 · 220.3K 播放 · [▶ 在 X 上观看](https://x.com/ArtificialAnlys/status/2083042088338538594)
+
+### MiniMax H3 is on Leonardo
+
+https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
+
+**[Leonardo.Ai](https://x.com/LeonardoAi)** · [@LeonardoAi](https://x.com/LeonardoAi) · MiniMax H3 · 2026-07-31 · 61.8K 播放 · [▶ 在 X 上观看](https://x.com/LeonardoAi/status/2083142947978047937)
+
+### MiniMax-H3 open source
+
+https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
+
+**[青龍聖者](https://x.com/bdsqlsz)** · [@bdsqlsz](https://x.com/bdsqlsz) · MiniMax H3 · 2026-07-31 · 52.8K 播放 · [▶ 在 X 上观看](https://x.com/bdsqlsz/status/2083023496842801456)
+
+### MiniMax H3 is now available in ComfyUI via Partner Nodes
+
+https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
+
+**[ComfyUI](https://x.com/ComfyUI)** · [@ComfyUI](https://x.com/ComfyUI) · MiniMax H3 · 2026-07-31 · 44.8K 播放 · [▶ 在 X 上观看](https://x.com/ComfyUI/status/2083071877891682784)
+
+### 海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。
+
+https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e
+
+**[huangserva](https://x.com/servasyy_ai)** · [@servasyy_ai](https://x.com/servasyy_ai) · MiniMax H3 · 2026-07-31 · 43.9K 播放 · [▶ 在 X 上观看](https://x.com/servasyy_ai/status/2083024386567840185)
+
+### Minimax发布视频模型MiniMax H3
+
+https://github.com/user-attachments/assets/d62d64f5-19e5-48ec-81bd-3f3fa7e77579
+
+**[Gorden Sun](https://x.com/Gorden_Sun)** · [@Gorden_Sun](https://x.com/Gorden_Sun) · MiniMax H3 · 2026-07-31 · 9.3K 播放 · [▶ 在 X 上观看](https://x.com/Gorden_Sun/status/2083007741904441528)
+
+### MiniMax is open-sourcing H3. This is going to be massive. 🔥
+
+https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4
+
+**[AshutoshShrivastava](https://x.com/ai_for_success)** · [@ai_for_success](https://x.com/ai_for_success) · MiniMax H3 · 2026-07-31 · 6.6K 播放 · [▶ 在 X 上观看](https://x.com/ai_for_success/status/2083017269886738837)
+
+### MiniMax H3 just became the best video editor in AI
+
+https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65
+
+**[Shruti](https://x.com/heyshrutimishra)** · [@heyshrutimishra](https://x.com/heyshrutimishra) · MiniMax H3 · 2026-07-31 · 5K 播放 · [▶ 在 X 上观看](https://x.com/heyshrutimishra/status/2083163811398181247)
+
+
+## 署名与下架
+
+这里的每一个视频、提示词和名字都属于在 X 上发布它的人，每一条都链回原帖。
+
+如果你是作者，希望修改或删除自己的内容，[提一个 issue](https://github.com/opensource-works/awesome-minimax-h3-prompts/issues/new) 即可，我们立刻下架。
+
+## 投稿
+
+把 X 链接加进 `scripts/urls.txt` 提 PR 即可，剩下的交给脚本。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+MiniMax H3 是 MiniMax 的视频模型，本仓库为非官方社区索引。仓库代码与整理内容以 MIT 协议开源；被索引的帖子和视频版权归原作者所有。
