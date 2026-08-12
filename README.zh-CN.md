@@ -145,7 +145,7 @@ https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
 https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
-**视频署名 / 来源：** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [X 原帖](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 944K 播放
+**视频署名 / 来源：** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [X 原帖](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 944.3K 播放
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
@@ -163,7 +163,7 @@ https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 55.1K 播放
+**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 55.2K 播放
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 

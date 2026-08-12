@@ -33,12 +33,12 @@ Open the gallery if you want to search across prompts, filter by category, or co
 ## Most watched
 
 <table><tr>
-<td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 944K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 944.3K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/ArtificialAnlys/status/2083042088338538594"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is #1 in Video Editing and ranks top 3 in both…</b><br><a href="https://x.com/ArtificialAnlys">@ArtificialAnlys</a> · 220.8K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/CallMeDiegoJr/status/2082554826349535341"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/CallMeDiegoJr_2082554386631331840.webp" width="100%" alt=""></a><br><sub><b>Testing whether H3&#x27;s native voice output handles Persian</b><br><a href="https://x.com/CallMeDiegoJr">@CallMeDiegoJr</a> · 62.3K views</sub></td>
 </tr><tr>
 <td width="33%" valign="top"><a href="https://x.com/LeonardoAi/status/2083142947978047937"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is on Leonardo</b><br><a href="https://x.com/LeonardoAi">@LeonardoAi</a> · 61.9K views</sub></td>
-<td width="33%" valign="top"><a href="https://x.com/bdsqlsz/status/2083023496842801456"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/bdsqlsz_2083023259378036736.webp" width="100%" alt=""></a><br><sub><b>MiniMax-H3 open source</b><br><a href="https://x.com/bdsqlsz">@bdsqlsz</a> · 55.1K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/bdsqlsz/status/2083023496842801456"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/bdsqlsz_2083023259378036736.webp" width="100%" alt=""></a><br><sub><b>MiniMax-H3 open source</b><br><a href="https://x.com/bdsqlsz">@bdsqlsz</a> · 55.2K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/ComfyUI/status/2083071877891682784"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ComfyUI_2083065132910063616.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is now available in ComfyUI via Partner Nodes</b><br><a href="https://x.com/ComfyUI">@ComfyUI</a> · 44.9K views</sub></td>
 </tr></table>
 
@@ -143,7 +143,7 @@ https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
 https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
-**Video credit / source:** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [Original post](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 944K views
+**Video credit / source:** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [Original post](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 944.3K views
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
@@ -161,7 +161,7 @@ https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**Video credit / source:** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [Original post](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 55.1K views
+**Video credit / source:** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [Original post](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 55.2K views
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
