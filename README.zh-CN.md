@@ -26,9 +26,9 @@ MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hail
 | 帖子数 | **16** |
 | 署名来源账号 | **16** |
 | 含完整提示词 | **2** |
-| X 上累计播放 | **1.5M** |
+| X 上累计播放 | **2M** |
 | 覆盖模型 | **MiniMax H3**（16） |
-| 最近更新 | 2026-08-24 |
+| 最近更新 | 2026-08-31 |
 
 ## 目录
 
@@ -59,7 +59,7 @@ https://github.com/user-attachments/assets/46cb4256-2731-4a88-ab24-9bcc58d5f200
 
 https://github.com/user-attachments/assets/98fc8164-df7f-464e-a7ae-23c79f6c47eb
 
-**视频署名 / 来源：** [Umesh](https://x.com/umesh_ai) · [@umesh_ai](https://x.com/umesh_ai) · [X 原帖](https://x.com/umesh_ai/status/2082499539735588916) · MiniMax H3 · 2026-07-29 · 18.3K 播放
+**视频署名 / 来源：** [Umesh](https://x.com/umesh_ai) · [@umesh_ai](https://x.com/umesh_ai) · [X 原帖](https://x.com/umesh_ai/status/2082499539735588916) · MiniMax H3 · 2026-07-29 · 18.4K 播放
 
 <details><summary><b>提示词</b></summary>
 
@@ -145,37 +145,37 @@ https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
 https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
-**视频署名 / 来源：** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [X 原帖](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 975K 播放
+**视频署名 / 来源：** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [X 原帖](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 1.4M 播放
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
 https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
-**视频署名 / 来源：** [Artificial Analysis](https://x.com/ArtificialAnlys) · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · [X 原帖](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31 · 222.7K 播放
+**视频署名 / 来源：** [Artificial Analysis](https://x.com/ArtificialAnlys) · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · [X 原帖](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31 · 223.3K 播放
 
 ### MiniMax H3 is on Leonardo
 
 https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
-**视频署名 / 来源：** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [X 原帖](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 62.4K 播放
+**视频署名 / 来源：** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [X 原帖](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 102.9K 播放
 
 ### MiniMax-H3 open source
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 59.4K 播放
+**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 60.4K 播放
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
 https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
 
-**视频署名 / 来源：** [ComfyUI](https://x.com/ComfyUI) · [@ComfyUI](https://x.com/ComfyUI) · [X 原帖](https://x.com/ComfyUI/status/2083071877891682784) · MiniMax H3 · 2026-07-31 · 45.3K 播放
+**视频署名 / 来源：** [ComfyUI](https://x.com/ComfyUI) · [@ComfyUI](https://x.com/ComfyUI) · [X 原帖](https://x.com/ComfyUI/status/2083071877891682784) · MiniMax H3 · 2026-07-31 · 45.4K 播放
 
 ### 海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。
 
 https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e
 
-**视频署名 / 来源：** [huangserva](https://x.com/servasyy_ai) · [@servasyy_ai](https://x.com/servasyy_ai) · [X 原帖](https://x.com/servasyy_ai/status/2083024386567840185) · MiniMax H3 · 2026-07-31 · 44.3K 播放
+**视频署名 / 来源：** [huangserva](https://x.com/servasyy_ai) · [@servasyy_ai](https://x.com/servasyy_ai) · [X 原帖](https://x.com/servasyy_ai/status/2083024386567840185) · MiniMax H3 · 2026-07-31 · 44.4K 播放
 
 ### Minimax发布视频模型MiniMax H3
 
@@ -193,7 +193,7 @@ https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4
 
 https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65
 
-**视频署名 / 来源：** [Shruti](https://x.com/heyshrutimishra) · [@heyshrutimishra](https://x.com/heyshrutimishra) · [X 原帖](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31 · 5K 播放
+**视频署名 / 来源：** [Shruti](https://x.com/heyshrutimishra) · [@heyshrutimishra](https://x.com/heyshrutimishra) · [X 原帖](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31 · 5.1K 播放
 
 
 ## 署名与下架

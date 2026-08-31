@@ -49,8 +49,8 @@
       ]
     },
     "stats": {
-      "views": 975006,
-      "likes": 3204,
+      "views": 1368213,
+      "likes": 4546,
       "retweets": 225
     }
   },
@@ -86,9 +86,58 @@
       ]
     },
     "stats": {
-      "views": 222730,
-      "likes": 912,
+      "views": 223264,
+      "likes": 910,
       "retweets": 84
+    }
+  },
+  {
+    "id": "2083142947978047937",
+    "url": "https://x.com/LeonardoAi/status/2083142947978047937",
+    "title": "MiniMax H3 is on Leonardo",
+    "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
+    "prompt": null,
+    "prompt_in_thread": false,
+    "model": "MiniMax H3",
+    "category": "Launch & Announcements",
+    "date": "2026-07-31",
+    "author": {
+      "name": "Leonardo.Ai",
+      "handle": "LeonardoAi",
+      "url": "https://x.com/LeonardoAi",
+      "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
+    },
+    "video": {
+      "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
+      "thumbnail": "https://pbs.twimg.com/media/HOjPdD9XwAAcG8i.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 12.23,
+      "formats": [
+        {
+          "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/480x270/i1k1FU_nY1ixaC1-.mp4?tag=14",
+          "bitrate": 288000,
+          "container": "mp4",
+          "codec": "h264"
+        },
+        {
+          "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/640x360/l9zc2D1d1R38IhON.mp4?tag=14",
+          "bitrate": 832000,
+          "container": "mp4",
+          "codec": "h264"
+        },
+        {
+          "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
+          "bitrate": 2176000,
+          "container": "mp4",
+          "codec": "h264"
+        }
+      ]
+    },
+    "stats": {
+      "views": 102880,
+      "likes": 477,
+      "retweets": 7
     }
   },
   {
@@ -141,58 +190,9 @@
       ]
     },
     "stats": {
-      "views": 62952,
+      "views": 63050,
       "likes": 145,
       "retweets": 1
-    }
-  },
-  {
-    "id": "2083142947978047937",
-    "url": "https://x.com/LeonardoAi/status/2083142947978047937",
-    "title": "MiniMax H3 is on Leonardo",
-    "text": "MiniMax H3 is on Leonardo.\n\nMost video models give you a clip. H3 gives you the clip and the soundtrack — with your character and voice locked in from refs. Expect:\n\n- Commercial-grade quality across ads, e-commerce, gaming & UI\n- Best value in its class\n- One lightweight model, fully multimodal\n\nBuilt for one-shot finished content: brand teasers, product videos, fashion films, talking characters",
-    "prompt": null,
-    "prompt_in_thread": false,
-    "model": "MiniMax H3",
-    "category": "Launch & Announcements",
-    "date": "2026-07-31",
-    "author": {
-      "name": "Leonardo.Ai",
-      "handle": "LeonardoAi",
-      "url": "https://x.com/LeonardoAi",
-      "avatar": "https://pbs.twimg.com/profile_images/2024157284331622400/ogvOcWzi_200x200.jpg"
-    },
-    "video": {
-      "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
-      "thumbnail": "https://pbs.twimg.com/media/HOjPdD9XwAAcG8i.jpg",
-      "width": 1920,
-      "height": 1080,
-      "duration": 12.23,
-      "formats": [
-        {
-          "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/480x270/i1k1FU_nY1ixaC1-.mp4?tag=14",
-          "bitrate": 288000,
-          "container": "mp4",
-          "codec": "h264"
-        },
-        {
-          "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/640x360/l9zc2D1d1R38IhON.mp4?tag=14",
-          "bitrate": 832000,
-          "container": "mp4",
-          "codec": "h264"
-        },
-        {
-          "url": "https://video.twimg.com/amplify_video/2083142884044210176/vid/avc1/1280x720/jbclj65-p3DIkmo_.mp4?tag=14",
-          "bitrate": 2176000,
-          "container": "mp4",
-          "codec": "h264"
-        }
-      ]
-    },
-    "stats": {
-      "views": 62368,
-      "likes": 465,
-      "retweets": 6
     }
   },
   {
@@ -245,7 +245,7 @@
       ]
     },
     "stats": {
-      "views": 59370,
+      "views": 60443,
       "likes": 140,
       "retweets": 18
     }
@@ -300,8 +300,8 @@
       ]
     },
     "stats": {
-      "views": 45319,
-      "likes": 380,
+      "views": 45444,
+      "likes": 374,
       "retweets": 33
     }
   },
@@ -355,7 +355,7 @@
       ]
     },
     "stats": {
-      "views": 44303,
+      "views": 44445,
       "likes": 66,
       "retweets": 5
     }
@@ -410,9 +410,9 @@
       ]
     },
     "stats": {
-      "views": 18335,
-      "likes": 309,
-      "retweets": 28
+      "views": 18416,
+      "likes": 310,
+      "retweets": 27
     }
   },
   {
@@ -465,7 +465,7 @@
       ]
     },
     "stats": {
-      "views": 9407,
+      "views": 9420,
       "likes": 40,
       "retweets": 5
     }
@@ -520,7 +520,7 @@
       ]
     },
     "stats": {
-      "views": 7471,
+      "views": 7474,
       "likes": 16,
       "retweets": 0
     }
@@ -575,8 +575,8 @@
       ]
     },
     "stats": {
-      "views": 6590,
-      "likes": 80,
+      "views": 6595,
+      "likes": 78,
       "retweets": 4
     }
   },
@@ -630,7 +630,7 @@
       ]
     },
     "stats": {
-      "views": 5772,
+      "views": 5832,
       "likes": 40,
       "retweets": 9
     }
@@ -679,7 +679,7 @@
       ]
     },
     "stats": {
-      "views": 5661,
+      "views": 5670,
       "likes": 55,
       "retweets": 6
     },
@@ -731,7 +731,7 @@
       ]
     },
     "stats": {
-      "views": 5050,
+      "views": 5079,
       "likes": 18,
       "retweets": 3
     }
@@ -786,7 +786,7 @@
       ]
     },
     "stats": {
-      "views": 4278,
+      "views": 4294,
       "likes": 16,
       "retweets": 9
     }
@@ -841,7 +841,7 @@
       ]
     },
     "stats": {
-      "views": 3560,
+      "views": 3567,
       "likes": 75,
       "retweets": 8
     }
