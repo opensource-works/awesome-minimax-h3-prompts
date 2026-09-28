@@ -28,7 +28,7 @@ MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hail
 | 含完整提示词 | **2** |
 | X 上累计播放 | **2.4M** |
 | 覆盖模型 | **MiniMax H3**（16） |
-| 最近更新 | 2026-09-21 |
+| 最近更新 | 2026-09-28 |
 
 ## 目录
 
@@ -82,7 +82,7 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 
 https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
-**视频署名 / 来源：** [Future Vibes AI - Educator](https://x.com/FutureVibesAi) · [@FutureVibesAi](https://x.com/FutureVibesAi) · [X 原帖](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29 · 3.6K 播放
+**视频署名 / 来源：** [Future Vibes AI - Testing & Educating](https://x.com/FutureVibesAi) · [@FutureVibesAi](https://x.com/FutureVibesAi) · [X 原帖](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29 · 3.6K 播放
 
 
 ## 原生音频与配音
@@ -145,31 +145,31 @@ https://github.com/user-attachments/assets/815806fa-c127-491b-a669-ab9a474da212
 
 https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
-**视频署名 / 来源：** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [X 原帖](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 1.7M 播放
+**视频署名 / 来源：** [MiniMax (official)](https://x.com/MiniMax_AI) · [@MiniMax_AI](https://x.com/MiniMax_AI) · [X 原帖](https://x.com/MiniMax_AI/status/2082779062653845803) · MiniMax H3 · 2026-07-30 · 1.8M 播放
 
 ### MiniMax H3 is #1 in Video Editing and ranks top 3 in both Text to Video and Image to Video…
 
 https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
-**视频署名 / 来源：** [Artificial Analysis](https://x.com/ArtificialAnlys) · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · [X 原帖](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31 · 224K 播放
+**视频署名 / 来源：** [Artificial Analysis](https://x.com/ArtificialAnlys) · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · [X 原帖](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31 · 224.2K 播放
 
 ### MiniMax H3 is on Leonardo
 
 https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
-**视频署名 / 来源：** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [X 原帖](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 104.4K 播放
+**视频署名 / 来源：** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [X 原帖](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 104.6K 播放
 
 ### MiniMax-H3 open source
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 62.2K 播放
+**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 62.4K 播放
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
 https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
 
-**视频署名 / 来源：** [ComfyUI](https://x.com/ComfyUI) · [@ComfyUI](https://x.com/ComfyUI) · [X 原帖](https://x.com/ComfyUI/status/2083071877891682784) · MiniMax H3 · 2026-07-31 · 45.6K 播放
+**视频署名 / 来源：** [ComfyUI](https://x.com/ComfyUI) · [@ComfyUI](https://x.com/ComfyUI) · [X 原帖](https://x.com/ComfyUI/status/2083071877891682784) · MiniMax H3 · 2026-07-31 · 45.7K 播放
 
 ### 海螺 MiniMax H3,Topview 全球首批接进去了,已经能玩。
 
