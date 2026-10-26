@@ -49,9 +49,9 @@
       ]
     },
     "stats": {
-      "views": 1777254,
-      "likes": 4430,
-      "retweets": 219
+      "views": 1777868,
+      "likes": 4385,
+      "retweets": 216
     }
   },
   {
@@ -86,8 +86,8 @@
       ]
     },
     "stats": {
-      "views": 224780,
-      "likes": 907,
+      "views": 224909,
+      "likes": 905,
       "retweets": 82
     }
   },
@@ -135,64 +135,9 @@
       ]
     },
     "stats": {
-      "views": 104902,
-      "likes": 434,
+      "views": 104962,
+      "likes": 424,
       "retweets": 7
-    }
-  },
-  {
-    "id": "2082554826349535341",
-    "url": "https://x.com/CallMeDiegoJr/status/2082554826349535341",
-    "title": "Testing whether H3's native voice output handles Persian",
-    "text": "اگر براتون سواله که مدل MiniMax H3 در @Hailuo_AI زبان فارسی رو هم پشتیبانی می‌کنه یا نه، باید بگم اگر تنوین‌ها رو برای حروف نذارید، خروجی صدا آقای پرتقال خانم پیازی طور می‌شه! 😂\n\n #MiniMaxH3",
-    "prompt": null,
-    "prompt_in_thread": false,
-    "model": "MiniMax H3",
-    "category": "Audio & Voice",
-    "date": "2026-07-29",
-    "author": {
-      "name": "Diego Jr",
-      "handle": "CallMeDiegoJr",
-      "url": "https://x.com/CallMeDiegoJr",
-      "avatar": "https://pbs.twimg.com/profile_images/2004688279782699008/8jMYzXU3_200x200.jpg"
-    },
-    "video": {
-      "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/2560x1440/z0rIv8ptO35T9p8n.mp4?tag=29",
-      "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2082554386631331840/img/g-NKETrTJJGq-Eet.jpg",
-      "width": 2560,
-      "height": 1440,
-      "duration": 15.08,
-      "formats": [
-        {
-          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/480x270/XeUnlOrs3NsoaOLg.mp4?tag=29",
-          "bitrate": 256000,
-          "container": "mp4",
-          "codec": "h264"
-        },
-        {
-          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/640x360/7EHpuncFfrHpZrRz.mp4?tag=29",
-          "bitrate": 832000,
-          "container": "mp4",
-          "codec": "h264"
-        },
-        {
-          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/1280x720/RePzgnksX0SNchbt.mp4?tag=29",
-          "bitrate": 2176000,
-          "container": "mp4",
-          "codec": "h264"
-        },
-        {
-          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/2560x1440/z0rIv8ptO35T9p8n.mp4?tag=29",
-          "bitrate": 10368000,
-          "container": "mp4",
-          "codec": "h264"
-        }
-      ]
-    },
-    "stats": {
-      "views": 63252,
-      "likes": 143,
-      "retweets": 1
     }
   },
   {
@@ -245,9 +190,64 @@
       ]
     },
     "stats": {
-      "views": 63087,
-      "likes": 138,
+      "views": 63362,
+      "likes": 136,
       "retweets": 17
+    }
+  },
+  {
+    "id": "2082554826349535341",
+    "url": "https://x.com/CallMeDiegoJr/status/2082554826349535341",
+    "title": "Testing whether H3's native voice output handles Persian",
+    "text": "اگر براتون سواله که مدل MiniMax H3 در @Hailuo_AI زبان فارسی رو هم پشتیبانی می‌کنه یا نه، باید بگم اگر تنوین‌ها رو برای حروف نذارید، خروجی صدا آقای پرتقال خانم پیازی طور می‌شه! 😂\n\n #MiniMaxH3",
+    "prompt": null,
+    "prompt_in_thread": false,
+    "model": "MiniMax H3",
+    "category": "Audio & Voice",
+    "date": "2026-07-29",
+    "author": {
+      "name": "Diego Jr",
+      "handle": "CallMeDiegoJr",
+      "url": "https://x.com/CallMeDiegoJr",
+      "avatar": "https://pbs.twimg.com/profile_images/2004688279782699008/8jMYzXU3_200x200.jpg"
+    },
+    "video": {
+      "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/2560x1440/z0rIv8ptO35T9p8n.mp4?tag=29",
+      "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2082554386631331840/img/g-NKETrTJJGq-Eet.jpg",
+      "width": 2560,
+      "height": 1440,
+      "duration": 15.08,
+      "formats": [
+        {
+          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/480x270/XeUnlOrs3NsoaOLg.mp4?tag=29",
+          "bitrate": 256000,
+          "container": "mp4",
+          "codec": "h264"
+        },
+        {
+          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/640x360/7EHpuncFfrHpZrRz.mp4?tag=29",
+          "bitrate": 832000,
+          "container": "mp4",
+          "codec": "h264"
+        },
+        {
+          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/1280x720/RePzgnksX0SNchbt.mp4?tag=29",
+          "bitrate": 2176000,
+          "container": "mp4",
+          "codec": "h264"
+        },
+        {
+          "url": "https://video.twimg.com/amplify_video/2082554386631331840/vid/avc1/2560x1440/z0rIv8ptO35T9p8n.mp4?tag=29",
+          "bitrate": 10368000,
+          "container": "mp4",
+          "codec": "h264"
+        }
+      ]
+    },
+    "stats": {
+      "views": 63267,
+      "likes": 143,
+      "retweets": 1
     }
   },
   {
@@ -300,8 +300,8 @@
       ]
     },
     "stats": {
-      "views": 45766,
-      "likes": 359,
+      "views": 45805,
+      "likes": 353,
       "retweets": 32
     }
   },
@@ -355,7 +355,7 @@
       ]
     },
     "stats": {
-      "views": 44710,
+      "views": 44735,
       "likes": 66,
       "retweets": 5
     }
@@ -410,9 +410,9 @@
       ]
     },
     "stats": {
-      "views": 19149,
-      "likes": 308,
-      "retweets": 27
+      "views": 19176,
+      "likes": 307,
+      "retweets": 26
     }
   },
   {
@@ -465,7 +465,7 @@
       ]
     },
     "stats": {
-      "views": 9487,
+      "views": 9495,
       "likes": 39,
       "retweets": 5
     }
@@ -520,7 +520,7 @@
       ]
     },
     "stats": {
-      "views": 7489,
+      "views": 7491,
       "likes": 16,
       "retweets": 0
     }
@@ -575,7 +575,7 @@
       ]
     },
     "stats": {
-      "views": 6609,
+      "views": 6613,
       "likes": 78,
       "retweets": 4
     }
@@ -630,9 +630,9 @@
       ]
     },
     "stats": {
-      "views": 5956,
+      "views": 5960,
       "likes": 40,
-      "retweets": 9
+      "retweets": 8
     }
   },
   {
@@ -679,7 +679,7 @@
       ]
     },
     "stats": {
-      "views": 5721,
+      "views": 5725,
       "likes": 55,
       "retweets": 6
     },
@@ -731,7 +731,7 @@
       ]
     },
     "stats": {
-      "views": 5126,
+      "views": 5136,
       "likes": 18,
       "retweets": 3
     }
@@ -786,7 +786,7 @@
       ]
     },
     "stats": {
-      "views": 4316,
+      "views": 4318,
       "likes": 16,
       "retweets": 9
     }
@@ -841,7 +841,7 @@
       ]
     },
     "stats": {
-      "views": 3617,
+      "views": 3626,
       "likes": 75,
       "retweets": 7
     }
