@@ -28,7 +28,7 @@ MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hail
 | 含完整提示词 | **2** |
 | X 上累计播放 | **2.4M** |
 | 覆盖模型 | **MiniMax H3**（16） |
-| 最近更新 | 2026-10-26 |
+| 最近更新 | 2026-11-02 |
 
 ## 目录
 
@@ -151,7 +151,7 @@ https://github.com/user-attachments/assets/6aedd45f-1c35-4137-9643-80b4e781f957
 
 https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
-**视频署名 / 来源：** [Artificial Analysis](https://x.com/ArtificialAnlys) · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · [X 原帖](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31 · 224.9K 播放
+**视频署名 / 来源：** [Artificial Analysis](https://x.com/ArtificialAnlys) · [@ArtificialAnlys](https://x.com/ArtificialAnlys) · [X 原帖](https://x.com/ArtificialAnlys/status/2083042088338538594) · MiniMax H3 · 2026-07-31 · 225K 播放
 
 ### MiniMax H3 is on Leonardo
 
@@ -163,7 +163,7 @@ https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 63.4K 播放
+**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 63.5K 播放
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
@@ -175,7 +175,7 @@ https://github.com/user-attachments/assets/88c33649-47f3-4356-b27d-a4d3951476a8
 
 https://github.com/user-attachments/assets/d85a3cad-95a6-48dc-8696-d82000b8876e
 
-**视频署名 / 来源：** [huangserva](https://x.com/servasyy_ai) · [@servasyy_ai](https://x.com/servasyy_ai) · [X 原帖](https://x.com/servasyy_ai/status/2083024386567840185) · MiniMax H3 · 2026-07-31 · 44.7K 播放
+**视频署名 / 来源：** [huangserva](https://x.com/servasyy_ai) · [@servasyy_ai](https://x.com/servasyy_ai) · [X 原帖](https://x.com/servasyy_ai/status/2083024386567840185) · MiniMax H3 · 2026-07-31 · 44.8K 播放
 
 ### Minimax发布视频模型MiniMax H3
 
