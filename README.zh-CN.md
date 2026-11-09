@@ -28,7 +28,7 @@ MiniMax H3 于 2026 年 7 月 31 日发布——海螺 AI 客户端里叫 **Hail
 | 含完整提示词 | **2** |
 | X 上累计播放 | **2.4M** |
 | 覆盖模型 | **MiniMax H3**（16） |
-| 最近更新 | 2026-11-02 |
+| 最近更新 | 2026-11-09 |
 
 ## 目录
 
@@ -82,7 +82,7 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 
 https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
-**视频署名 / 来源：** [Future Vibes AI - Testing & Educating](https://x.com/FutureVibesAi) · [@FutureVibesAi](https://x.com/FutureVibesAi) · [X 原帖](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29 · 3.6K 播放
+**视频署名 / 来源：** [Future Vibes AI - Testing & Educating](https://x.com/FutureVibesAi) · [@FutureVibesAi](https://x.com/FutureVibesAi) · [X 原帖](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29 · 3.7K 播放
 
 
 ## 原生音频与配音
@@ -157,13 +157,13 @@ https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
 https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
-**视频署名 / 来源：** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [X 原帖](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 105K 播放
+**视频署名 / 来源：** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [X 原帖](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 105.1K 播放
 
 ### MiniMax-H3 open source
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 63.5K 播放
+**视频署名 / 来源：** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [X 原帖](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 63.7K 播放
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
@@ -193,7 +193,7 @@ https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4
 
 https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65
 
-**视频署名 / 来源：** [Shruti](https://x.com/heyshrutimishra) · [@heyshrutimishra](https://x.com/heyshrutimishra) · [X 原帖](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31 · 5.1K 播放
+**视频署名 / 来源：** [Shruti](https://x.com/heyshrutimishra) · [@heyshrutimishra](https://x.com/heyshrutimishra) · [X 原帖](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31 · 5.2K 播放
 
 
 ## 署名与下架

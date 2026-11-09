@@ -28,16 +28,16 @@ Open the gallery if you want to search across prompts, filter by category, or co
 | Posts with the full prompt | **2** |
 | Combined views on X | **2.4M** |
 | Models covered | **MiniMax H3** (16) |
-| Last refreshed | 2026-11-02 |
+| Last refreshed | 2026-11-09 |
 
 ## Most watched
 
 <table><tr>
 <td width="33%" valign="top"><a href="https://x.com/MiniMax_AI/status/2082779062653845803"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/MiniMax_AI_2082778044692135936.webp" width="100%" alt=""></a><br><sub><b>It&#x27;s coming. @Hailuo_AI</b><br><a href="https://x.com/MiniMax_AI">@MiniMax_AI</a> · 1.8M views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/ArtificialAnlys/status/2083042088338538594"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ArtificialAnlys_2083042088338538594.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is #1 in Video Editing and ranks top 3 in both…</b><br><a href="https://x.com/ArtificialAnlys">@ArtificialAnlys</a> · 225K views</sub></td>
-<td width="33%" valign="top"><a href="https://x.com/LeonardoAi/status/2083142947978047937"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is on Leonardo</b><br><a href="https://x.com/LeonardoAi">@LeonardoAi</a> · 105K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/LeonardoAi/status/2083142947978047937"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/LeonardoAi_2083142884044210176.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is on Leonardo</b><br><a href="https://x.com/LeonardoAi">@LeonardoAi</a> · 105.1K views</sub></td>
 </tr><tr>
-<td width="33%" valign="top"><a href="https://x.com/bdsqlsz/status/2083023496842801456"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/bdsqlsz_2083023259378036736.webp" width="100%" alt=""></a><br><sub><b>MiniMax-H3 open source</b><br><a href="https://x.com/bdsqlsz">@bdsqlsz</a> · 63.5K views</sub></td>
+<td width="33%" valign="top"><a href="https://x.com/bdsqlsz/status/2083023496842801456"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/bdsqlsz_2083023259378036736.webp" width="100%" alt=""></a><br><sub><b>MiniMax-H3 open source</b><br><a href="https://x.com/bdsqlsz">@bdsqlsz</a> · 63.7K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/CallMeDiegoJr/status/2082554826349535341"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/CallMeDiegoJr_2082554386631331840.webp" width="100%" alt=""></a><br><sub><b>Testing whether H3&#x27;s native voice output handles Persian</b><br><a href="https://x.com/CallMeDiegoJr">@CallMeDiegoJr</a> · 63.3K views</sub></td>
 <td width="33%" valign="top"><a href="https://x.com/ComfyUI/status/2083071877891682784"><img src="https://pub-1dec941b0f984f2e8e9c9636ee482592.r2.dev/ComfyUI_2083065132910063616.webp" width="100%" alt=""></a><br><sub><b>MiniMax H3 is now available in ComfyUI via Partner Nodes</b><br><a href="https://x.com/ComfyUI">@ComfyUI</a> · 45.8K views</sub></td>
 </tr></table>
@@ -88,7 +88,7 @@ Speeder chase across a cliff city (single continuous shot) From a monumental cli
 
 https://github.com/user-attachments/assets/f58b00dd-acac-4018-9a59-11769dd17c59
 
-**Video credit / source:** [Future Vibes AI - Testing & Educating](https://x.com/FutureVibesAi) · [@FutureVibesAi](https://x.com/FutureVibesAi) · [Original post](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29 · 3.6K views
+**Video credit / source:** [Future Vibes AI - Testing & Educating](https://x.com/FutureVibesAi) · [@FutureVibesAi](https://x.com/FutureVibesAi) · [Original post](https://x.com/FutureVibesAi/status/2082529869297246414) · MiniMax H3 · 2026-07-29 · 3.7K views
 
 
 ## Audio & Voice
@@ -155,13 +155,13 @@ https://github.com/user-attachments/assets/dbe0dded-de89-4d81-b0eb-f62757ae7b9e
 
 https://github.com/user-attachments/assets/3fbe3470-6b4a-4abe-ab1e-e13d4f04c125
 
-**Video credit / source:** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [Original post](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 105K views
+**Video credit / source:** [Leonardo.Ai](https://x.com/LeonardoAi) · [@LeonardoAi](https://x.com/LeonardoAi) · [Original post](https://x.com/LeonardoAi/status/2083142947978047937) · MiniMax H3 · 2026-07-31 · 105.1K views
 
 ### MiniMax-H3 open source
 
 https://github.com/user-attachments/assets/e7384a43-71ac-455a-8657-7c39b61e5405
 
-**Video credit / source:** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [Original post](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 63.5K views
+**Video credit / source:** [青龍聖者](https://x.com/bdsqlsz) · [@bdsqlsz](https://x.com/bdsqlsz) · [Original post](https://x.com/bdsqlsz/status/2083023496842801456) · MiniMax H3 · 2026-07-31 · 63.7K views
 
 ### MiniMax H3 is now available in ComfyUI via Partner Nodes
 
@@ -191,7 +191,7 @@ https://github.com/user-attachments/assets/c398e986-5c00-4c9a-abd2-73d091b82bb4
 
 https://github.com/user-attachments/assets/c010b832-9cfc-43a2-ad2f-32a2b9874a65
 
-**Video credit / source:** [Shruti](https://x.com/heyshrutimishra) · [@heyshrutimishra](https://x.com/heyshrutimishra) · [Original post](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31 · 5.1K views
+**Video credit / source:** [Shruti](https://x.com/heyshrutimishra) · [@heyshrutimishra](https://x.com/heyshrutimishra) · [Original post](https://x.com/heyshrutimishra/status/2083163811398181247) · MiniMax H3 · 2026-07-31 · 5.2K views
 
 
 ## Credit and takedowns
